@@ -4,13 +4,11 @@ title: Welcome to Middleman
 
 <% data.snippets.each do |category| %>
   <h2><%= category[:category] %></h2>
-    <% category[:snippets].each do |snippet| %>
-      <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
-        <div class="example"><%= snippet[:html] %></div>
-        <pre>
-          <code>
-<%= escape_html snippet[:html] %>
-         </code>
-      </pre>
-    <% end %>
+
+  <% category[:snippets].each do |snippet| %>
+    <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+
+    <div class="example"><%= snippet[:html] %></div>
+    <%= Pygments.highlight(snippet[:html]) %>
+  <% end %>
 <% end %>
