@@ -6,6 +6,7 @@ title: Welcome to Middleman
   <h2><%= category[:category] %></h2>
     <% category[:snippets].each do |snippet| %>
       <%= snippet[:title] %>
+        <div class="example"><%= snippet[:html] %></div>
         <pre>
           <code>
 <%= escape_html snippet[:html] %>
