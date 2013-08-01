@@ -18,7 +18,7 @@
       <% data.snippets.each do |category| %>
         <h2><%= category[:category] %></h2>
         <% category[:snippets].each do |snippet| %>
-          <%= link_to snippet[:title], "##{snippet[:title].downcase.gsub(' ','_')}" %>
+          <%= link_to snippet[:title], "##{anchor_from_title snippet[:title]}" %>
         <% end %>
       <% end %>
     </nav>
