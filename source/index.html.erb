@@ -1,14 +1,35 @@
 ---
-title: Welcome to Middleman
+title: Welcome to Spare-Parts
 ---
 
-<% data.snippets.each do |category| %>
-  <h2><%= category[:category] %></h2>
+<div class="main-content-container">
 
-  <% category[:snippets].each do |snippet| %>
-    <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+  <% data.snippets.each do |category| %>
 
-    <div class="example"><%= snippet[:html] %></div>
-    <%= Pygments.highlight(snippet[:html]) %>
+    <h2><%= category[:category] %></h2>
+    <div class="item-container">
+      <% category[:snippets].each do |snippet| %>
+        <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+        <div class="example"><%= snippet[:html] %></div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                <small>Code</small>
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <h4>HTML</h4>
+                  <button>copy</button>
+<%= Pygments.highlight(snippet[:html]) %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   <% end %>
-<% end %>
+</div>

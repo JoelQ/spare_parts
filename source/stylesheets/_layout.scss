@@ -1,0 +1,50 @@
+body {
+  background: $main-color;
+  margin: 0;
+}
+
+.container {
+  margin-top: $space;
+  @include outer-container;
+}
+
+nav {
+  @include span-columns(2);
+}
+
+.main-content-container {
+  @include span-columns(10);
+}
+
+.item-container {
+  background-color: white;
+  padding: $space;
+}
+
+.example {
+  padding: $space;
+  margin: $space/2 0;
+  background-color: $light-color;
+}
+
+.code-section {
+  margin: 0;
+  padding: $space /2;
+  @include span-columns(4);
+  h4 {
+    display: inline;
+  }
+
+  button {
+    border: none;
+    background-color: darken($main-color, 15);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $white;
+    padding: 7px 18px;
+    font-size: $font-size;
+    display: inline;
+    float: right;
+  }
+}
