@@ -1,0 +1,11 @@
+- category: 'Checkboxes'
+  snippets:
+    - title: 'Checkboxes'
+      html: |
+        <body>
+          <form>
+            <input type="checkbox">
+          </form>
+        </body>
+      css: ''
+      js: ''
