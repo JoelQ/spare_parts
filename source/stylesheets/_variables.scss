@@ -19,3 +19,11 @@ $white: white;
 $main-color-light: adjust-hue(mix($white, $main-color), -40);
 $black: darken($main-color, 50);
 $light-color: #FAFAFA;
+
+///////////////////////////////////////////////////////////////
+//
+//   Responsive
+//
+///////////////////////////////////////////////////////////////
+
+$mobile: new-breakpoint(max-width 750px);

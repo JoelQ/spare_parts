@@ -3,6 +3,10 @@
   padding: $space /2;
   @include span-columns(4);
 
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+
   header {
     margin-bottom: $space;
 

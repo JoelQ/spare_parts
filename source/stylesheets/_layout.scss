@@ -6,6 +6,7 @@ body {
 .container {
   margin-top: $space;
   @include outer-container;
+  padding: $space;
 }
 
 .hero {
@@ -27,16 +28,44 @@ nav {
 }
 
 .item-container {
+  position: relative;
   background-color: white;
   padding: $space;
   margin-bottom: 1px;
 
   header {
+
     h3 {
       display: inline;
     }
-    button {
+
+    .item-links {
+      position: absolute;
+      right: 0;
+      top: $space;
       float: right;
+
+      button {
+        border: 0;
+        border-bottom: 2px solid darken($light-color, 5);
+        background-color: $light-color;
+        color: $main-color;
+        text-transform: uppercase;
+        font-size: $font-size;
+        padding: 3px 10px;
+        margin-left: $space /3;
+
+        &.external-link {
+          background-color: darken($white, 3);
+          font-weight: 700;
+          border-right: 1px solid $main-color;
+          padding: 5px $space 3px 12px;
+          box-shadow: inset 1px 2px 1px darken($white, 12);
+          font-size: $font-size /1.2;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+      }
     }
   }
 }
@@ -46,15 +75,4 @@ nav {
   margin: $space/2 0;
   background-color: $light-color;
   border: 1px solid darken($light-color, 4);
-}
-
-button {
-  border: 0;
-  border-bottom: 2px solid darken($light-color, 5);
-  background-color: $light-color;
-  color: $main-color;
-  text-transform: uppercase;
-  font-size: $font-size;
-  padding: 3px 10px;
-
 }

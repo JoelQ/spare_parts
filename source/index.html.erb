@@ -11,7 +11,11 @@ title: Spare-Parts
       <% category[:snippets].each do |snippet| %>
         <header>
           <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
-          <button>Source</button>
+          <div class="item-links">
+            <button>Bourbon</button>
+            <button>Jquery</button>
+            <button class="external-link">Source</button>
+          </div>
         </header>
         <div class="example"><%= snippet[:html] %></div>
         <div class="accordion" id="accordion1">
