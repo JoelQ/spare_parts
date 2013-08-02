@@ -46,15 +46,22 @@ nav {
       top: $space;
       float: right;
 
+      p {
+        display: inline;
+        font-style: italic;
+      }
+
       button {
         border: 0;
-        border-bottom: 2px solid darken($light-color, 5);
-        background-color: $light-color;
-        color: $main-color;
+        border-bottom: 2px solid darken(adjust-hue($main-color, 10), 10);
+        background-color: adjust-hue($main-color, 10);
+        color: $white;
         text-transform: uppercase;
-        font-size: $font-size;
-        padding: 3px 10px;
-        margin-left: $space /3;
+        font-size: $font-size /1.2;
+        font-weight: 600;
+        padding: 3px 15px;
+        border-radius: 15px;
+        margin-left: $space /4;
 
         &.external-link {
           background-color: darken($white, 3);
@@ -62,9 +69,16 @@ nav {
           border-right: 1px solid $main-color;
           padding: 5px $space 3px 12px;
           box-shadow: inset 1px 2px 1px darken($white, 12);
+          color: darken($white, 20);
           font-size: $font-size /1.2;
           border-top-left-radius: 20px;
           border-bottom-left-radius: 20px;
+          border-top-right-radius: 0;
+          border-bottom: 0;
+          border-bottom-right-radius: 0;
+          &:hover {
+
+          }
         }
       }
     }
