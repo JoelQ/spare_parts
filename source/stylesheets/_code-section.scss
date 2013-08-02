@@ -1,15 +1,52 @@
-.clearfix {
-  *zoom: 1;
+.code-section {
+  margin: 0;
+  padding: $space /2;
+  @include span-columns(4);
+
+  header {
+    margin-bottom: $space;
+
+    h4 {
+      display: inline;
+      margin-right: $space /2;
+    }
+
+    button {
+      border: none;
+      background-color: $main-color-light;
+      border-radius: 20px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: $white;
+      padding: 3px 18px;
+      font-size: $font-size /1.5;
+      display: inline;
+
+      &:hover {
+        background-color: adjust-hue($main-color-light, 30);
+      }
+    }
+  }
 }
+
+
+///////////////////////////////////////////////////////////////
+//
+//   Accordion
+//
+///////////////////////////////////////////////////////////////
+
 .clearfix:before,
 .clearfix:after {
   display: table;
   content: "";
   line-height: 0;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -17,6 +54,7 @@
   background-color: transparent;
   border: 0;
 }
+
 .input-block-level {
   display: block;
   width: 100%;
@@ -25,19 +63,17 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.accordion {
-
-}
-
-.accordion-group {
-
-}
 
 .accordion-heading {
-  background-color: mix($black, $main-color);
+  background-color: $main-color-light;
+  border-bottom: 2px solid darken($main-color-light, 5);
 
   a {
     padding: $space /2;
+  }
+  i {
+    float: right;
+    font-size: $font-size *1.4;
   }
 }
 
@@ -51,7 +87,8 @@
 
 .accordion-inner {
   @include clearfix;
-  background-color: mix($black, $main-color);
+  border: 2px solid $main-color-light;;
+  border-top: none;
 }
 
 .fade {

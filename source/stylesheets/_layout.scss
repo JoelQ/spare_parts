@@ -8,8 +8,18 @@ body {
   @include outer-container;
 }
 
+.hero {
+  background: url(../images/hero.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  height: 400px;
+}
+
 nav {
   @include span-columns(2);
+  padding-right: $space;
 }
 
 .main-content-container {
@@ -19,32 +29,32 @@ nav {
 .item-container {
   background-color: white;
   padding: $space;
+  margin-bottom: 1px;
+
+  header {
+    h3 {
+      display: inline;
+    }
+    button {
+      float: right;
+    }
+  }
 }
 
 .example {
   padding: $space;
   margin: $space/2 0;
   background-color: $light-color;
+  border: 1px solid darken($light-color, 4);
 }
 
-.code-section {
-  margin: 0;
-  padding: $space /2;
-  @include span-columns(4);
-  h4 {
-    display: inline;
-  }
+button {
+  border: 0;
+  border-bottom: 2px solid darken($light-color, 5);
+  background-color: $light-color;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: $font-size;
+  padding: 3px 10px;
 
-  button {
-    border: none;
-    background-color: darken($main-color, 15);
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: $white;
-    padding: 7px 18px;
-    font-size: $font-size;
-    display: inline;
-    float: right;
-  }
 }

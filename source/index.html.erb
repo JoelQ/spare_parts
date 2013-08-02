@@ -1,5 +1,5 @@
 ---
-title: Welcome to Spare-Parts
+title: Spare-Parts
 ---
 
 <div class="main-content-container">
@@ -9,22 +9,51 @@ title: Welcome to Spare-Parts
     <h2><%= category[:category] %></h2>
     <div class="item-container">
       <% category[:snippets].each do |snippet| %>
-        <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+        <header>
+          <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+          <button>Source</button>
+        </header>
         <div class="example"><%= snippet[:html] %></div>
         <div class="accordion" id="accordion1">
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                <small>Code</small>
+                <small>Code <i class="icon-right-circled"></i></small>
               </a>
             </div>
             <div id="collapseOne" class="accordion-body collapse">
               <div class="accordion-inner">
                 <div class="code-section">
-                  <h4>HTML</h4>
-                  <button>copy</button>
+                  <header>
+                    <h4>HTML</h4>
+                    <button>copy</button>
+                  </header>
+                  <code>
 <%= Pygments.highlight(snippet[:html]) %>
+                  </code>
                 </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button>copy</button>
+                  </header>
+                  <code>
+<%= Pygments.highlight(snippet[:css]) %>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button>copy</button>
+                  </header>
+                  <code>
+<%= Pygments.highlight(snippet[:js]) %>
+                  </code>
+                </div>
+
+
               </div>
             </div>
           </div>

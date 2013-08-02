@@ -6,6 +6,7 @@
 
 $space: 30px;
 $font-size: $space /2.5;
+$line-height: $font-size * 1.4;
 
 ///////////////////////////////////////////////////////////////
 //
@@ -13,7 +14,8 @@ $font-size: $space /2.5;
 //
 ///////////////////////////////////////////////////////////////
 
-$main-color: teal;
+$main-color: #84909C;
 $white: white;
+$main-color-light: adjust-hue(mix($white, $main-color), -40);
 $black: darken($main-color, 50);
-$light-color: #EEE;
+$light-color: #FAFAFA;

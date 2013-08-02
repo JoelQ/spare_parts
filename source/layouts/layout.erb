@@ -13,9 +13,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-
+    <div class="hero"></div>
     <div class="container">
       <nav>
+      <h1><i class="icon-tools"></i>Spare Parts</h1>
         <% data.snippets.each do |category| %>
           <h2><%= category[:category] %></h2>
           <% category[:snippets].each do |snippet| %>
