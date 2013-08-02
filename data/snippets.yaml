@@ -69,4 +69,14 @@
         .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
           right: 0px;
         }
-      js:
+      js: 'some stuff'
+    - title: 'Broken CSS'
+      html: |
+        <div>
+          <a href="#">link</a>
+        </div>
+      css: |
+        div {
+          background-color: red;
+          a { color: yellow; }
+        }

@@ -11,21 +11,22 @@ title: Spare-Parts
       <% category[:snippets].each do |snippet| %>
         <header>
           <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+          <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
           <div class="item-links">
             <button>Bourbon</button>
             <button>Jquery</button>
             <button class="external-link">Source</button>
           </div>
         </header>
-        <div class="example"><%= snippet[:html] %></div>
+        <div class="example <%= anchor_from_title(snippet[:title]) %>"><%= snippet[:html] %></div>
         <div class="accordion" id="accordion1">
           <div class="accordion-group">
             <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              <a class="accordion-toggle" data-toggle="collapse" href="#<%= anchor_from_title snippet[:title] %>_accordion">
                 <small>Code <i class="icon-right-circled"></i></small>
               </a>
             </div>
-            <div id="collapseOne" class="accordion-body collapse">
+            <div id="<%= anchor_from_title snippet[:title] %>_accordion" class="accordion-body collapse">
               <div class="accordion-inner">
                 <div class="code-section">
                   <header>
@@ -33,7 +34,7 @@ title: Spare-Parts
                     <button>copy</button>
                   </header>
                   <code>
-<%= Pygments.highlight(snippet[:html]) %>
+                    <%= Pygments.highlight(snippet[:html]) %>
                   </code>
                 </div>
 
@@ -43,7 +44,7 @@ title: Spare-Parts
                     <button>copy</button>
                   </header>
                   <code>
-<%= Pygments.highlight(snippet[:css]) %>
+                    <%= Pygments.highlight(snippet[:css]) %>
                   </code>
                 </div>
 
@@ -53,10 +54,9 @@ title: Spare-Parts
                     <button>copy</button>
                   </header>
                   <code>
-<%= Pygments.highlight(snippet[:js]) %>
+                    <%= Pygments.highlight(snippet[:js]) %>
                   </code>
                 </div>
-
 
               </div>
             </div>
