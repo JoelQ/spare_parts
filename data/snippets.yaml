@@ -1,6 +1,8 @@
 - category: 'Patterns'
   snippets:
     - title: 'Cool Checkboxes'
+      jquery: false
+      bourbon: true
       html: |
         <div class="onoffswitch">
           <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
@@ -71,6 +73,8 @@
         }
       js: 'something = "something"'
     - title: 'Broken CSS'
+      jquery: true
+      bourbon: false
       html: |
         <div>
           <a href="#">link</a>
@@ -81,4 +85,4 @@
           a { color: yellow; }
         }
       js: |
-        abc = 1
+        $('a').click(function(){ console.log(this) })
