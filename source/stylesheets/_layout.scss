@@ -20,7 +20,7 @@ body {
 ///////////////////////////////////////////////////////////////
 
 .hero {
-  background: url(../images/hero.jpg) no-repeat center center fixed;
+  background: url(../images/hero.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,15 +31,17 @@ body {
 
   h1 {
     border-bottom: 0;
-    font-size: $font-size *3;
+    font-size: $font-size *5;
     text-align: center;
     padding-top: $space *2;
+    color: darken($cta-color, 5);
   }
 
   h2 {
     font-family: $sans;
     text-align: center;
     font-weight: 400;
+    color: darken($cta-color, 5);
   }
 
   a {
