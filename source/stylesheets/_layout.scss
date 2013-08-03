@@ -25,6 +25,7 @@ nav {
 
 .main-content-container {
   @include span-columns(10);
+  @include omega;
 }
 
 .item-container {
