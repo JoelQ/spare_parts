@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans;
 }
 
 h1 {
@@ -7,6 +7,7 @@ h1 {
   font-size: $font-size;
   font-family: 'Fjalla One', sans-serif;
   color: white;
+  margin: 0;
   padding-bottom: $space /2;
   border-bottom: 1px dashed $white;
   i {

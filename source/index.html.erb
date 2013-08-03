@@ -7,8 +7,9 @@ title: Spare-Parts
   <% data.snippets.each do |category| %>
 
     <h2><%= category[:category] %></h2>
-    <div class="item-container">
+
       <% category[:snippets].each do |snippet| %>
+      <div class="item-container">
         <header>
           <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
           <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
@@ -70,8 +71,8 @@ title: Spare-Parts
           </div>
           <script><%= snippet[:js] %></script>
         </div>
+      </div>
       <% end %>
-    </div>
   <% end %>
 </div>
 

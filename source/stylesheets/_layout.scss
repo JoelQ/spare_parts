@@ -9,30 +9,86 @@ body {
   padding: $space;
 }
 
+.main-content-container {
+  @include span-columns(10);
+}
+
+///////////////////////////////////////////////////////////////
+//
+//   Hero
+//
+///////////////////////////////////////////////////////////////
+
 .hero {
   background: url(../images/hero.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  background-color: #2B3842;
+  width: 100%;
   height: 400px;
+
+  h1 {
+    border-bottom: 0;
+    font-size: $font-size *3;
+    text-align: center;
+    padding-top: $space *2;
+  }
+
+  h2 {
+    font-family: $sans;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    border-bottom: 3px solid darken($cta-color, 5);
+    padding: $space;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $cta-color;
+    &:hover {
+      background-color: lighten($cta-color, 10);
+    }
+  }
 }
+
+///////////////////////////////////////////////////////////////
+//
+//   Nav
+//
+///////////////////////////////////////////////////////////////
 
 nav {
   @include span-columns(2);
   padding-right: $space;
-}
 
 .main-content-container {
   @include span-columns(10);
   @include omega;
+  a {
+    display: block;
+  }
 }
+
+///////////////////////////////////////////////////////////////
+//
+//   Item
+//
+///////////////////////////////////////////////////////////////
 
 .item-container {
   position: relative;
   background-color: white;
   padding: $space;
-  margin-bottom: 1px;
+  margin-bottom: 0;//$space /2;
+  border: 4px solid darken($white, 3);
+  border-bottom: 0;
 
   header {
 
@@ -42,7 +98,7 @@ nav {
 
     .item-links {
       position: absolute;
-      right: 0;
+      right: -4px;
       top: $space;
       float: right;
 
@@ -56,6 +112,7 @@ nav {
         border-bottom: 2px solid darken(adjust-hue($main-color, 10), 10);
         background-color: adjust-hue($main-color, 10);
         color: $white;
+        text-shadow: 0 1px 0 darken(adjust-hue($main-color, 10), 10);
         text-transform: uppercase;
         font-size: $font-size /1.2;
         font-weight: 600;
@@ -67,8 +124,9 @@ nav {
           background-color: darken($white, 3);
           font-weight: 700;
           border-right: 1px solid $main-color;
-          padding: 5px $space 3px 12px;
+          padding: 5px $space+4px 5px 12px;
           box-shadow: inset 1px 2px 1px darken($white, 12);
+          text-shadow: 0 1px 0 $white;
           color: darken($white, 20);
           font-size: $font-size /1.2;
           border-top-left-radius: 20px;
@@ -76,6 +134,7 @@ nav {
           border-top-right-radius: 0;
           border-bottom: 0;
           border-bottom-right-radius: 0;
+
           &:hover {
 
           }
