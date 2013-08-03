@@ -69,7 +69,7 @@
         .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
           right: 0px;
         }
-      js: 'some stuff'
+      js: 'something = "something"'
     - title: 'Broken CSS'
       html: |
         <div>
@@ -80,3 +80,5 @@
           background-color: red;
           a { color: yellow; }
         }
+      js: |
+        abc = 1

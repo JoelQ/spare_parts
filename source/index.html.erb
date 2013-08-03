@@ -12,6 +12,7 @@ title: Spare-Parts
         <header>
           <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
           <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
+          <script><%= snippet[:js] %></script>
           <div class="item-links">
             <button>Bourbon</button>
             <button>Jquery</button>
@@ -31,9 +32,9 @@ title: Spare-Parts
                 <div class="code-section">
                   <header>
                     <h4>HTML</h4>
-                    <button>copy</button>
+                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_html">copy</button>
                   </header>
-                  <code>
+                  <code id="<%= anchor_from_title snippet[:title] %>_html">
                     <%= Pygments.highlight(snippet[:html]) %>
                   </code>
                 </div>
@@ -41,9 +42,9 @@ title: Spare-Parts
                 <div class="code-section">
                   <header>
                     <h4>CSS</h4>
-                    <button>copy</button>
+                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_css">copy</button>
                   </header>
-                  <code>
+                  <code id="<%= anchor_from_title snippet[:title] %>_css">
                     <%= Pygments.highlight(snippet[:css]) %>
                   </code>
                 </div>
@@ -51,9 +52,9 @@ title: Spare-Parts
                 <div class="code-section">
                   <header>
                     <h4>Javascript</h4>
-                    <button>copy</button>
+                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_js">copy</button>
                   </header>
-                  <code>
+                  <code id="<%= anchor_from_title snippet[:title] %>_js">
                     <%= Pygments.highlight(snippet[:js]) %>
                   </code>
                 </div>
@@ -66,3 +67,9 @@ title: Spare-Parts
     </div>
   <% end %>
 </div>
+
+<script>
+  ZeroClipboard.setDefaults({moviePath: 'images/ZeroClipboard.swf'});
+  var clip = new ZeroClipboard();
+  clip.glue($('.copy'));
+</script>
