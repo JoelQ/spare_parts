@@ -2,7 +2,7 @@
   snippets:
     - title: 'Light from above for type'
       jquery: false
-      bourbon: true
+      bourbon: false
       html: |
         <div class="style-light-from-above">
           <p>&#9733;</p>
@@ -296,90 +296,6 @@
 
 
 
-    - title: 'Rubber Button'
-      html: |
-        <div class="btn">Rubber button</div>
-      css: |
-        .btn {
-          cursor: pointer;
-          $highlight: white;
-          $shade: darken(whitesmoke, 20);
-          background-color: whitesmoke;
-          border: 3px solid darken(whitesmoke, 7);
-          color: gray;
-          font-size: 10px;
-          padding: 10px;
-          text-transform: uppercase;
-          display: inline;
-          font-weight: bold;
-          text-shadow: 0 1px 2px $shade;
-          border-radius: 5px;
-          transition: all 0.03s linear;
-          box-shadow:
-            inset 0 1px 0 $highlight, // top
-            0 1px 2px $highlight, // bottom
-            inset 0 -1px 1px $shade; // bottom
-
-          &:hover {
-            background-color: lighten(whitesmoke, 2);
-          }
-
-          &:active {
-            background-color: darken(whitesmoke, 3);
-            box-shadow:
-              inset 0 1px 0 $shade, // top
-              0 1px 2px $highlight, // bottom
-              inset 0 -1px 0 darken($highlight, 10); // bottom
-            }
-          }
-
-    - title: 'Flat Button'
-      html: |
-        <div class="btn">Flat Button</div>
-      css: |
-        .btn {
-          display: inline-block;
-          padding: 13px;
-          margin-bottom: 0;
-          font-size: 13px;
-          line-height: 13px;
-          *line-height: 13px;
-          text-align: center;
-          vertical-align: middle;
-          cursor: pointer;
-          border: 1px solid darken(gray, 20);
-          background-color: gray;
-          *border: 0; // Remove the border to prevent IE7's black border on input:focus
-          transition: all 0.03s linear;
-          border-radius: 3px;
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-          color: white;
-
-          &:hover {
-            color: white;
-            text-decoration: none;
-            background-color: lighten(gray, 10);
-            *background-color: darken(gray, 15); /* Buttons in IE7 don't get borders, so darken on hover */
-            background-position: 0 -15px;
-          }
-
-          &.active,
-          &:active {
-            background-color: darken(gray, 10);
-            background-color: darken(gray, 15) \9;
-            background-image: none;
-            outline: 0;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
-          }
-        }
-
-
-
-
-
-
-
-
 - category: 'Components'
   snippets:
     - title: 'Switch'
@@ -455,7 +371,7 @@
     - title: 'Tooltip'
       html: |
         <a href="#" class="item-one">
-          Hover Here
+          Hover for Tooltip
           <div class="tooltip">Tooltip text</div>
         </a>
       css: |
@@ -572,7 +488,7 @@
     - title: 'Dropdown'
       html: |
         <a class="dropdown-menu">
-          Hover here
+          Hover for Dropdown
           <div class="dropdown">
             Dropdown
           </div>
@@ -582,7 +498,7 @@
           cursor: pointer;
           position: relative;
           color: white;
-          background-color: teal;
+          background-color: gray;
           padding: 5px 8px;
 
           &:hover .dropdown {
@@ -595,7 +511,7 @@
             width: 100%;
             position: absolute;
             color: white;
-            background-color: teal;
+            background-color: gray;
             padding: 5px 8px;
             transition: all 0.15s linear;
             }

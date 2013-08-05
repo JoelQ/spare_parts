@@ -14,9 +14,12 @@ title: Spare-Parts
           <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
           <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
           <div class="item-links">
-            <p>Requires</p>
-            <button>Bourbon</button>
-            <button>Jquery</button>
+            <% if snippet[:jquery] %>
+              <button class="jquery"><a href="http://jquery.com">Jquery Required</a></button>
+            <% end %>
+            <% if snippet[:bourbon] %>
+              <button class="bourbon">Bourbon Required</button>
+            <% end %>
             <button class="external-link">Source</button>
           </div>
         </header>
@@ -26,12 +29,7 @@ title: Spare-Parts
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" href="#<%= anchor_from_title snippet[:title] %>_accordion">
                 <small>Code <i class="icon-right-circled"></i></small>
-                <% if snippet[:jquery] %>
-                  <span>JQuery</span>
-                <% end %>
-                <% if snippet[:bourbon] %>
-                  <span>Bourbon</span>
-                <% end %>
+
               </a>
             </div>
             <div id="<%= anchor_from_title snippet[:title] %>_accordion" class="accordion-body collapse">
