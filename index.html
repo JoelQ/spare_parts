@@ -1,0 +1,1336 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Spare-Parts</title>
+    <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="index">
+    <div class="hero">
+    <h1><i class="icon-tools"></i>Spare Parts</h1>
+    <h2>A pattern, component and style library. All the code below works for any project that runs on SCSS. Just copy the code and use it.</h2>
+      <a href="mailto:magnus@thoughtbot.com?Subject=Sumitting" target="_top">Submit your HTML, SCSS and/or JS</a>
+    </div>
+    <div class="container">
+      <nav>
+      <h1><i class="icon-tools"></i>Spare Parts</h1>
+        
+          <h2>Styles</h2>
+          
+            <a href="#light_from_above_for_type">Light from above for type</a>
+          
+            <a href="#inset_for_type">Inset for type</a>
+          
+            <a href="#rubber_button">Rubber Button</a>
+          
+            <a href="#flat_button">Flat Button</a>
+          
+        
+          <h2>Patterns</h2>
+          
+            <a href="#navigation">Navigation</a>
+          
+        
+          <h2>Components</h2>
+          
+            <a href="#switch">Switch</a>
+          
+            <a href="#tooltip">Tooltip</a>
+          
+            <a href="#dropdown">Dropdown</a>
+          
+        
+      </nav>
+      <div class="main-content-container">
+
+  
+
+    <h2>Styles</h2>
+
+      
+      <div class="item-container">
+        <header>
+          <h3 id="light_from_above_for_type">Light from above for type</h3>
+          <style>.light_from_above_for_type .style-light-from-above {
+  text-shadow: 0 1px 2px rgba(255, 0, 0, 0.5);
+  color: #cc0000;
+  background: -webkit-linear-gradient(white, #cc0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  .light_from_above_for_type .style-light-from-above p {
+    font-size: 60px;
+    margin: 0;
+    line-height: 60px; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example light_from_above_for_type"><div class="style-light-from-above">
+  <p>&#9733;</p>
+</div>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#light_from_above_for_type_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="light_from_above_for_type_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="light_from_above_for_type_html">copy</button>
+                  </header>
+                  <code id="light_from_above_for_type_html">
+                    <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;style-light-from-above&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#9733;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="light_from_above_for_type_css">copy</button>
+                  </header>
+                  <code id="light_from_above_for_type_css">
+                    <div class="highlight"><pre><span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span> <span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color:</span> <span class="err">$</span><span class="n">bottom</span><span class="p">;</span>
+  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">mixin</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="n">px</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span> <span class="n">transparentize</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">light</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">above</span> <span class="p">{</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="mi">2</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="n">darken</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
+
+  <span class="n">p</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+    <span class="nl">margin:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="light_from_above_for_type_js">copy</button>
+                  </header>
+                  <code id="light_from_above_for_type_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+      <div class="item-container">
+        <header>
+          <h3 id="inset_for_type">Inset for type</h3>
+          <style>.inset_for_type .style-inset {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+  color: #999999;
+  background: -webkit-linear-gradient(gray, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #a6a6a6;
+  -moz-text-stroke: 1px #a6a6a6; }
+  .inset_for_type .style-inset p {
+    font-size: 60px;
+    margin: 0;
+    line-height: 60px; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example inset_for_type"><div class="style-inset light-background">
+  <p>&#9733;</p>
+</div>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#inset_for_type_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="inset_for_type_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="inset_for_type_html">copy</button>
+                  </header>
+                  <code id="inset_for_type_html">
+                    <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;style-inset light-background&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#9733;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="inset_for_type_css">copy</button>
+                  </header>
+                  <code id="inset_for_type_css">
+                    <div class="highlight"><pre><span class="err">@</span><span class="n">mixin</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="n">px</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span> <span class="n">transparentize</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span> <span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">width</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="o">:</span> <span class="err">$</span><span class="n">width</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="o">:</span> <span class="err">$</span><span class="n">width</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span> <span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color:</span> <span class="err">$</span><span class="n">bottom</span><span class="p">;</span>
+  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">inset</span> <span class="p">{</span>
+  <span class="n">p</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+    <span class="nl">margin:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="mi">3</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span> <span class="c1">// text-shadow with transparency</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">60</span><span class="p">));</span> <span class="c1">// this has to be on the actual font content</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">65</span><span class="p">),</span> <span class="mi">1</span><span class="n">px</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="inset_for_type_js">copy</button>
+                  </header>
+                  <code id="inset_for_type_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+      <div class="item-container">
+        <header>
+          <h3 id="rubber_button">Rubber Button</h3>
+          <style>.rubber_button .btn {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: 3px solid #e3e3e3;
+  color: gray;
+  font-size: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline;
+  font-weight: bold;
+  text-shadow: 0 1px 2px #c2c2c2;
+  border-radius: 5px;
+  transition: all 0.03s linear;
+  box-shadow: inset 0 1px 0 white, 0 1px 2px white, inset 0 -1px 1px #c2c2c2; }
+  .rubber_button .btn:hover {
+    background-color: #fafafa; }
+  .rubber_button .btn:active {
+    background-color: #ededed;
+    box-shadow: inset 0 1px 0 #c2c2c2, 0 1px 2px white, inset 0 -1px 0 #e6e6e6; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example rubber_button"><div class="btn">Rubber button</div>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#rubber_button_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="rubber_button_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="rubber_button_html">copy</button>
+                  </header>
+                  <code id="rubber_button_html">
+                    <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span><span class="nt">&gt;</span>Rubber button<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="rubber_button_css">copy</button>
+                  </header>
+                  <code id="rubber_button_css">
+                    <div class="highlight"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+  <span class="err">$</span><span class="n">highlight</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="err">$</span><span class="n">shade</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">20</span><span class="p">);</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">whitesmoke</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">7</span><span class="p">);</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="err">$</span><span class="n">shade</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.03s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>
+    <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="o">//</span> <span class="k">top</span>
+    <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="o">//</span> <span class="k">bottom</span>
+    <span class="k">inset</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">1px</span> <span class="err">$</span><span class="n">shade</span><span class="p">;</span> <span class="o">//</span> <span class="k">bottom</span>
+
+  <span class="o">&amp;:</span><span class="n">hover</span> <span class="err">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">lighten</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="o">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">3</span><span class="p">);</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>
+      <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="err">$</span><span class="n">shade</span><span class="o">,</span> <span class="o">//</span> <span class="k">top</span>
+      <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="o">//</span> <span class="k">bottom</span>
+      <span class="k">inset</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">0</span> <span class="n">darken</span><span class="p">(</span><span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span> <span class="o">//</span> <span class="k">bottom</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="rubber_button_js">copy</button>
+                  </header>
+                  <code id="rubber_button_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+      <div class="item-container">
+        <header>
+          <h3 id="flat_button">Flat Button</h3>
+          <style>.flat_button .btn {
+  display: inline-block;
+  padding: 13px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 13px;
+  *line-height: 13px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #4d4d4d;
+  background-color: gray;
+  *border: 0;
+  transition: all 0.03s linear;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: white; }
+  .flat_button .btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #9a9a9a;
+    *background-color: #5a5a5a;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -15px; }
+  .flat_button .btn.active, .flat_button .btn:active {
+    background-color: #676767;
+    background-color: #5a5a5a \9;
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example flat_button"><div class="btn">Flat Button</div>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#flat_button_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="flat_button_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="flat_button_html">copy</button>
+                  </header>
+                  <code id="flat_button_html">
+                    <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span><span class="nt">&gt;</span>Flat Button<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="flat_button_css">copy</button>
+                  </header>
+                  <code id="flat_button_css">
+                    <div class="highlight"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="o">*</span><span class="k">line-height</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+  <span class="k">vertical-align</span><span class="o">:</span> <span class="k">middle</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">20</span><span class="p">);</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="o">*</span><span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">Remove</span> <span class="n">the</span> <span class="k">border</span> <span class="n">to</span> <span class="n">prevent</span> <span class="n">IE7</span><span class="s1">&#39;s black border on input:focus</span>
+<span class="s1">  transition: all 0.03s linear;</span>
+<span class="s1">  border-radius: 3px;</span>
+<span class="s1">  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);</span>
+<span class="s1">  color: white;</span>
+
+<span class="s1">  &amp;:hover {</span>
+<span class="s1">    color: white;</span>
+<span class="s1">    text-decoration: none;</span>
+<span class="s1">    background-color: lighten(gray, 10);</span>
+<span class="s1">    *background-color: darken(gray, 15); /* Buttons in IE7 don&#39;</span><span class="n">t</span> <span class="n">get</span> <span class="n">borders</span><span class="o">,</span> <span class="n">so</span> <span class="n">darken</span> <span class="n">on</span> <span class="n">hover</span> <span class="o">*/</span>
+    <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-15px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">&amp;</span><span class="nc">.active</span><span class="o">,</span>
+  <span class="o">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">15</span><span class="p">)</span> <span class="err">\</span><span class="m">9</span><span class="p">;</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">15</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">05</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="flat_button_js">copy</button>
+                  </header>
+                  <code id="flat_button_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+  
+
+    <h2>Patterns</h2>
+
+      
+      <div class="item-container">
+        <header>
+          <h3 id="navigation">Navigation</h3>
+          <style>.navigation header {
+  width: 100%;
+  height: 60px;
+  background-color: gray;
+  color: white; }
+  .navigation header p {
+    display: none; }
+  .navigation header .logo {
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 0 20px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px; }
+  .navigation header .nav {
+    float: left;
+    width: 100%; }
+    .navigation header .nav ul {
+      margin: 0;
+      padding: 0; }
+      .navigation header .nav ul li {
+        display: inline; }
+        .navigation header .nav ul li a {
+          text-transform: uppercase;
+          float: left;
+          font-size: 13px;
+          font-family: sans-serif;
+          display: inline;
+          color: white;
+          text-decoration: none;
+          line-height: 60px;
+          padding: 0 10px;
+          border-right: 1px solid #787878; }
+      .navigation header .nav ul li:first-child a {
+        border-left: 1px solid #787878; }
+      .navigation header .nav ul li:last-child {
+        float: right;
+        border-left: 1px solid #787878; }
+  @media all and (max-width: 700px) {
+    .navigation header .menu-wrapper {
+      display: block;
+      background-color: gray;
+      float: right;
+      width: 100%; }
+      .navigation header .menu-wrapper p {
+        display: block;
+        padding: 0 10px;
+        float: right;
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 60px;
+        font-size: 13px;
+        font-family: sans-serif; }
+      .navigation header .menu-wrapper:hover .nav ul {
+        display: block; }
+    .navigation header .nav ul {
+      display: none;
+      -webkit-transform-style: preserve-3d;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%; }
+      .navigation header .nav ul li {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%; }
+        .navigation header .nav ul li a {
+          text-align: center;
+          width: 100%;
+          position: relative;
+          display: block;
+          z-index: 99999999;
+          padding: 10px 0;
+          line-height: 19px;
+          overflow: hidden;
+          background-color: gray; }
+          .navigation header .nav ul li a a:last-child {
+            padding-bottom: 30px; } }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example navigation"><header>
+  <div class="menu-wrapper">
+    <p>Menu</p>
+    <div class="nav">
+      <ul>
+        <li><a href="">One</a></li>
+        <li><a href="">Two</a></li>
+        <li><a href="">Three</a></li>
+        <li><a href="">Four</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#navigation_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="navigation_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="navigation_html">copy</button>
+                  </header>
+                  <code id="navigation_html">
+                    <div class="highlight"><pre><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;menu-wrapper&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Menu<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nav&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>One<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="navigation_css">copy</button>
+                  </header>
+                  <code id="navigation_css">
+                    <div class="highlight"><pre><span class="err">$</span><span class="nt">nav-back-color</span><span class="o">:</span> <span class="nt">gray</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">nav-border</span><span class="o">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nt">darken</span><span class="o">(</span><span class="err">$</span><span class="nt">nav-back-color</span><span class="o">,</span> <span class="nt">3</span><span class="o">);</span>
+<span class="err">$</span><span class="nt">nav-color</span><span class="o">:</span> <span class="nt">white</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">nav-font-family</span><span class="o">:</span> <span class="nt">sans-serif</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">nav-height</span><span class="o">:</span> <span class="nt">60px</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">nav-font-size</span><span class="o">:</span> <span class="nt">13px</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">nav-mobile</span><span class="o">:</span> <span class="nt">900px</span><span class="o">;</span>
+
+<span class="nt">header</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">height</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+
+  <span class="n">p</span> <span class="err">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.logo</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">font-family</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="m">800</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">height</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nc">.nav</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+
+    <span class="n">ul</span> <span class="err">{</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+      <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+
+      <span class="n">li</span> <span class="err">{</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+
+        <span class="n">a</span> <span class="err">{</span>
+          <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+          <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+          <span class="k">font-size</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">font-size</span><span class="p">;</span>
+          <span class="k">font-family</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">font-family</span><span class="p">;</span>
+          <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+          <span class="k">color</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+          <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+          <span class="k">line-height</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">height</span><span class="p">;</span>
+          <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+          <span class="k">border-right</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">border</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="err">}</span>
+
+      <span class="nt">li</span><span class="nd">:first-child</span> <span class="nt">a</span> <span class="p">{</span>
+        <span class="k">border-left</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">border</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">li</span><span class="nd">:last-child</span> <span class="p">{</span>
+        <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+        <span class="k">border-left</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">border</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+
+<span class="o">/////////////////</span>
+
+  <span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">700px</span><span class="o">)</span> <span class="p">{</span>
+
+    <span class="nc">.menu-wrapper</span> <span class="p">{</span>
+      <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+      <span class="k">background-color</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="n">back</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+
+      <span class="n">p</span> <span class="err">{</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+        <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+        <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+        <span class="k">color</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+        <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+        <span class="k">line-height</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">height</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">font-size</span><span class="p">;</span>
+        <span class="k">font-family</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="k">font-family</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="o">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="o">.</span><span class="n">nav</span> <span class="n">ul</span> <span class="err">{</span>
+          <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="err">}</span>
+
+    <span class="nc">.nav</span> <span class="nt">ul</span> <span class="p">{</span>
+      <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+      <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span> <span class="o">//</span> <span class="n">stop</span> <span class="n">webkit</span> <span class="n">flicker</span>
+      <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+
+      <span class="n">li</span> <span class="err">{</span>
+        <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+        <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+        <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+
+        <span class="n">a</span> <span class="err">{</span>
+          <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+          <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+          <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+          <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+          <span class="k">z-index</span><span class="o">:</span> <span class="m">99999999</span><span class="p">;</span>
+          <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+          <span class="k">line-height</span><span class="o">:</span> <span class="m">19px</span><span class="p">;</span>
+          <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+          <span class="k">background-color</span><span class="o">:</span> <span class="err">$</span><span class="n">nav</span><span class="o">-</span><span class="n">back</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+
+          <span class="n">a</span><span class="o">:</span><span class="n">last</span><span class="o">-</span><span class="n">child</span> <span class="err">{</span>
+            <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="err">}</span>
+      <span class="err">}</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="navigation_js">copy</button>
+                  </header>
+                  <code id="navigation_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+  
+
+    <h2>Components</h2>
+
+      
+      <div class="item-container">
+        <header>
+          <h3 id="switch">Switch</h3>
+          <style>.switch .onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+.switch .onoffswitch-checkbox {
+  display: none; }
+.switch .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer; }
+.switch .onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s; }
+.switch .onoffswitch-inner:before,
+.switch .onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  font-family: sans-serif;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+.switch .onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #84909C;
+  color: #FFFFFF; }
+.switch .onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #DDD;
+  color: #999999;
+  text-align: right; }
+.switch .onoffswitch-switch {
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s; }
+.switch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+.switch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example switch"><div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+  <label class="onoffswitch-label" for="myonoffswitch">
+    <div class="onoffswitch-inner"></div>
+    <div class="onoffswitch-switch"></div>
+  </label>
+</div>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#switch_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="switch_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="switch_html">copy</button>
+                  </header>
+                  <code id="switch_html">
+                    <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;onoffswitch&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;onoffswitch&quot;</span> <span class="na">class=</span><span class="s">&quot;onoffswitch-checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;myonoffswitch&quot;</span> <span class="err">checked</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;onoffswitch-label&quot;</span> <span class="na">for=</span><span class="s">&quot;myonoffswitch&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;onoffswitch-inner&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;onoffswitch-switch&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="switch_css">copy</button>
+                  </header>
+                  <code id="switch_css">
+                    <div class="highlight"><pre><span class="nc">.onoffswitch</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">90px</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span><span class="k">none</span><span class="p">;</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-checkbox</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-label</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-inner</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">200</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-100</span><span class="o">%</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="k">margin</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="k">margin</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="k">margin</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span> <span class="n">transition</span><span class="o">:</span> <span class="k">margin</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-inner</span><span class="nd">:before</span><span class="o">,</span>
+<span class="nc">.onoffswitch-inner</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span> <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-inner</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;ON&quot;</span><span class="p">;</span>
+  <span class="k">padding-left</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#84909C</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-inner</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;OFF&quot;</span><span class="p">;</span>
+  <span class="k">padding-right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#DDD</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#999999</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-switch</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#FFFFFF</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span> <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span> <span class="m">0s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-checkbox</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nc">.onoffswitch-label</span> <span class="nc">.onoffswitch-inner</span> <span class="p">{</span>
+  <span class="k">margin-left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.onoffswitch-checkbox</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nc">.onoffswitch-label</span> <span class="nc">.onoffswitch-switch</span> <span class="p">{</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="switch_js">copy</button>
+                  </header>
+                  <code id="switch_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+      <div class="item-container">
+        <header>
+          <h3 id="tooltip">Tooltip</h3>
+          <style>.tooltip a.item-one {
+  position: relative;
+  background-color: gray;
+  padding: 5px 8px; }
+  .tooltip a.item-one:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  .tooltip a.item-one .tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 0px;
+    opacity: 0;
+    padding: 5px 8px 6px;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+    text-transform: none;
+    transition: all 0.15s linear;
+    white-space: nowrap;
+    visibility: hidden;
+    width: 210px;
+    z-index: 10;
+    top: -50px;
+    left: 50%;
+    margin-left: -105px; }
+    .tooltip a.item-one .tooltip:before, .tooltip a.item-one .tooltip:after {
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      width: 0;
+      height: 0;
+      content: ''; }
+    .tooltip a.item-one .tooltip:before {
+      border: 9px solid transparent; }
+    .tooltip a.item-one .tooltip:after {
+      border: 8px solid transparent; }
+    .tooltip a.item-one .tooltip:before {
+      border-top-color: none;
+      top: auto;
+      bottom: -18px;
+      left: auto;
+      right: auto; }
+    .tooltip a.item-one .tooltip:after {
+      border-top-color: rgba(0, 0, 0, 0.7);
+      top: auto;
+      bottom: -16px;
+      left: auto;
+      right: auto; }
+    .tooltip a.item-one .tooltip:before {
+      left: 50%;
+      margin-left: -9px; }
+    .tooltip a.item-one .tooltip:after {
+      left: 50%;
+      margin-left: -8px; }
+    .tooltip a.item-one .tooltip:hover {
+      opacity: 0;
+      visibility: hidden; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example tooltip"><a href="#" class="item-one">
+  Hover for Tooltip
+  <div class="tooltip">Tooltip text</div>
+</a>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#tooltip_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="tooltip_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="tooltip_html">copy</button>
+                  </header>
+                  <code id="tooltip_html">
+                    <div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;item-one&quot;</span><span class="nt">&gt;</span>
+  Hover for Tooltip
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tooltip&quot;</span><span class="nt">&gt;</span>Tooltip text<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="tooltip_css">copy</button>
+                  </header>
+                  <code id="tooltip_css">
+                    <div class="highlight"><pre><span class="k">@mixin</span> <span class="nt">ui-nub</span><span class="o">(</span><span class="err">$</span><span class="nt">size</span><span class="o">:</span> <span class="nt">8px</span><span class="o">,</span> <span class="err">$</span><span class="nt">position</span><span class="o">:</span> <span class="nt">top-right</span><span class="o">,</span>  <span class="err">$</span><span class="nt">bg-color</span><span class="o">:</span> <span class="nf">#fff</span><span class="o">,</span> <span class="err">$</span><span class="nt">border-color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="nt">100</span><span class="o">,</span><span class="nt">100</span><span class="o">,</span><span class="nt">100</span><span class="o">))</span> <span class="p">{</span>
+
+  <span class="o">&amp;</span><span class="nd">:before</span><span class="o">,</span>
+  <span class="o">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">pointer</span><span class="o">-</span><span class="n">events</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">&amp;</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="p">(</span><span class="err">$</span><span class="k">size</span> <span class="o">+</span> <span class="m">1</span><span class="p">)</span> <span class="k">solid</span> <span class="k">transparent</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="err">$</span><span class="k">size</span> <span class="k">solid</span> <span class="k">transparent</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">@if</span> <span class="o">(</span><span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">bottom-left</span><span class="o">)</span> <span class="nt">or</span> <span class="o">(</span><span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">bottom-right</span><span class="o">)</span> <span class="nt">or</span> <span class="o">(</span><span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">bottom-center</span><span class="o">)</span> <span class="p">{</span>
+    <span class="o">&amp;</span><span class="nd">:before</span> <span class="p">{</span>
+      <span class="k">border-top-color</span><span class="o">:</span> <span class="err">$</span><span class="k">border-color</span><span class="p">;</span>
+      <span class="k">top</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="o">:</span> <span class="o">-</span><span class="p">((</span><span class="err">$</span><span class="k">size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">+</span> <span class="m">2</span><span class="p">);</span>
+      <span class="k">left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="k">right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="o">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+      <span class="k">border-top-color</span><span class="o">:</span> <span class="err">$</span><span class="n">bg</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+      <span class="k">top</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="k">bottom</span><span class="o">:</span> <span class="o">-</span><span class="p">((</span><span class="err">$</span><span class="k">size</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">-</span> <span class="m">0</span><span class="p">);</span>
+      <span class="k">left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="k">right</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">@if</span> <span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">bottom-center</span> <span class="p">{</span>
+      <span class="o">&amp;</span><span class="nd">:before</span> <span class="p">{</span>
+        <span class="k">left</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+        <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="p">(</span><span class="err">$</span><span class="k">size</span> <span class="o">+</span> <span class="m">1</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="o">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+        <span class="k">left</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+        <span class="k">margin-left</span><span class="o">:</span> <span class="o">-</span><span class="err">$</span><span class="k">size</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nt">ui-tooltip</span><span class="o">(</span><span class="err">$</span><span class="nt">width</span><span class="o">:</span> <span class="nt">200px</span><span class="o">,</span> <span class="err">$</span><span class="nt">position</span><span class="o">:</span> <span class="nt">bottom</span><span class="o">,</span> <span class="err">$</span><span class="nt">bg-color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="nt">80</span><span class="o">,</span><span class="nt">80</span><span class="o">,</span><span class="nt">80</span><span class="o">),</span> <span class="err">$</span><span class="nt">tooltip-selector</span><span class="o">:</span> <span class="nt">div</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">position</span><span class="o">:</span> <span class="nt">relative</span><span class="o">;</span>
+
+  <span class="o">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="err">#{$</span><span class="n">tooltip</span><span class="o">-</span><span class="n">selector</span><span class="p">}</span> <span class="p">{</span>
+      <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+      <span class="k">visibility</span><span class="o">:</span> <span class="k">visible</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="err">#</span><span class="p">{</span><span class="err">$</span><span class="n">tooltip</span><span class="o">-</span><span class="n">selector</span><span class="p">}</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="err">$</span><span class="n">bg</span><span class="o">-</span><span class="k">color</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">normal</span><span class="p">;</span>
+    <span class="k">letter-spacing</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span> <span class="m">6px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+    <span class="k">text</span><span class="o">-</span><span class="k">overflow</span><span class="o">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+    <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">darken</span><span class="p">(</span><span class="err">$</span><span class="n">bg</span><span class="o">-</span><span class="k">color</span><span class="o">,</span> <span class="m">4</span><span class="o">%</span><span class="p">);</span>
+    <span class="k">text-transform</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.15s</span> <span class="n">linear</span><span class="p">;</span>
+    <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span>
+    <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="k">width</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span>
+
+    <span class="o">@</span><span class="n">if</span> <span class="p">(</span><span class="err">$</span><span class="k">position</span> <span class="o">==</span> <span class="k">bottom</span><span class="p">)</span> <span class="n">or</span> <span class="p">(</span><span class="err">$</span><span class="k">position</span> <span class="o">==</span> <span class="k">top</span><span class="p">)</span> <span class="err">{</span>
+      <span class="err">#{$</span><span class="k">position</span><span class="p">}</span><span class="o">:</span> <span class="nt">-50px</span><span class="o">;</span>
+      <span class="nt">left</span><span class="o">:</span> <span class="nt">50</span><span class="o">%;</span>
+      <span class="nt">margin-left</span><span class="o">:</span> <span class="nt">-</span><span class="o">(</span><span class="err">$</span><span class="nt">width</span><span class="o">/</span><span class="nt">2</span><span class="o">);</span>
+    <span class="err">}</span>
+
+    <span class="k">@else</span> <span class="nt">if</span> <span class="o">(</span><span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">left</span><span class="o">)</span> <span class="nt">or</span> <span class="o">(</span><span class="err">$</span><span class="nt">position</span> <span class="o">==</span> <span class="nt">right</span><span class="o">)</span> <span class="p">{</span>
+      <span class="err">#</span><span class="p">{</span><span class="err">$</span><span class="k">position</span><span class="p">}</span><span class="o">:</span> <span class="o">(</span><span class="nt">-</span><span class="err">$</span><span class="nt">width</span><span class="o">)</span> <span class="nt">-</span> <span class="nt">15px</span><span class="o">;</span>
+      <span class="nt">margin-bottom</span><span class="o">:</span> <span class="nt">-17px</span><span class="o">;</span>
+      <span class="nt">bottom</span><span class="o">:</span> <span class="nt">50</span><span class="o">%;</span>
+    <span class="p">}</span>
+
+    <span class="k">@include</span> <span class="nt">ui-nub</span><span class="o">(</span><span class="nt">8px</span><span class="o">,</span> <span class="nt">bottom-center</span><span class="o">,</span> <span class="err">$</span><span class="nt">bg-color</span><span class="o">,</span> <span class="nt">none</span><span class="o">)</span><span class="p">;</span>
+
+
+
+    <span class="o">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+      <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+      <span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+
+<span class="nt">a</span><span class="nc">.item-one</span> <span class="p">{</span>
+  <span class="o">@</span><span class="n">include</span> <span class="n">ui</span><span class="o">-</span><span class="n">tooltip</span><span class="p">(</span><span class="m">210px</span><span class="o">,</span> <span class="k">top</span><span class="o">,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">7</span><span class="p">)</span><span class="o">,</span> <span class="s2">&quot;.tooltip&quot;</span><span class="p">);</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;;</span>
+<span class="p">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="tooltip_js">copy</button>
+                  </header>
+                  <code id="tooltip_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+      <div class="item-container">
+        <header>
+          <h3 id="dropdown">Dropdown</h3>
+          <style>.dropdown .dropdown-menu {
+  cursor: pointer;
+  position: relative;
+  color: white;
+  background-color: gray;
+  padding: 5px 8px; }
+  .dropdown .dropdown-menu:hover .dropdown {
+    display: block; }
+  .dropdown .dropdown-menu .dropdown {
+    display: none;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    background-color: gray;
+    padding: 5px 8px;
+    transition: all 0.15s linear; }
+</style>
+          <div class="item-links">
+            
+            
+            <button class="external-link">Source</button>
+          </div>
+        </header>
+        <div class="example dropdown"><a class="dropdown-menu">
+  Hover for Dropdown
+  <div class="dropdown">
+    Dropdown
+  </div>
+</a>
+</div>
+        <div class="accordion" id="accordion1">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" href="#dropdown_accordion">
+                <small>Code <i class="icon-right-circled"></i></small>
+
+              </a>
+            </div>
+            <div id="dropdown_accordion" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="code-section">
+                  <header>
+                    <h4>HTML</h4>
+                    <button class="copy" data-clipboard-target="dropdown_html">copy</button>
+                  </header>
+                  <code id="dropdown_html">
+                    <div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="nt">&gt;</span>
+  Hover for Dropdown
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown&quot;</span><span class="nt">&gt;</span>
+    Dropdown
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>CSS</h4>
+                    <button class="copy" data-clipboard-target="dropdown_css">copy</button>
+                  </header>
+                  <code id="dropdown_css">
+                    <div class="highlight"><pre><span class="nc">.dropdown-menu</span> <span class="p">{</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+
+  <span class="o">&amp;:</span><span class="n">hover</span> <span class="o">.</span><span class="n">dropdown</span> <span class="err">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="p">}</span>
+
+ <span class="nc">.dropdown</span> <span class="p">{</span> <span class="o">//</span> <span class="n">dropdown</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.15s</span> <span class="n">linear</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+</pre></div>
+                  </code>
+                </div>
+
+                <div class="code-section">
+                  <header>
+                    <h4>Javascript</h4>
+                    <button class="copy" data-clipboard-target="dropdown_js">copy</button>
+                  </header>
+                  <code id="dropdown_js">
+                    
+                  </code>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script></script>
+        </div>
+      </div>
+      
+  
+</div>
+
+<script>
+  ZeroClipboard.setDefaults({moviePath: 'images/ZeroClipboard.swf'});
+  var clip = new ZeroClipboard();
+  clip.glue($('.copy'));
+</script>
+
+    </div>
+  </body>
+</html>

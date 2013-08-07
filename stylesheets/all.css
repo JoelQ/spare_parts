@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.hll {
+  background-color: #ffffcc; }
+
+/* line 2, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.c {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment */
+/* line 3, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.k {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword */
+/* line 4, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.o {
+  color: #666666; }
+
+/* Operator */
+/* line 5, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.cm {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment.Multiline */
+/* line 6, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.cp {
+  color: #007020; }
+
+/* Comment.Preproc */
+/* line 7, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.c1 {
+  color: #60a0b0;
+  font-style: italic; }
+
+/* Comment.Single */
+/* line 8, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.cs {
+  color: #60a0b0;
+  background-color: #fff0f0; }
+
+/* Comment.Special */
+/* line 9, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gd {
+  color: #a00000; }
+
+/* Generic.Deleted */
+/* line 10, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.ge {
+  font-style: italic; }
+
+/* Generic.Emph */
+/* line 11, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gr {
+  color: red; }
+
+/* Generic.Error */
+/* line 12, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gh {
+  color: #000080;
+  font-weight: bold; }
+
+/* Generic.Heading */
+/* line 13, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gi {
+  color: #00a000; }
+
+/* Generic.Inserted */
+/* line 14, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.go {
+  color: gray; }
+
+/* Generic.Output */
+/* line 15, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gp {
+  color: #c65d09;
+  font-weight: bold; }
+
+/* Generic.Prompt */
+/* line 16, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gs {
+  font-weight: bold; }
+
+/* Generic.Strong */
+/* line 17, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gu {
+  color: #800080;
+  font-weight: bold; }
+
+/* Generic.Subheading */
+/* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.gt {
+  color: #0040d0; }
+
+/* Generic.Traceback */
+/* line 19, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kc {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Constant */
+/* line 20, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kd {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Declaration */
+/* line 21, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kn {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Namespace */
+/* line 22, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kp {
+  color: #007020; }
+
+/* Keyword.Pseudo */
+/* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kr {
+  color: #007020;
+  font-weight: bold; }
+
+/* Keyword.Reserved */
+/* line 24, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.kt {
+  color: #902000; }
+
+/* Keyword.Type */
+/* line 25, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.m {
+  color: #40a070; }
+
+/* Literal.Number */
+/* line 26, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.s {
+  color: #4070a0; }
+
+/* Literal.String */
+/* line 27, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.na {
+  color: #4070a0; }
+
+/* Name.Attribute */
+/* line 28, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nb {
+  color: #007020; }
+
+/* Name.Builtin */
+/* line 29, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nc {
+  color: #0e84b5;
+  font-weight: bold; }
+
+/* Name.Class */
+/* line 30, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.no {
+  color: #60add5; }
+
+/* Name.Constant */
+/* line 31, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nd {
+  color: #555555;
+  font-weight: bold; }
+
+/* Name.Decorator */
+/* line 32, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.ni {
+  color: #d55537;
+  font-weight: bold; }
+
+/* Name.Entity */
+/* line 33, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.ne {
+  color: #007020; }
+
+/* Name.Exception */
+/* line 34, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nf {
+  color: #06287e; }
+
+/* Name.Function */
+/* line 35, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nl {
+  color: #002070;
+  font-weight: bold; }
+
+/* Name.Label */
+/* line 36, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nn {
+  color: #0e84b5;
+  font-weight: bold; }
+
+/* Name.Namespace */
+/* line 37, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nt {
+  color: #062873;
+  font-weight: bold; }
+
+/* Name.Tag */
+/* line 38, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.nv {
+  color: #bb60d5; }
+
+/* Name.Variable */
+/* line 39, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.ow {
+  color: #007020;
+  font-weight: bold; }
+
+/* Operator.Word */
+/* line 40, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.w {
+  color: #bbbbbb; }
+
+/* Text.Whitespace */
+/* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.mf {
+  color: #40a070; }
+
+/* Literal.Number.Float */
+/* line 42, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.mh {
+  color: #40a070; }
+
+/* Literal.Number.Hex */
+/* line 43, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.mi {
+  color: #40a070; }
+
+/* Literal.Number.Integer */
+/* line 44, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.mo {
+  color: #40a070; }
+
+/* Literal.Number.Oct */
+/* line 45, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sb {
+  color: #4070a0; }
+
+/* Literal.String.Backtick */
+/* line 46, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sc {
+  color: #4070a0; }
+
+/* Literal.String.Char */
+/* line 47, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sd {
+  color: #4070a0;
+  font-style: italic; }
+
+/* Literal.String.Doc */
+/* line 48, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.s2 {
+  color: #4070a0; }
+
+/* Literal.String.Double */
+/* line 49, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.se {
+  color: #4070a0;
+  font-weight: bold; }
+
+/* Literal.String.Escape */
+/* line 50, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sh {
+  color: #4070a0; }
+
+/* Literal.String.Heredoc */
+/* line 51, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.si {
+  color: #70a0d0;
+  font-style: italic; }
+
+/* Literal.String.Interpol */
+/* line 52, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sx {
+  color: #c65d09; }
+
+/* Literal.String.Other */
+/* line 53, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.sr {
+  color: #235388; }
+
+/* Literal.String.Regex */
+/* line 54, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.s1 {
+  color: #4070a0; }
+
+/* Literal.String.Single */
+/* line 55, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.ss {
+  color: #517918; }
+
+/* Literal.String.Symbol */
+/* line 56, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.bp {
+  color: #007020; }
+
+/* Name.Builtin.Pseudo */
+/* line 57, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.vc {
+  color: #bb60d5; }
+
+/* Name.Variable.Class */
+/* line 58, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.vg {
+  color: #bb60d5; }
+
+/* Name.Variable.Global */
+/* line 59, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.vi {
+  color: #bb60d5; }
+
+/* Name.Variable.Instance */
+/* line 60, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/pygments.css */
+.il {
+  color: #40a070; }
+
+/* Literal.Number.Integer.Long */
+/* line 2, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.code-section {
+  margin: 0;
+  padding: 15px;
+  display: block;
+  float: left;
+  margin-right: 0.84034%;
+  width: 32.77311%; }
+  /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
+  .code-section:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 750px) {
+    /* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+    .code-section {
+      display: block;
+      float: left;
+      margin-right: 0.84034%;
+      width: 100%; }
+      /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
+      .code-section:last-child {
+        margin-right: 0; } }
+  /* line 10, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .code-section header {
+    margin-bottom: 30px; }
+    /* line 13, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+    .code-section header h4 {
+      display: inline;
+      margin-right: 15px; }
+    /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+    .code-section header button {
+      border: none;
+      background-color: #dde4e3;
+      border-radius: 20px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: white;
+      padding: 3px 18px;
+      font-size: 8px;
+      display: inline; }
+      /* line 29, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+      .code-section header button:hover {
+        background-color: #dde2e4; }
+
+/* line 44, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+/* line 50, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 54, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 62, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 71, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.accordion-heading {
+  background-color: #dde4e3;
+  border-bottom: 2px solid #cfd8d7; }
+  /* line 75, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .accordion-heading a {
+    padding: 10px 15px;
+    color: #b3c2bf; }
+    /* line 79, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+    .accordion-heading a:hover {
+      color: #97aba7; }
+  /* line 84, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .accordion-heading i {
+    float: right;
+    font-size: 16.8px; }
+
+/* line 90, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.accordion-heading .accordion-toggle {
+  display: block; }
+
+/* line 94, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.accordion-toggle {
+  cursor: pointer; }
+
+/* line 98, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.accordion-inner {
+  *zoom: 1;
+  border: 2px solid #dde4e3;
+  border-top: none; }
+  /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .accordion-inner:before, .accordion-inner:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .accordion-inner:after {
+    clear: both; }
+
+/* line 104, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear; }
+
+/* line 111, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.fade.in {
+  opacity: 1; }
+
+/* line 114, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
+/* line 123, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.collapse.in {
+  height: auto; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+body {
+  background: #84909c;
+  background: url(../images/back.png) repeat center center fixed;
+  margin: 0; }
+
+/* line 7, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.container {
+  margin-top: 30px;
+  *zoom: 1;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px; }
+  /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .container:after {
+    clear: both; }
+
+/* line 13, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.main-content-container {
+  display: block;
+  float: left;
+  margin-right: 0.84034%;
+  width: 83.19328%; }
+  /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
+  .main-content-container:last-child {
+    margin-right: 0; }
+
+/* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.hero {
+  background: url(../images/hero.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #2B3842;
+  width: 100%;
+  height: 450px; }
+  /* line 33, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .hero h1 {
+    border-bottom: 0;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    color: #385069;
+    text-shadow: 0 1px 1px rgba(64, 93, 122, 0.2); }
+  /* line 42, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .hero h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #385069;
+    text-shadow: 0 1px 1px rgba(64, 93, 122, 0.2); }
+  /* line 53, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .hero a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    border-bottom: 2px solid #385069;
+    padding: 30px;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #405d7a;
+    text-shadow: 0 2px 1px #2f4358;
+    box-shadow: 0 2px 1px white; }
+    /* line 66, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    .hero a:hover {
+      background-color: #52769b; }
+
+/* line 78, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+nav {
+  display: block;
+  float: left;
+  margin-right: 0.84034%;
+  width: 15.96639%;
+  padding-right: 30px; }
+  /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
+  nav:last-child {
+    margin-right: 0; }
+  /* line 81, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  nav a {
+    display: block; }
+
+/* line 86, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.main-content-container {
+  display: block;
+  float: left;
+  margin-right: 0.84034%;
+  width: 83.19328%;
+  margin-right: 0; }
+  /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
+  .main-content-container:last-child {
+    margin-right: 0; }
+
+/* line 97, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.item-container {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 0;
+  border: 4px solid #f7f7f7;
+  border-bottom: 0; }
+  /* line 107, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .item-container header h3 {
+    display: inline; }
+  /* line 111, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .item-container header .item-links {
+    position: absolute;
+    right: -4px;
+    top: 30px;
+    float: right; }
+    /* line 117, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    .item-container header .item-links p {
+      display: inline;
+      font-style: italic; }
+    /* line 122, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    .item-container header .item-links button {
+      border: 0;
+      color: white;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 15px;
+      border-radius: 15px;
+      margin-left: 7.5px;
+      background-color: #848c9c;
+      border-bottom: 2px solid #6a7283;
+      text-shadow: 0 1px 0 #6a7283; }
+      /* line 135, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+      .item-container header .item-links button:hover {
+        background-color: #9299a7; }
+      /* line 139, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+      .item-container header .item-links button.bourbon {
+        background-color: #98849c;
+        border-bottom: 2px solid #7f6a83;
+        text-shadow: 0 1px 0 #7f6a83; }
+        /* line 143, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+        .item-container header .item-links button.bourbon:hover {
+          background-color: #a492a7; }
+      /* line 148, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+      .item-container header .item-links button.external-link {
+        background-color: #f7f7f7;
+        font-weight: 700;
+        border-right: 1px solid #84909c;
+        padding: 5px 34px 5px 12px;
+        box-shadow: inset 1px 2px 1px #e0e0e0;
+        text-shadow: 0 1px 0 white;
+        color: #cccccc;
+        font-size: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom: 0;
+        border-bottom-right-radius: 0; }
+
+/* line 172, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.example {
+  padding: 30px;
+  margin: 15px 0;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0; }
+
+/* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 5, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+h1 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed white; }
+  /* line 13, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+  h1 i {
+    margin-right: 7.5px; }
+
+/* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  color: white; }
+
+/* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+h3 {
+  margin: 0;
+  color: #84909c; }
+
+/* line 28, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+h4 {
+  margin: 0;
+  color: #84909c; }
+
+/* line 33, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+p {
+  font-size: 12px;
+  color: #84909c; }
+
+/* line 38, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+small {
+  text-transform: uppercase;
+  font-weight: 800; }
+
+/* line 43, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9); }
+  /* line 46, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+  a:hover {
+    color: white; }
+
+/* line 51, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+code {
+  font-size: 12px;
+  line-height: 16.8px; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?17503373");
+  src: url("../fonts/fontello.eot?17503373#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?17503373") format("woff"), url("../fonts/fontello.ttf?17503373") format("truetype"), url("../fonts/fontello.svg?17503373#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 73, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em; }
+
+/* line 89, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+.icon-tools:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 90, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+.icon-right-circled:before {
+  content: '\e800'; }
+
+/* '' */
