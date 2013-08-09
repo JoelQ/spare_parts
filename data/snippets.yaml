@@ -207,6 +207,41 @@
 
 - category: 'Patterns'
   snippets:
+    - title: 'Avatar and Comment'
+      html: |
+        <div class="comment">
+          <div class="avatar">
+          </div>
+          <div>
+            <h3>Name Lastname</h3>
+            <h4>Timestamp</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+         </div>
+      css: |
+        $avatar-size: 50px;
+        $space: 15px;
+        .comment {
+          p {
+            margin-left: $avatar-size + $space;
+            margin-top: 5px;
+          }
+          h3, h4 {
+            display: inline;
+          }
+          .avatar {
+            background: url(../images/avatar.png) no-repeat center center;
+            background-size: $avatar-size;
+            border: 3px solid white;
+            box-shadow: 0 1px 1px #DDD;
+            height: $avatar-size;
+            width: $avatar-size;
+            background-color: #E5E5E5;
+            float: left;
+            margin-right: $space;
+          }
+        }
+
     - title: 'Navigation'
       html: |
         <header>
