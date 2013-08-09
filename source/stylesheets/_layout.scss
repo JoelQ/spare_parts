@@ -28,15 +28,15 @@ body {
     background-size: cover;
   background-color: #2B3842;
   width: 100%;
-  height: 450px;
+  height: 500px;
 
   h1 {
     border-bottom: 0;
     font-size: $font-size *5;
     text-align: center;
     padding-top: $space *2;
-    color: darken($cta-color, 5);
-    text-shadow: 0 1px 1px transparentize($cta-color, .8);
+    color: darken($main-color, 20);
+    text-shadow: 0 1px 1px transparentize($main-color, .8);
   }
 
   h2 {
@@ -45,26 +45,58 @@ body {
     font-weight: 400;
     max-width: 600px;
     margin: auto;
-    margin-bottom: $space;
-    color: darken($cta-color, 5);
-    text-shadow: 0 1px 1px transparentize($cta-color, .8);
+    margin-bottom: $space /2;
+    color: darken($main-color, 5);
+    text-shadow: 0 1px 1px transparentize($main-color, .8);
+  }
+
+  .divider {
+    border-bottom: 1px solid $main-color;
+    display: block;
+    margin: auto;
+    margin-bottom: $space /2;
+    width: $space *2;
   }
 
   a {
     display: block;
-    margin: auto;
+    padding: 13px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 13px;
+    *line-height: 13px;
     text-align: center;
     width: 500px;
-    border-bottom: 2px solid darken($cta-color, 5);
     padding: $space;
-    border-radius: 3px;
+    vertical-align: middle;
     font-weight: 700;
-    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid darken($cta-color, 20);
+    border-bottom: 2px solid darken($cta-color, 5);
     background-color: $cta-color;
+    transition: all 0.03s linear;
+    border-radius: 3px;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    color: white;
     text-shadow: 0 2px 1px darken($cta-color, 10);
-    box-shadow: 0 2px 1px white;
+    margin: auto;
+
     &:hover {
-      background-color: lighten($cta-color, 10);
+      color: white;
+      text-decoration: none;
+      background-color: lighten($cta-color, 5);
+      *background-color: darken($cta-color, 5); /* Buttons in IE7 don't get borders, so darken on hover */
+      background-position: 0 -15px;
+    }
+
+    &.active,
+    &:active {
+      background-color: darken($cta-color, 5);
+      background-color: darken($cta-color, 5) \9;
+      background-image: none;
+      outline: 0;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
     }
   }
 }

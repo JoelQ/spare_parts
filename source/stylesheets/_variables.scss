@@ -17,7 +17,7 @@ $line-height: $font-size * 1.4;
 ///////////////////////////////////////////////////////////////
 
 $main-color: #84909C;
-$cta-color: saturate(darken($main-color, 20), 20);
+$cta-color: #2EA798;
 $white: white;
 $main-color-light: lighten(adjust-hue(mix($white, $main-color), -40), 10);
 $black: darken($main-color, 50);

@@ -17,7 +17,7 @@
 
     button {
       border: none;
-      background-color: $main-color-light;
+      background-color: darken($main-color-light, 10);
       border-radius: 20px;
       text-transform: uppercase;
       font-weight: 800;
@@ -27,7 +27,7 @@
       display: inline;
 
       &:hover {
-        background-color: adjust-hue($main-color-light, 30);
+        background-color: darken($main-color-light, 20);
       }
     }
   }
