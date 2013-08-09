@@ -38,6 +38,10 @@
 # Reload the browser automatically whenever files change
 activate :livereload
 
+#from middleman-gh-pages for creating relative paths on gh-pages
+activate :relative_assets
+set :relative_links, true
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
