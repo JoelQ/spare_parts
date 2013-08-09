@@ -1,13 +1,24 @@
 - category: 'Styles'
   snippets:
-    - title: 'Light from above for type'
+    - title: 'Light from above for type icons'
       jquery: false
       bourbon: false
       html: |
-        <div class="style-light-from-above">
-          <p>&#9733;</p>
+        <div class="circle">
+          <div class="style-light-from-above">
+            <p>&#9733;</p>
+          </div>
         </div>
       css: |
+        .circle {
+          background-color: gray;
+          padding: 5px;
+          border-radius: 40px;
+          display: block;
+          height: 70px;
+          width: 70px;
+        }
+
         @mixin text-gradient ($top, $bottom) {
           color: $bottom;
           background: -webkit-linear-gradient($top, $bottom);
@@ -20,8 +31,8 @@
         }
 
         .style-light-from-above {
-          @include blend-layer(red, 2px, 0.5);
-          @include text-gradient(white, darken(red, 10));
+          @include blend-layer(lighten(gray, 15), 2px, 0.5);
+          @include text-gradient(white, lighten(gray, 15));
 
           p {
             font-size: 60px;
@@ -30,7 +41,7 @@
           }
         }
 
-    - title: 'Inset for type'
+    - title: 'Inset for type icons'
       html: |
         <div class="style-inset light-background">
           <p>&#9733;</p>
@@ -71,6 +82,9 @@
         .btn {
           cursor: pointer;
           $highlight: white;
+          -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
           $shade: darken(whitesmoke, 20);
           background-color: whitesmoke;
           border: 3px solid darken(whitesmoke, 7);
@@ -109,6 +123,9 @@
           display: inline-block;
           padding: 13px;
           margin-bottom: 0;
+          -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
           font-size: 13px;
           line-height: 13px;
           *line-height: 13px;
@@ -155,10 +172,10 @@
             <p>Menu</p>
             <div class="nav">
               <ul>
-                <li><a href="">One</a></li>
-                <li><a href="">Two</a></li>
-                <li><a href="">Three</a></li>
-                <li><a href="">Four</a></li>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
               </ul>
             </div>
           </div>
@@ -201,22 +218,19 @@
 
               li {
                 display: inline;
-
-                a {
-                  text-transform: uppercase;
-                  float: left;
-                  font-size: $nav-font-size;
-                  font-family: $nav-font-family;
-                  display: inline;
-                  color: $nav-color;
-                  text-decoration: none;
-                  line-height: $nav-height;
-                  padding: 0 10px;
-                  border-right: $nav-border;
-                }
+                text-transform: uppercase;
+                float: left;
+                font-size: $nav-font-size;
+                font-family: $nav-font-family;
+                display: inline;
+                color: $nav-color;
+                text-decoration: none;
+                line-height: $nav-height;
+                padding: 0 10px;
+                border-right: $nav-border;
               }
 
-              li:first-child a {
+              li:first-child {
                 border-left: $nav-border;
               }
 
@@ -269,22 +283,15 @@
                 overflow: hidden;
                 display: block;
                 width: 100%;
-
-                a {
-                  text-align: center;
-                  width: 100%;
-                  position: relative;
-                  display: block;
-                  z-index: 99999999;
-                  padding: 10px 0;
-                  line-height: 19px;
-                  overflow: hidden;
-                  background-color: $nav-back-color;
-
-                  a:last-child {
-                    padding-bottom: 30px;
-                  }
-                }
+                text-align: center;
+                width: 100%;
+                position: relative;
+                display: block;
+                z-index: 99999999;
+                padding: 10px 0;
+                line-height: 19px;
+                overflow: hidden;
+                background-color: $nav-back-color;
               }
             }
           }

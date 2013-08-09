@@ -22,12 +22,13 @@
     </div>
     <div class="container">
       <nav>
-      <h1><i class="icon-tools"></i>Spare Parts</h1>
         <% data.snippets.each do |category| %>
           <h2><%= category[:category] %></h2>
+          <div class="nav-links">
           <% category[:snippets].each do |snippet| %>
             <%= link_to snippet[:title], "##{anchor_from_title snippet[:title]}" %>
           <% end %>
+          </div>
         <% end %>
       </nav>
       <%= yield %>

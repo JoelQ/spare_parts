@@ -8,68 +8,71 @@ title: Spare-Parts
 
     <h2><%= category[:category] %></h2>
 
+    <div class="items">
       <% category[:snippets].each do |snippet| %>
-      <div class="item-container">
-        <header>
-          <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
-          <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
-          <div class="item-links">
-            <% if snippet[:jquery] %>
-              <button class="jquery"><a href="http://jquery.com">Jquery Required</a></button>
-            <% end %>
-            <% if snippet[:bourbon] %>
-              <button class="bourbon">Bourbon Required</button>
-            <% end %>
-            <button class="external-link">Source</button>
-          </div>
-        </header>
-        <div class="example <%= anchor_from_title(snippet[:title]) %>"><%= snippet[:html] %></div>
-        <div class="accordion" id="accordion1">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" href="#<%= anchor_from_title snippet[:title] %>_accordion">
-                <small>Code <i class="icon-right-circled"></i></small>
-              </a>
+        <div class="item-container">
+          <header>
+            <h3 id="<%= anchor_from_title snippet[:title] %>"><%= snippet[:title] %></h3>
+            <style><%= wrap_css_with_class(snippet[:css], anchor_from_title(snippet[:title])) %></style>
+            <div class="item-links">
+              <% if snippet[:jquery] %>
+                <button class="jquery"><a href="http://jquery.com">Jquery Required</a></button>
+              <% end %>
+              <% if snippet[:bourbon] %>
+                <button class="bourbon">Bourbon Required</button>
+              <% end %>
+              <button class="external-link">Code Origin</button>
             </div>
-            <div id="<%= anchor_from_title snippet[:title] %>_accordion" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <div class="code-section">
-                  <header>
-                    <h4>HTML</h4>
-                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_html">copy</button>
-                  </header>
-                  <code id="<%= anchor_from_title snippet[:title] %>_html">
-                    <%= Pygments.highlight(snippet[:html]) %>
-                  </code>
-                </div>
+          </header>
+          <div class="example <%= anchor_from_title(snippet[:title]) %>"><%= snippet[:html] %></div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#<%= anchor_from_title snippet[:title] %>_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="<%= anchor_from_title snippet[:title] %>_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
 
-                <div class="code-section">
-                  <header>
-                    <h4>CSS</h4>
-                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_css">copy</button>
-                  </header>
-                  <code id="<%= anchor_from_title snippet[:title] %>_css">
-                    <%= Pygments.highlight(snippet[:css]) %>
-                  </code>
-                </div>
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_html">copy</button>
+                    </header>
+                    <code id="<%= anchor_from_title snippet[:title] %>_html">
+                      <%= Pygments.highlight(snippet[:html]) %>
+                    </code>
+                  </div>
 
-                <div class="code-section">
-                  <header>
-                    <h4>Javascript</h4>
-                    <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_js">copy</button>
-                  </header>
-                  <code id="<%= anchor_from_title snippet[:title] %>_js">
-                    <%= Pygments.highlight(snippet[:js]) %>
-                  </code>
-                </div>
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_css">copy</button>
+                    </header>
+                    <code id="<%= anchor_from_title snippet[:title] %>_css">
+                      <%= Pygments.highlight(snippet[:css]) %>
+                    </code>
+                  </div>
 
+                  <div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="<%= anchor_from_title snippet[:title] %>_js">copy</button>
+                    </header>
+                    <code id="<%= anchor_from_title snippet[:title] %>_js">
+                      <%= Pygments.highlight(snippet[:js]) %>
+                    </code>
+                  </div>
+
+                </div>
               </div>
             </div>
+            <script><%= snippet[:js] %></script>
           </div>
-          <script><%= snippet[:js] %></script>
         </div>
-      </div>
       <% end %>
+    </div>
   <% end %>
 </div>
 

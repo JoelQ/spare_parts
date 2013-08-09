@@ -1,7 +1,23 @@
 .code-section {
   margin: 0;
   padding: $space /2;
-  @include span-columns(4);
+
+  pre {
+    white-space: pre;
+    overflow-x: scroll;
+  }
+
+  &.html {
+    @include span-columns(4);
+  }
+
+  &.css {
+    @include span-columns(5);
+  }
+
+  &.js {
+    @include span-columns(3);
+  }
 
   @include media($mobile) {
     @include span-columns(12);
