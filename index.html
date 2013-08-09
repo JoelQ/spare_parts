@@ -29,11 +29,15 @@
           
             <a href="#light_from_above_for_type_icons">Light from above for type icons</a>
           
+            <a href="#gloss">Gloss</a>
+          
             <a href="#inset_for_type_icons">Inset for type icons</a>
           
             <a href="#rubber_button">Rubber Button</a>
           
             <a href="#flat_button">Flat Button</a>
+          
+            <a href="#border_detail">Border Detail</a>
           
           </div>
         
@@ -68,16 +72,16 @@
           <header>
             <h3 id="light_from_above_for_type_icons">Light from above for type icons</h3>
             <style>.light_from_above_for_type_icons .circle {
-  background-color: gray;
+  background-color: #444;
   padding: 5px;
   border-radius: 40px;
   display: block;
   height: 70px;
   width: 70px; }
 .light_from_above_for_type_icons .style-light-from-above {
-  text-shadow: 0 1px 2px rgba(166, 166, 166, 0.5);
-  color: #a6a6a6;
-  background: -webkit-linear-gradient(white, #a6a6a6);
+  text-shadow: 0 1px 2px rgba(255, 165, 0, 0.5);
+  color: #faa200;
+  background: -webkit-linear-gradient(white, #faa200);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
   .light_from_above_for_type_icons .style-light-from-above p {
@@ -129,7 +133,7 @@
                     </header>
                     <code id="light_from_above_for_type_icons_css">
                       <div class="highlight"><pre><span class="nc">.circle</span> <span class="p">{</span>
-  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#444</span><span class="p">;</span>
   <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
   <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
@@ -149,8 +153,8 @@
 <span class="p">}</span>
 
 <span class="nc">.style-light-from-above</span> <span class="p">{</span>
-  <span class="o">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">15</span><span class="p">)</span><span class="o">,</span> <span class="m">2px</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-  <span class="o">@</span><span class="n">include</span> <span class="k">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">white</span><span class="o">,</span> <span class="n">lighten</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">15</span><span class="p">));</span>
+  <span class="o">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="nb">orange</span><span class="o">,</span> <span class="m">2px</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="o">@</span><span class="n">include</span> <span class="k">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="nb">white</span><span class="o">,</span> <span class="n">darken</span><span class="p">(</span><span class="nb">orange</span><span class="o">,</span> <span class="m">1</span><span class="p">));</span>
 
   <span class="n">p</span> <span class="err">{</span>
     <span class="k">font-size</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
@@ -168,6 +172,102 @@
                       <button class="copy" data-clipboard-target="light_from_above_for_type_icons_js">copy</button>
                     </header>
                     <code id="light_from_above_for_type_icons_js">
+                      
+                    </code>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="gloss">Gloss</h3>
+            <style>.gloss .style-gloss {
+  color: #7d7de8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8a8f0), color-stop(50%, #9393ec), color-stop(51%, #7d7de8), color-stop(100%, #a8a8f0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #7d7de8;
+  -moz-text-stroke: 1px #7d7de8; }
+  .gloss .style-gloss p {
+    font-size: 60px;
+    margin: 0;
+    line-height: 60px; }
+</style>
+            <div class="item-links">
+              
+              
+              <button class="external-link">Code Origin</button>
+            </div>
+          </header>
+          <div class="example gloss"><div class="style-gloss">
+  <p>&#9733;</p>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#gloss_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="gloss_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="gloss_html">copy</button>
+                    </header>
+                    <code id="gloss_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;style-gloss&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#9733;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="gloss_css">copy</button>
+                    </header>
+                    <code id="gloss_css">
+                      <div class="highlight"><pre><span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span> <span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">width</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="o">:</span> <span class="err">$</span><span class="n">width</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="o">:</span> <span class="err">$</span><span class="n">width</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gloss</span> <span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="o">-</span><span class="n">mid</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color:</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">;</span>
+  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="p">,</span> <span class="n">left</span> <span class="n">top</span><span class="p">,</span> <span class="n">left</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">50</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">51</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">100</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="p">));</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">gloss</span> <span class="p">{</span> <span class="c1">// four steps in the gradient for glossy metalic</span>
+  <span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">lighten</span><span class="p">(</span><span class="n">desaturate</span><span class="p">(</span><span class="n">blue</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="mi">20</span><span class="p">);</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gloss</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span> <span class="c1">// this has to be on the actual font content</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">1</span><span class="n">px</span><span class="p">);</span>
+
+  <span class="n">p</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+    <span class="nl">margin:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="gloss_js">copy</button>
+                    </header>
+                    <code id="gloss_js">
                       
                     </code>
                   </div>
@@ -201,7 +301,7 @@
               <button class="external-link">Code Origin</button>
             </div>
           </header>
-          <div class="example inset_for_type_icons"><div class="style-inset light-background">
+          <div class="example inset_for_type_icons"><div class="style-inset">
   <p>&#9733;</p>
 </div>
 </div>
@@ -221,7 +321,7 @@
                       <button class="copy" data-clipboard-target="inset_for_type_icons_html">copy</button>
                     </header>
                     <code id="inset_for_type_icons_html">
-                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;style-inset light-background&quot;</span><span class="nt">&gt;</span>
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;style-inset&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#9733;</span><span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
@@ -519,6 +619,79 @@
                       <button class="copy" data-clipboard-target="flat_button_js">copy</button>
                     </header>
                     <code id="flat_button_js">
+                      
+                    </code>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="border_detail">Border Detail</h3>
+            <style>.border_detail .box {
+  height: 30px;
+  width: 90px;
+  background-color: #C0C0C0;
+  border: 1px solid #838383;
+  box-shadow: 0 1px 2px #A7A7A7, inset 0 0 2px white; }
+</style>
+            <div class="item-links">
+              
+              
+              <button class="external-link">Code Origin</button>
+            </div>
+          </header>
+          <div class="example border_detail"><div class="box"></div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#border_detail_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="border_detail_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="border_detail_html">copy</button>
+                    </header>
+                    <code id="border_detail_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="border_detail_css">copy</button>
+                    </header>
+                    <code id="border_detail_css">
+                      <div class="highlight"><pre><span class="p">.</span><span class="n">box</span> <span class="p">{</span>
+  <span class="nl">height:</span> <span class="mi">30</span><span class="n">px</span><span class="p">;</span>
+  <span class="nl">width:</span> <span class="mi">90</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="err">#</span><span class="n">C0C0C0</span><span class="p">;</span>
+  <span class="nl">border:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="err">#</span><span class="mi">838383</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="n">px</span> <span class="mi">2</span><span class="n">px</span> <span class="err">#</span><span class="n">A7A7A7</span><span class="p">,</span> <span class="n">inset</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">2</span><span class="n">px</span> <span class="n">white</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="border_detail_js">copy</button>
+                    </header>
+                    <code id="border_detail_js">
                       
                     </code>
                   </div>
