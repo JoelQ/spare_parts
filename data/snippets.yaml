@@ -11,7 +11,7 @@
         </div>
       css: |
         .circle {
-          background-color: gray;
+          background-color: #444;
           padding: 5px;
           border-radius: 40px;
           display: block;
@@ -31,8 +31,38 @@
         }
 
         .style-light-from-above {
-          @include blend-layer(lighten(gray, 15), 2px, 0.5);
-          @include text-gradient(white, lighten(gray, 15));
+          @include blend-layer(orange, 2px, 0.5);
+          @include text-gradient(white, darken(orange, 1));
+
+          p {
+            font-size: 60px;
+            margin: 0;
+            line-height: 60px;
+          }
+        }
+
+    - title: 'Gloss'
+      jquery: false
+      bourbon: false
+      html: |
+        <div class="style-gloss">
+          <p>&#9733;</p>
+        </div>
+      css: |
+        @mixin text-stroke ($color, $width) {
+          -webkit-text-stroke: $width $color;
+          -moz-text-stroke: $width $color;
+        }
+        @mixin text-gloss ($color-top, $color-top-mid, $color-bottom-mid, $color-bottom) {
+          color: $color-bottom-mid;
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-top), color-stop(50%,$color-top-mid), color-stop(51%,$color-bottom-mid), color-stop(100%,$color-bottom));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .style-gloss { // four steps in the gradient for glossy metalic
+          $gloss-color: lighten(desaturate(blue, 30), 20);
+          @include text-gloss(lighten($gloss-color, 10), lighten($gloss-color, 5), lighten($gloss-color, 0), lighten($gloss-color, 10)); // this has to be on the actual font content
+          @include text-stroke($gloss-color, 1px);
 
           p {
             font-size: 60px;
@@ -43,7 +73,7 @@
 
     - title: 'Inset for type icons'
       html: |
-        <div class="style-inset light-background">
+        <div class="style-inset">
           <p>&#9733;</p>
         </div>
       css: |
@@ -156,6 +186,18 @@
             outline: 0;
             box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
           }
+        }
+
+    - title: 'Border Detail'
+      html: |
+        <div class="box"></div>
+      css: |
+        .box {
+          height: 30px;
+          width: 90px;
+          background-color: #C0C0C0;
+          border: 1px solid #838383;
+          box-shadow: 0 1px 2px #A7A7A7, inset 0 0 2px white;
         }
 
 
