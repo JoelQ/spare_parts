@@ -250,15 +250,16 @@
           }
         }
 
-    - title: 'Center vertically and horizontally from http://www.brunildo.org/test/img_center.html'
+    - title: 'Center vertically and horizontally'
       html: |
         <div class="wraptocenter">
-          <span>Centered</span>
+          <span>MID</span>
         </div>
       css: |
         .wraptocenter {
           display: table-cell;
           text-align: center;
+          color: white;
           vertical-align: middle;
           width: 100px;
           height: 100px;
