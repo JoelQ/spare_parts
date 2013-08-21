@@ -205,6 +205,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - category: 'Patterns'
   snippets:
     - title: 'Avatar and Comment'
@@ -240,6 +248,24 @@
             float: left;
             margin-right: $space;
           }
+        }
+
+    - title: 'Center vertically and horizontally from http://www.brunildo.org/test/img_center.html'
+      html: |
+        <div class="wraptocenter">
+          <span>Centered</span>
+        </div>
+      css: |
+        .wraptocenter {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          width: 100px;
+          height: 100px;
+          background-color: gray;
+        }
+        .wraptocenter * {
+          vertical-align: middle;
         }
 
     - title: 'Navigation'
