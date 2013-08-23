@@ -41,6 +41,10 @@
           
             <a href="#border_detail">Border Detail</a>
           
+            <a href="#drop_cap">Drop Cap</a>
+          
+            <a href="#tilted_box">Tilted box</a>
+          
           </div>
         
           <h2>Patterns</h2>
@@ -65,7 +69,7 @@
           
             <a href="#line_behind_text">Line behind text</a>
           
-            <a href="#elipsis_for_overflow">Elipsis for overflow</a>
+            <a href="#ellipsis_for_overflow">Ellipsis for overflow</a>
           
           </div>
         
@@ -218,6 +222,8 @@
             <div class="item-links">
               
               
+              
+                <a href="http://snipplr.com/view/70539/transparent-png-drop-shadow/" class="external-link">Code Origin</a>
               
             </div>
           </header>
@@ -822,6 +828,214 @@
                       <button class="copy" data-clipboard-target="border_detail_js">copy</button>
                     </header>
                     <code id="border_detail_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="drop_cap">Drop Cap</h3>
+            <style>.drop_cap p {
+  width: 390px;
+  color: gray;
+  font-size: 13px; }
+.drop_cap p:first-letter {
+  display: block;
+  background-color: gray;
+  padding: 12px 16px;
+  margin: 5px 10px 0 0;
+  float: left;
+  font-size: 16px;
+  color: white;
+  font-family: Georgia;
+  font-weight: bold; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://snipplr.com/view/66684/css--add-a-drop-cap/" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example drop_cap"><p>Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi asperiores odit! 
+  ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi. 
+</p>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#drop_cap_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="drop_cap_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="drop_cap_html">copy</button>
+                    </header>
+                    <code id="drop_cap_html">
+                      <div class="highlight"><pre><span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi asperiores odit! 
+  ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi. 
+<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="drop_cap_css">copy</button>
+                    </header>
+                    <code id="drop_cap_css">
+                      <div class="highlight"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">390px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span><span class="nd">:first-letter</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">12px</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="drop_cap_js">copy</button>
+                    </header>
+                    <code id="drop_cap_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="tilted_box">Tilted box</h3>
+            <style>.tilted_box .box {
+  display: inline-block;
+  -webkit-transform: skew(-20deg, 0deg);
+  -moz-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+  transform: skew(-20deg, 0deg);
+  background-color: gray;
+  padding: 5px 8px; }
+  .tilted_box .box p {
+    color: white;
+    padding: 0 8px;
+    -webkit-transform: skew(20deg, 0deg);
+    -moz-transform: skew(20deg, 0deg);
+    -o-transform: skew(20deg, 0deg);
+    transform: skew(20deg, 0deg); }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://snipplr.com/view/66684/css--add-a-drop-cap/" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example tilted_box"><div class="box">
+  <p>Tilted Text Box</p>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#tilted_box_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="tilted_box_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="tilted_box_html">copy</button>
+                    </header>
+                    <code id="tilted_box_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Tilted Text Box<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="tilted_box_css">copy</button>
+                    </header>
+                    <code id="tilted_box_css">
+                      <div class="highlight"><pre><span class="err">$</span><span class="nt">box-skew</span><span class="o">:</span> <span class="nt">20deg</span><span class="o">;</span>
+<span class="nc">.box</span> <span class="p">{</span>
+  
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="n">p</span> <span class="err">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+    <span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">skew</span><span class="o">,</span> <span class="m">0</span><span class="n">deg</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="tilted_box_js">copy</button>
+                    </header>
+                    <code id="tilted_box_js">
                       
                     </code>
                   </div> -->
@@ -1950,63 +2164,61 @@
       
         <div class="item-container">
           <header>
-            <h3 id="elipsis_for_overflow">Elipsis for overflow</h3>
-            <style>.elipsis_for_overflow .box {
+            <h3 id="ellipsis_for_overflow">Ellipsis for overflow</h3>
+            <style>.ellipsis_for_overflow .box {
   width: 200px;
-  background-color: gray; }
-.elipsis_for_overflow span {
-  color: white;
-  padding: 5px 8px;
-  display: block;
-  white-space: nowrap;
-  width: 200px;
+  height: 66.66667px; }
+.ellipsis_for_overflow .ellipsis {
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
 </style>
             <div class="item-links">
               
               
               
-                <a href="http://docs.tinyfactory.co/css/2012/08/11/text-overflow-ellipsis-using-CSS.html" class="external-link">Code Origin</a>
+                <a href="http://snipplr.com/view/67357/webkit-lastline-truncate/" class="external-link">Code Origin</a>
               
             </div>
           </header>
-          <div class="example elipsis_for_overflow"><div class="box">
-  <span>Lorem ipsum dolor sit amet, 
+          <div class="example ellipsis_for_overflow"><div class="box">
+  <p class="ellipsis">Lorem ipsum dolor sit amet, 
   consectetur adipisicing elit. Quidem 
   facilis aspernatur harum eos beatae 
   molestiae molestias vitae repudiandae 
   praesentium itaque natus accusantium 
   quia ipsam doloribus aut! Illum 
   repudiandae inventore laboriosam
-  </span>
+  </p>
 </div>
 </div>
           <div class="accordion" id="accordion1">
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#elipsis_for_overflow_accordion">
+                <a class="accordion-toggle" data-toggle="collapse" href="#ellipsis_for_overflow_accordion">
                   <small>Code <i class="icon-right-circled"></i></small>
                 </a>
               </div>
-              <div id="elipsis_for_overflow_accordion" class="accordion-body collapse">
+              <div id="ellipsis_for_overflow_accordion" class="accordion-body collapse">
                 <div class="accordion-inner">
 
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
-                      <button class="copy" data-clipboard-target="elipsis_for_overflow_html">copy</button>
+                      <button class="copy" data-clipboard-target="ellipsis_for_overflow_html">copy</button>
                     </header>
-                    <code id="elipsis_for_overflow_html">
+                    <code id="ellipsis_for_overflow_html">
                       <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span&gt;</span>Lorem ipsum dolor sit amet, 
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;ellipsis&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, 
   consectetur adipisicing elit. Quidem 
   facilis aspernatur harum eos beatae 
   molestiae molestias vitae repudiandae 
   praesentium itaque natus accusantium 
   quia ipsam doloribus aut! Illum 
   repudiandae inventore laboriosam
-  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
                     </code>
@@ -2015,23 +2227,20 @@
                   <div class="code-section css">
                     <header>
                       <h4>CSS</h4>
-                      <button class="copy" data-clipboard-target="elipsis_for_overflow_css">copy</button>
+                      <button class="copy" data-clipboard-target="ellipsis_for_overflow_css">copy</button>
                     </header>
-                    <code id="elipsis_for_overflow_css">
-                      <div class="highlight"><pre><span class="err">$</span><span class="nt">box-width</span><span class="o">:</span> <span class="nt">200px</span><span class="o">;</span>
-
-<span class="nc">.box</span> <span class="p">{</span>
-  <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="k">width</span><span class="p">;</span>
-  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+                    <code id="ellipsis_for_overflow_css">
+                      <div class="highlight"><pre><span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">width</span><span class="o">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+<span class="p">.</span><span class="n">box</span> <span class="p">{</span>
+  <span class="nl">width:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">width</span><span class="p">;</span>
+  <span class="nl">height:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="n">width</span> <span class="o">/</span><span class="mi">3</span><span class="p">;</span>    
 <span class="p">}</span>
-<span class="nt">span</span> <span class="p">{</span>
-  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="o">//</span> <span class="n">because</span> <span class="n">we</span><span class="err">&#39;</span><span class="n">re</span> <span class="n">using</span> <span class="n">a</span> <span class="n">span</span> <span class="n">class</span>
-  <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span> <span class="o">//</span><span class="n">This</span> <span class="n">prevents</span> <span class="n">the</span> <span class="k">content</span> <span class="n">from</span> <span class="n">breaking</span> <span class="n">onto</span> <span class="n">another</span> <span class="n">line</span>
-  <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="k">width</span><span class="p">;</span> <span class="o">//</span> <span class="n">this</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="k">width</span> <span class="n">of</span> <span class="n">your</span> <span class="k">content</span>
-  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="o">//</span> <span class="n">hides</span> <span class="n">the</span> <span class="k">text</span> <span class="n">that</span> <span class="n">is</span> <span class="k">outside</span> <span class="n">of</span> <span class="n">your</span> <span class="k">width</span>
-  <span class="k">text</span><span class="o">-</span><span class="k">overflow</span><span class="o">:</span> <span class="n">ellipsis</span><span class="p">;</span> <span class="o">//</span><span class="n">creates</span> <span class="n">our</span> <span class="n">ellipsis</span><span class="o">!</span>
+<span class="p">.</span><span class="n">ellipsis</span> <span class="p">{</span>
+  <span class="nl">overflow:</span> <span class="n">hidden</span><span class="p">;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">overflow</span><span class="o">:</span> <span class="n">ellipsis</span><span class="p">;</span>
+  <span class="nl">display:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">line</span><span class="o">-</span><span class="n">clamp</span><span class="o">:</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// number of lines to show</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">orient</span><span class="o">:</span> <span class="n">vertical</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
                     </code>
@@ -2040,9 +2249,9 @@
                   <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
-                      <button class="copy" data-clipboard-target="elipsis_for_overflow_js">copy</button>
+                      <button class="copy" data-clipboard-target="ellipsis_for_overflow_js">copy</button>
                     </header>
-                    <code id="elipsis_for_overflow_js">
+                    <code id="ellipsis_for_overflow_js">
                       
                     </code>
                   </div> -->
