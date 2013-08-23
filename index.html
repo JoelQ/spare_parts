@@ -29,6 +29,8 @@
           
             <a href="#light_from_above_for_type_icons">Light from above for type icons</a>
           
+            <a href="#shadowed_png">Shadowed png</a>
+          
             <a href="#gloss">Gloss</a>
           
             <a href="#inset_for_type_icons">Inset for type icons</a>
@@ -60,6 +62,10 @@
             <a href="#tooltip">Tooltip</a>
           
             <a href="#dropdown">Dropdown</a>
+          
+            <a href="#line_behind_text">Line behind text</a>
+          
+            <a href="#elipsis_for_overflow">Elipsis for overflow</a>
           
           </div>
         
@@ -96,7 +102,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example light_from_above_for_type_icons"><div class="circle">
@@ -170,7 +176,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="light_from_above_for_type_icons_js">copy</button>
@@ -178,7 +184,121 @@
                     <code id="light_from_above_for_type_icons_js">
                       
                     </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="shadowed_png">Shadowed png</h3>
+            <style>.shadowed_png .shadowed {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(128, 128, 128, 0.9));
+  filter: url(shadow.svg#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.
+    Dropshadow(OffX=12, OffY=12, Color='$shadow-color')";
+  filter: "progid:DXImageTransform.Microsoft.
+    Dropshadow(OffX=12, OffY=12, 
+  Color='$shadow-color')"; }
+.shadowed_png .style-light-from-above {
+  text-shadow: 0 1px 2px rgba(255, 165, 0, 0.5);
+  color: #faa200;
+  background: -webkit-linear-gradient(white, #faa200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  .shadowed_png .style-light-from-above p {
+    font-size: 60px;
+    margin: 0;
+    line-height: 60px; }
+</style>
+            <div class="item-links">
+              
+              
+              
+            </div>
+          </header>
+          <div class="example shadowed_png"><img class="shadowed" src="images/shadow-img.png" alt="">
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#shadowed_png_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="shadowed_png_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="shadowed_png_html">copy</button>
+                    </header>
+                    <code id="shadowed_png_html">
+                      <div class="highlight"><pre><span class="o">&lt;</span><span class="n">img</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;shadowed&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;images/shadow-img.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="o">&gt;</span>
+</pre></div>
+                    </code>
                   </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="shadowed_png_css">copy</button>
+                    </header>
+                    <code id="shadowed_png_css">
+                      <div class="highlight"><pre><span class="err">$</span><span class="n">shadow</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">gray</span><span class="p">;</span>
+<span class="p">.</span><span class="n">shadowed</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> 
+    <span class="n">drop</span><span class="o">-</span><span class="n">shadow</span><span class="p">(</span><span class="mi">0</span><span class="n">px</span> <span class="mi">0</span><span class="n">px</span> <span class="mi">5</span><span class="n">px</span> <span class="n">transparentize</span><span class="p">(</span><span class="err">$</span><span class="n">shadow</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">));</span>
+  <span class="nl">filter:</span> 
+    <span class="n">url</span><span class="p">(</span><span class="n">shadow</span><span class="p">.</span><span class="n">svg</span><span class="err">#</span><span class="n">drop</span><span class="o">-</span><span class="n">shadow</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> 
+    <span class="s">&quot;progid:DXImageTransform.Microsoft.</span>
+    <span class="n">Dropshadow</span><span class="p">(</span><span class="n">OffX</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">OffY</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">Color</span><span class="o">=</span><span class="err">&#39;$</span><span class="n">shadow</span><span class="o">-</span><span class="n">color</span><span class="err">&#39;</span><span class="p">)</span><span class="s">&quot;;</span>
+  <span class="nl">filter:</span> 
+    <span class="s">&quot;progid:DXImageTransform.Microsoft.</span>
+    <span class="n">Dropshadow</span><span class="p">(</span><span class="n">OffX</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">OffY</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> 
+  <span class="n">Color</span><span class="o">=</span><span class="err">&#39;$</span><span class="n">shadow</span><span class="o">-</span><span class="n">color</span><span class="err">&#39;</span><span class="p">)</span><span class="s">&quot;;</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span> <span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">color:</span> <span class="err">$</span><span class="n">bottom</span><span class="p">;</span>
+  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">mixin</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="n">px</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span> <span class="n">transparentize</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">light</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">above</span> <span class="p">{</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">orange</span><span class="p">,</span> <span class="mi">2</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="n">darken</span><span class="p">(</span><span class="n">orange</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
+
+  <span class="n">p</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+    <span class="nl">margin:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="shadowed_png_js">copy</button>
+                    </header>
+                    <code id="shadowed_png_js">
+                      
+                    </code>
+                  </div> -->
 
                 </div>
               </div>
@@ -205,7 +325,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example gloss"><div class="style-gloss">
@@ -247,13 +367,20 @@
 <span class="p">}</span>
 <span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gloss</span> <span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="o">-</span><span class="n">mid</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">,</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
   <span class="nl">color:</span> <span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">;</span>
-  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="p">,</span> <span class="n">left</span> <span class="n">top</span><span class="p">,</span> <span class="n">left</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">50</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">51</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">100</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="p">));</span>
+  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="p">,</span> <span class="n">left</span> <span class="n">top</span><span class="p">,</span> <span class="n">left</span> <span class="n">bottom</span><span class="p">,</span> 
+    <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="p">),</span> 
+    <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">50</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">top</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> 
+    <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">51</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="o">-</span><span class="n">mid</span><span class="p">),</span> 
+    <span class="n">color</span><span class="o">-</span><span class="n">stop</span><span class="p">(</span><span class="mi">100</span><span class="o">%</span><span class="p">,</span><span class="err">$</span><span class="n">color</span><span class="o">-</span><span class="n">bottom</span><span class="p">));</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">gloss</span> <span class="p">{</span> <span class="c1">// four steps in the gradient for glossy metalic</span>
   <span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">lighten</span><span class="p">(</span><span class="n">desaturate</span><span class="p">(</span><span class="n">blue</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="mi">20</span><span class="p">);</span>
-  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gloss</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span> <span class="c1">// this has to be on the actual font content</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gloss</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> 
+    <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> 
+    <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> 
+    <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span> 
   <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="p">(</span><span class="err">$</span><span class="n">gloss</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="mi">1</span><span class="n">px</span><span class="p">);</span>
 
   <span class="n">p</span> <span class="p">{</span>
@@ -266,7 +393,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="gloss_js">copy</button>
@@ -274,7 +401,7 @@
                     <code id="gloss_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -302,7 +429,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example inset_for_type_icons"><div class="style-inset">
@@ -361,15 +488,15 @@
     <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
   <span class="p">}</span>
 
-  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="mi">3</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span> <span class="c1">// text-shadow with transparency</span>
-  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">60</span><span class="p">));</span> <span class="c1">// this has to be on the actual font content</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="mi">3</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">60</span><span class="p">));</span>
   <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">stroke</span><span class="p">(</span><span class="n">lighten</span><span class="p">(</span><span class="n">black</span><span class="p">,</span> <span class="mi">65</span><span class="p">),</span> <span class="mi">1</span><span class="n">px</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="inset_for_type_icons_js">copy</button>
@@ -377,7 +504,7 @@
                     <code id="inset_for_type_icons_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -415,7 +542,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example rubber_button"><div class="btn">Rubber button</div>
@@ -486,7 +613,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="rubber_button_js">copy</button>
@@ -494,7 +621,7 @@
                     <code id="rubber_button_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -531,7 +658,6 @@
     text-decoration: none;
     background-color: #9a9a9a;
     *background-color: #5a5a5a;
-    /* Buttons in IE7 don't get borders, so darken on hover */
     background-position: 0 -15px; }
   .flat_button .btn.active, .flat_button .btn:active {
     background-color: #676767;
@@ -543,7 +669,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example flat_button"><div class="btn">Flat Button</div>
@@ -590,17 +716,17 @@
   <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
   <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">20</span><span class="p">);</span>
   <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-  <span class="o">*</span><span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">Remove</span> <span class="n">the</span> <span class="k">border</span> <span class="n">to</span> <span class="n">prevent</span> <span class="n">IE7</span><span class="s1">&#39;s black border on input:focus</span>
-<span class="s1">  transition: all 0.03s linear;</span>
-<span class="s1">  border-radius: 3px;</span>
-<span class="s1">  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);</span>
-<span class="s1">  color: white;</span>
+  <span class="o">*</span><span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">Remove</span> <span class="n">the</span> <span class="k">border</span> <span class="n">to</span> <span class="n">prevent</span> <span class="n">IE7</span><span class="err">&#39;</span><span class="n">s</span> <span class="nb">black</span> <span class="k">border</span> <span class="n">on</span> <span class="n">input</span><span class="o">:</span><span class="n">focus</span>
+  <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.03s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,.</span><span class="m">2</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">05</span><span class="p">);</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
 
-<span class="s1">  &amp;:hover {</span>
-<span class="s1">    color: white;</span>
-<span class="s1">    text-decoration: none;</span>
-<span class="s1">    background-color: lighten(gray, 10);</span>
-<span class="s1">    *background-color: darken(gray, 15); /* Buttons in IE7 don&#39;</span><span class="n">t</span> <span class="n">get</span> <span class="n">borders</span><span class="o">,</span> <span class="n">so</span> <span class="n">darken</span> <span class="n">on</span> <span class="n">hover</span> <span class="o">*/</span>
+  <span class="o">&amp;:</span><span class="n">hover</span> <span class="err">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="n">lighten</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span>
+    <span class="o">*</span><span class="k">background-color</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">15</span><span class="p">);</span>
     <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-15px</span><span class="p">;</span>
   <span class="p">}</span>
 
@@ -617,7 +743,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="flat_button_js">copy</button>
@@ -625,7 +751,7 @@
                     <code id="flat_button_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -647,7 +773,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example border_detail"><div class="box"></div>
@@ -690,7 +816,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="border_detail_js">copy</button>
@@ -698,7 +824,7 @@
                     <code id="border_detail_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -736,7 +862,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example avatar_and_comment"><div class="comment">
@@ -810,7 +936,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="avatar_and_comment_js">copy</button>
@@ -818,7 +944,7 @@
                     <code id="avatar_and_comment_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -844,7 +970,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example center_vertically_and_horizontally"><div class="wraptocenter">
@@ -896,7 +1022,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="center_vertically_and_horizontally_js">copy</button>
@@ -904,7 +1030,7 @@
                     <code id="center_vertically_and_horizontally_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -996,7 +1122,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example navigation"><header>
@@ -1171,7 +1297,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="navigation_js">copy</button>
@@ -1179,7 +1305,7 @@
                     <code id="navigation_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -1259,7 +1385,9 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
+                <a href="http://proto.io/freebies/onoff/" class="external-link">Code Origin</a>
+              
             </div>
           </header>
           <div class="example switch"><div class="onoffswitch">
@@ -1366,7 +1494,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="switch_js">copy</button>
@@ -1374,7 +1502,7 @@
                     <code id="switch_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -1451,7 +1579,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example tooltip"><a href="#" class="item-one">
@@ -1602,7 +1730,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="tooltip_js">copy</button>
@@ -1610,7 +1738,7 @@
                     <code id="tooltip_js">
                       
                     </code>
-                  </div>
+                  </div> -->
 
                 </div>
               </div>
@@ -1643,7 +1771,7 @@
             <div class="item-links">
               
               
-              <button class="external-link">Code Origin</button>
+              
             </div>
           </header>
           <div class="example dropdown"><a class="dropdown-menu">
@@ -1711,7 +1839,7 @@
                     </code>
                   </div>
 
-                  <div class="code-section js">
+                  <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
                       <button class="copy" data-clipboard-target="dropdown_js">copy</button>
@@ -1719,7 +1847,205 @@
                     <code id="dropdown_js">
                       
                     </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="line_behind_text">Line behind text</h3>
+            <style>.line_behind_text .line-behind-text {
+  text-align: center;
+  border-bottom: 1px solid gray; }
+.line_behind_text .line-behind-text p {
+  color: gray;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  top: 25px;
+  background: white;
+  padding: 0 10px; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://theleggett.com/explanations/strikethrough/" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example line_behind_text"><div class="line-behind-text">
+  <p>LINE BEHIND TEXT</p>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#line_behind_text_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="line_behind_text_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="line_behind_text_html">copy</button>
+                    </header>
+                    <code id="line_behind_text_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;line-behind-text&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>LINE BEHIND TEXT<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
                   </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="line_behind_text_css">copy</button>
+                    </header>
+                    <code id="line_behind_text_css">
+                      <div class="highlight"><pre><span class="nc">.line-behind-text</span> <span class="p">{</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+  <span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">gray</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.line-behind-text</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="m">800</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="line_behind_text_js">copy</button>
+                    </header>
+                    <code id="line_behind_text_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="elipsis_for_overflow">Elipsis for overflow</h3>
+            <style>.elipsis_for_overflow .box {
+  width: 200px;
+  background-color: gray; }
+.elipsis_for_overflow span {
+  color: white;
+  padding: 5px 8px;
+  display: block;
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://docs.tinyfactory.co/css/2012/08/11/text-overflow-ellipsis-using-CSS.html" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example elipsis_for_overflow"><div class="box">
+  <span>Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. Quidem 
+  facilis aspernatur harum eos beatae 
+  molestiae molestias vitae repudiandae 
+  praesentium itaque natus accusantium 
+  quia ipsam doloribus aut! Illum 
+  repudiandae inventore laboriosam
+  </span>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#elipsis_for_overflow_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="elipsis_for_overflow_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="elipsis_for_overflow_html">copy</button>
+                    </header>
+                    <code id="elipsis_for_overflow_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. Quidem 
+  facilis aspernatur harum eos beatae 
+  molestiae molestias vitae repudiandae 
+  praesentium itaque natus accusantium 
+  quia ipsam doloribus aut! Illum 
+  repudiandae inventore laboriosam
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="elipsis_for_overflow_css">copy</button>
+                    </header>
+                    <code id="elipsis_for_overflow_css">
+                      <div class="highlight"><pre><span class="err">$</span><span class="nt">box-width</span><span class="o">:</span> <span class="nt">200px</span><span class="o">;</span>
+
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="k">width</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">span</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="o">//</span> <span class="n">because</span> <span class="n">we</span><span class="err">&#39;</span><span class="n">re</span> <span class="n">using</span> <span class="n">a</span> <span class="n">span</span> <span class="n">class</span>
+  <span class="k">white-space</span><span class="o">:</span> <span class="k">nowrap</span><span class="p">;</span> <span class="o">//</span><span class="n">This</span> <span class="n">prevents</span> <span class="n">the</span> <span class="k">content</span> <span class="n">from</span> <span class="n">breaking</span> <span class="n">onto</span> <span class="n">another</span> <span class="n">line</span>
+  <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">box</span><span class="o">-</span><span class="k">width</span><span class="p">;</span> <span class="o">//</span> <span class="n">this</span> <span class="n">should</span> <span class="n">be</span> <span class="n">the</span> <span class="k">width</span> <span class="n">of</span> <span class="n">your</span> <span class="k">content</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="o">//</span> <span class="n">hides</span> <span class="n">the</span> <span class="k">text</span> <span class="n">that</span> <span class="n">is</span> <span class="k">outside</span> <span class="n">of</span> <span class="n">your</span> <span class="k">width</span>
+  <span class="k">text</span><span class="o">-</span><span class="k">overflow</span><span class="o">:</span> <span class="n">ellipsis</span><span class="p">;</span> <span class="o">//</span><span class="n">creates</span> <span class="n">our</span> <span class="n">ellipsis</span><span class="o">!</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="elipsis_for_overflow_js">copy</button>
+                    </header>
+                    <code id="elipsis_for_overflow_js">
+                      
+                    </code>
+                  </div> -->
 
                 </div>
               </div>
