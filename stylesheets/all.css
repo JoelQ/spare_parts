@@ -306,20 +306,20 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 36, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+/* line 37, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
 .accordion-heading, .accordion-inner, .item-container header .item-links a.external-link {
   background-color: #f7f7f7;
   box-shadow: inset 0 2px 2px #e6e6e6;
   text-shadow: 0 1px 0 white; }
-  /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+  /* line 42, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
   .accordion-heading a, .accordion-inner a, .item-container header .item-links a.external-link a {
     text-shadow: 0 1px 0 white;
     color: #cccccc; }
-    /* line 45, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+    /* line 46, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
     .accordion-heading a:hover, .accordion-inner a:hover, .item-container header .item-links a.external-link a:hover {
       text-shadow: 0 1px 0 white;
       color: #cccccc; }
-  /* line 51, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+  /* line 52, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
   .accordion-heading:hover, .accordion-inner:hover, .item-container header .item-links a.external-link:hover {
     background-color: #fafafa; }
 
@@ -471,8 +471,7 @@
 
 /* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 body {
-  background: white;
-  background: url(../images/back.png) repeat center center fixed;
+  background: #68b8b8;
   margin: 0; }
 
 /* line 7, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
@@ -510,8 +509,7 @@ body {
   background-size: cover;
   background-color: #2B3842;
   width: 100%;
-  height: 520px;
-  border-bottom: 1px solid #84909c; }
+  height: 520px; }
   /* line 34, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
   .hero i {
     display: block;
@@ -643,7 +641,7 @@ nav {
     .item-container header .item-links a.external-link {
       color: #cccccc;
       font-weight: 700;
-      border-right: 1px solid #84909c;
+      border-right: 1px solid #68b8b8;
       padding: 5px 34px 5px 12px;
       font-size: 10px;
       border-top-left-radius: 20px;

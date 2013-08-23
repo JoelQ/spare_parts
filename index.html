@@ -35,15 +35,25 @@
           
             <a href="#inset_for_type_icons">Inset for type icons</a>
           
+            <a href="#button">Button</a>
+          
+            <a href="#button_with_indication">Button with indication</a>
+          
             <a href="#rubber_button">Rubber Button</a>
           
-            <a href="#flat_button">Flat Button</a>
+            <a href="#simple_button">Simple Button</a>
           
             <a href="#border_detail">Border Detail</a>
           
             <a href="#drop_cap">Drop Cap</a>
           
             <a href="#tilted_box">Tilted box</a>
+          
+            <a href="#ribbon">Ribbon</a>
+          
+            <a href="#paper_curl_effect">Paper Curl effect</a>
+          
+            <a href="#stack_of_paper_effect">Stack of Paper Effect</a>
           
           </div>
         
@@ -521,6 +531,312 @@
       
         <div class="item-container">
           <header>
+            <h3 id="button">Button</h3>
+            <style>.button body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3; }
+.button .button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  padding: 0px;
+  clear: both;
+  float: none;
+  height: auto;
+  width: 150px;
+  border: 1px solid #CCC;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px #fff; }
+.button .button div {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #FFF;
+  background-color: #f3f3f3;
+  background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #d9d9d9 100%);
+  background-image: -moz-linear-gradient(top, #f3f3f3 0%, #d9d9d9 100%);
+  background-image: -o-linear-gradient(top, #f3f3f3 0%, #d9d9d9 100%);
+  background-image: linear-gradient(top, #f3f3f3 0%, #d9d9d9 100%);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0px 1px 0px #fff; }
+.button .button div:hover {
+  background-color: #E5E5E5;
+  background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #f3f3f3 50%, #f3f3f3 100%);
+  background-image: -moz-linear-gradient(top, #e5e5e5 0%, #f3f3f3 50%, #f3f3f3 100%);
+  background-image: -o-linear-gradient(top, #e5e5e5 0%, #f3f3f3 50%, #f3f3f3 100%);
+  background-image: linear-gradient(top, #e5e5e5 0%, #f3f3f3 50%, #f3f3f3 100%);
+  text-shadow: 0px 1px 0px #fff; }
+.button .button div:active {
+  background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #f3f3f3 70%, #ebebeb 100%);
+  background-image: -moz-linear-gradient(top, #e5e5e5 0%, #f3f3f3 70%, #ebebeb 100%);
+  background-image: -o-linear-gradient(top, #e5e5e5 0%, #f3f3f3 70%, #ebebeb 100%);
+  background-image: linear-gradient(top, #e5e5e5 0%, #f3f3f3 70%, #ebebeb 100%);
+  box-shadow: inset 0px 1px 15px #ccc; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.csspop.com/view/613" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example button"><div class="button">
+ <div>Button</div>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#button_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="button_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="button_html">copy</button>
+                    </header>
+                    <code id="button_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div&gt;</span>Button<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="button_css">copy</button>
+                    </header>
+                    <code id="button_css">
+                      <div class="highlight"><pre><span class="s-Atom">body</span> <span class="p">{</span>
+  <span class="s-Atom">font</span><span class="o">-</span><span class="nn">family</span><span class="p">:</span> <span class="nv">Arial</span><span class="p">,</span> <span class="nv">Helvetica</span><span class="p">,</span> <span class="s-Atom">sans</span><span class="o">-</span><span class="s-Atom">serif</span><span class="p">;</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">color</span><span class="p">:</span> <span class="s-Atom">#f3f3f3</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="s-Atom">button</span> <span class="p">{</span>
+  <span class="nn">cursor</span><span class="p">:</span> <span class="s-Atom">pointer</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">user</span><span class="o">-</span><span class="nn">select</span><span class="p">:</span> <span class="s-Atom">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">user</span><span class="o">-</span><span class="nn">select</span><span class="p">:</span> <span class="s-Atom">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">ms</span><span class="o">-</span><span class="s-Atom">user</span><span class="o">-</span><span class="nn">select</span><span class="p">:</span> <span class="s-Atom">none</span><span class="p">;</span>
+  <span class="nn">padding</span><span class="p">:</span> <span class="m">0</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="nn">clear</span><span class="p">:</span> <span class="s-Atom">both</span><span class="p">;</span>
+  <span class="nn">float</span><span class="p">:</span> <span class="s-Atom">none</span><span class="p">;</span>
+  <span class="nn">height</span><span class="p">:</span> <span class="s-Atom">auto</span><span class="p">;</span>
+  <span class="nn">width</span><span class="p">:</span> <span class="m">150</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="nn">border</span><span class="p">:</span> <span class="m">1</span><span class="s-Atom">px</span> <span class="s-Atom">solid</span> <span class="s-Atom">#</span><span class="nv">CCC</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">box</span><span class="o">-</span><span class="nn">shadow</span><span class="p">:</span><span class="m">0</span><span class="s-Atom">px</span> <span class="m">1</span><span class="s-Atom">px</span> <span class="m">0</span><span class="s-Atom">px</span> <span class="s-Atom">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="s-Atom">button</span> <span class="o">div</span> <span class="p">{</span>
+  <span class="nn">color</span><span class="p">:</span> <span class="s-Atom">#</span><span class="m">333</span><span class="p">;</span>
+  <span class="s-Atom">text</span><span class="o">-</span><span class="nn">decoration</span><span class="p">:</span> <span class="s-Atom">none</span><span class="p">;</span>
+  <span class="s-Atom">text</span><span class="o">-</span><span class="nn">align</span><span class="p">:</span> <span class="s-Atom">center</span><span class="p">;</span>
+  <span class="nn">display</span><span class="p">:</span> <span class="s-Atom">block</span><span class="p">;</span>
+  <span class="s-Atom">font</span><span class="o">-</span><span class="nn">size</span><span class="p">:</span> <span class="m">14</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">line</span><span class="o">-</span><span class="nn">height</span><span class="p">:</span> <span class="m">30</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">border</span><span class="o">-</span><span class="s-Atom">top</span><span class="o">-</span><span class="nn">width</span><span class="p">:</span> <span class="m">1</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">border</span><span class="o">-</span><span class="s-Atom">top</span><span class="o">-</span><span class="nn">style</span><span class="p">:</span> <span class="s-Atom">solid</span><span class="p">;</span>
+  <span class="s-Atom">border</span><span class="o">-</span><span class="s-Atom">top</span><span class="o">-</span><span class="nn">color</span><span class="p">:</span> <span class="s-Atom">#</span><span class="nv">FFF</span><span class="p">;</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">color</span><span class="p">:</span> <span class="s-Atom">#f3f3f3</span><span class="p">;</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#f3f3f3</span> <span class="m">0</span><span class="c1">%,#D9D9D9 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#f3f3f3</span> <span class="m">0</span><span class="c1">%,#D9D9D9 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">o</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#f3f3f3</span> <span class="m">0</span><span class="c1">%,#D9D9D9 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#f3f3f3</span> <span class="m">0</span><span class="c1">%,#D9D9D9 100%);</span>
+  <span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">border</span><span class="o">-</span><span class="nn">radius</span><span class="p">:</span> <span class="m">3</span><span class="s-Atom">px</span><span class="p">;</span>
+  <span class="s-Atom">text</span><span class="o">-</span><span class="nn">shadow</span><span class="p">:</span><span class="m">0</span><span class="s-Atom">px</span> <span class="m">1</span><span class="s-Atom">px</span> <span class="m">0</span><span class="s-Atom">px</span> <span class="s-Atom">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="s-Atom">button</span> <span class="o">div</span><span class="s-Atom">:hover</span> <span class="p">{</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">color</span><span class="p">:</span> <span class="s-Atom">#</span><span class="nv">E5E5E5</span><span class="p">;</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 50%,#f3f3f3 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 50%,#f3f3f3 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">o</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 50%,#f3f3f3 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 50%,#f3f3f3 100%);</span>
+  <span class="s-Atom">text</span><span class="o">-</span><span class="nn">shadow</span><span class="p">:</span><span class="m">0</span><span class="s-Atom">px</span> <span class="m">1</span><span class="s-Atom">px</span> <span class="m">0</span><span class="s-Atom">px</span> <span class="s-Atom">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="s-Atom">button</span> <span class="o">div</span><span class="s-Atom">:active</span> <span class="p">{</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">webkit</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 70%,#ebebeb 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">moz</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 70%,#ebebeb 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="o">-</span><span class="s-Atom">o</span><span class="o">-</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 70%,#ebebeb 100%);</span>
+  <span class="s-Atom">background</span><span class="o">-</span><span class="nn">image</span><span class="p">:</span><span class="s-Atom">linear</span><span class="o">-</span><span class="nf">gradient</span><span class="p">(</span><span class="s-Atom">top</span><span class="p">,</span><span class="s-Atom">#</span><span class="nv">E5E5E5</span> <span class="m">0</span><span class="c1">%,#f3f3f3 70%,#ebebeb 100%);</span>
+  <span class="s-Atom">box</span><span class="o">-</span><span class="nn">shadow</span><span class="p">:</span><span class="s-Atom">inset</span> <span class="m">0</span><span class="s-Atom">px</span> <span class="m">1</span><span class="s-Atom">px</span> <span class="m">15</span><span class="s-Atom">px</span> <span class="s-Atom">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="button_js">copy</button>
+                    </header>
+                    <code id="button_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="button_with_indication">Button with indication</h3>
+            <style>.button_with_indication button {
+  background: -moz-linear-gradient(top, white 0%, #cccccc 100%);
+  background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
+  background: linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #333;
+  font-size: 13px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 6px 13px;
+  position: relative;
+  text-shadow: #fff 0 1px 0;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+.button_with_indication button:hover {
+  border-color: #444;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 8px; }
+.button_with_indication button:before {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 7px;
+  height: 38px;
+  top: -3px;
+  left: 0; }
+.button_with_indication button.confirm {
+  padding-left: 18px; }
+.button_with_indication button.confirm:before {
+  background: #0ED6B6;
+  display: block; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.csspop.com/view/570" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example button_with_indication"><button class="confirm">
+  Confirm
+</button>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#button_with_indication_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="button_with_indication_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="button_with_indication_html">copy</button>
+                    </header>
+                    <code id="button_with_indication_html">
+                      <div class="highlight"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;confirm&quot;</span><span class="nt">&gt;</span>
+  Confirm
+<span class="nt">&lt;/button&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="button_with_indication_css">copy</button>
+                    </header>
+                    <code id="button_with_indication_css">
+                      <div class="highlight"><pre><span class="nt">button</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#fff</span> <span class="m">0</span><span class="o">%,</span> <span class="m">#ccc</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span>
+  <span class="k">background</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#fff</span> <span class="m">0</span><span class="o">%,</span> <span class="m">#ccc</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span>    
+  <span class="k">background</span><span class="o">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#fff</span> <span class="m">0</span><span class="o">%,</span> <span class="m">#ccc</span> <span class="m">100</span><span class="o">%</span><span class="p">);</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#666</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">6px</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">#fff</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">border-color</span><span class="o">:</span> <span class="m">#444</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">2</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">7px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">38px</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">-3px</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span><span class="nc">.confirm</span> <span class="p">{</span>
+  <span class="k">padding-left</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span><span class="nc">.confirm</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#0ED6B6</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>   
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="button_with_indication_js">copy</button>
+                    </header>
+                    <code id="button_with_indication_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
             <h3 id="rubber_button">Rubber Button</h3>
             <style>.rubber_button .btn {
   cursor: pointer;
@@ -531,11 +847,11 @@
   border: 3px solid #e3e3e3;
   color: gray;
   font-size: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   text-transform: uppercase;
   display: inline;
   font-weight: bold;
-  text-shadow: 0 1px 2px #c2c2c2;
+  text-shadow: 0 1px 2px gainsboro;
   border-radius: 5px;
   transition: all 0.03s linear;
   box-shadow: inset 0 1px 0 white, 0 1px 2px white, inset 0 -1px 1px #c2c2c2; }
@@ -584,29 +900,27 @@
   <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
   <span class="err">$</span><span class="n">highlight</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
   <span class="err">$</span><span class="n">shade</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">20</span><span class="p">);</span>
   <span class="k">background-color</span><span class="o">:</span> <span class="nb">whitesmoke</span><span class="p">;</span>
   <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">7</span><span class="p">);</span>
   <span class="k">color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
   <span class="k">font-size</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
   <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
   <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
-  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="err">$</span><span class="n">shade</span><span class="p">;</span>
+  <span class="k">text-shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">lighten</span><span class="p">(</span><span class="err">$</span><span class="n">shade</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span>
   <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
   <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.03s</span> <span class="n">linear</span><span class="p">;</span>
   <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>
     <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="o">//</span> <span class="k">top</span>
     <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="err">$</span><span class="n">highlight</span><span class="o">,</span> <span class="o">//</span> <span class="k">bottom</span>
     <span class="k">inset</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">1px</span> <span class="err">$</span><span class="n">shade</span><span class="p">;</span> <span class="o">//</span> <span class="k">bottom</span>
-
   <span class="o">&amp;:</span><span class="n">hover</span> <span class="err">{</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="n">lighten</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>
   <span class="p">}</span>
-
   <span class="o">&amp;</span><span class="nd">:active</span> <span class="p">{</span>
     <span class="k">background-color</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">whitesmoke</span><span class="o">,</span> <span class="m">3</span><span class="p">);</span>
     <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>
@@ -638,10 +952,10 @@
       
         <div class="item-container">
           <header>
-            <h3 id="flat_button">Flat Button</h3>
-            <style>.flat_button .btn {
+            <h3 id="simple_button">Simple Button</h3>
+            <style>.simple_button .btn {
   display: inline-block;
-  padding: 13px;
+  padding: 13px 25px;
   margin-bottom: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -659,13 +973,13 @@
   border-radius: 3px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   color: white; }
-  .flat_button .btn:hover {
+  .simple_button .btn:hover {
     color: white;
     text-decoration: none;
     background-color: #9a9a9a;
     *background-color: #5a5a5a;
     background-position: 0 -15px; }
-  .flat_button .btn.active, .flat_button .btn:active {
+  .simple_button .btn.active, .simple_button .btn:active {
     background-color: #676767;
     background-color: #5a5a5a \9;
     background-image: none;
@@ -678,25 +992,25 @@
               
             </div>
           </header>
-          <div class="example flat_button"><div class="btn">Flat Button</div>
+          <div class="example simple_button"><div class="btn">Simple Button</div>
 </div>
           <div class="accordion" id="accordion1">
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#flat_button_accordion">
+                <a class="accordion-toggle" data-toggle="collapse" href="#simple_button_accordion">
                   <small>Code <i class="icon-right-circled"></i></small>
                 </a>
               </div>
-              <div id="flat_button_accordion" class="accordion-body collapse">
+              <div id="simple_button_accordion" class="accordion-body collapse">
                 <div class="accordion-inner">
 
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
-                      <button class="copy" data-clipboard-target="flat_button_html">copy</button>
+                      <button class="copy" data-clipboard-target="simple_button_html">copy</button>
                     </header>
-                    <code id="flat_button_html">
-                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span><span class="nt">&gt;</span>Flat Button<span class="nt">&lt;/div&gt;</span>
+                    <code id="simple_button_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span><span class="nt">&gt;</span>Simple Button<span class="nt">&lt;/div&gt;</span>
 </pre></div>
                     </code>
                   </div>
@@ -704,12 +1018,12 @@
                   <div class="code-section css">
                     <header>
                       <h4>CSS</h4>
-                      <button class="copy" data-clipboard-target="flat_button_css">copy</button>
+                      <button class="copy" data-clipboard-target="simple_button_css">copy</button>
                     </header>
-                    <code id="flat_button_css">
+                    <code id="simple_button_css">
                       <div class="highlight"><pre><span class="nc">.btn</span> <span class="p">{</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">13px</span> <span class="m">25px</span><span class="p">;</span>
   <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
@@ -752,9 +1066,9 @@
                   <!--<div class="code-section js">
                     <header>
                       <h4>JS</h4>
-                      <button class="copy" data-clipboard-target="flat_button_js">copy</button>
+                      <button class="copy" data-clipboard-target="simple_button_js">copy</button>
                     </header>
-                    <code id="flat_button_js">
+                    <code id="simple_button_js">
                       
                     </code>
                   </div> -->
@@ -1036,6 +1350,411 @@
                       <button class="copy" data-clipboard-target="tilted_box_js">copy</button>
                     </header>
                     <code id="tilted_box_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="ribbon">Ribbon</h3>
+            <style>.ribbon .wrapper {
+  width: 280px;
+  height: 100px;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 90; }
+.ribbon .ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -1px; }
+.ribbon .ribbon-green {
+  font: bold 15px Sans-Serif;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bfdc7a), to(#8ebf45));
+  background-image: -webkit-linear-gradient(top, #bfdc7a, #8ebf45);
+  background-image: -moz-linear-gradient(top, #bfdc7a, #8ebf45);
+  background-image: -ms-linear-gradient(top, #bfdc7a, #8ebf45);
+  background-image: -o-linear-gradient(top, #bfdc7a, #8ebf45);
+  color: white;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.csspop.com/view/530" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example ribbon"><div class="wrapper">
+  <div class="ribbon-wrapper-green"><div class="ribbon-green">NEWS</div></div>
+</div>​
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#ribbon_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="ribbon_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="ribbon_html">copy</button>
+                    </header>
+                    <code id="ribbon_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wrapper&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon-wrapper-green&quot;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon-green&quot;</span><span class="nt">&gt;</span>NEWS<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>​
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="ribbon_css">copy</button>
+                    </header>
+                    <code id="ribbon_css">
+                      <div class="highlight"><pre><span class="nc">.wrapper</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">280px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>    <span class="m">0px</span> <span class="m">0px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>         <span class="m">0px</span> <span class="m">0px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">90</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.ribbon-wrapper-green</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">85px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">88px</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.ribbon-green</span> <span class="p">{</span>
+  <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">15px</span> <span class="n">Sans</span><span class="o">-</span><span class="n">Serif</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span>    <span class="n">rotate</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span>     <span class="n">rotate</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span>      <span class="n">rotate</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="p">);</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">7px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">-5px</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#BFDC7A</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="o">,</span> <span class="k">left</span> <span class="k">top</span><span class="o">,</span> <span class="k">left</span> <span class="k">bottom</span><span class="o">,</span> <span class="n">from</span><span class="p">(</span><span class="m">#BFDC7A</span><span class="p">)</span><span class="o">,</span> <span class="n">to</span><span class="p">(</span><span class="m">#8EBF45</span><span class="p">));</span> 
+  <span class="k">background-image</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
+  <span class="k">background-image</span><span class="o">:</span>    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
+  <span class="k">background-image</span><span class="o">:</span>     <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
+  <span class="k">background-image</span><span class="o">:</span>      <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>    <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>         <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="ribbon_js">copy</button>
+                    </header>
+                    <code id="ribbon_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="paper_curl_effect">Paper Curl effect</h3>
+            <style>.paper_curl_effect ul.box {
+  position: relative;
+  z-index: 1;
+  /* prevent shadows falling behind containers with backgrounds */
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.paper_curl_effect ul.box li {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 100px;
+  padding: 0;
+  border: 1px solid #efefef;
+  margin: 0 30px 30px 0;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; }
+.paper_curl_effect ul.box li:before,
+.paper_curl_effect ul.box li:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 70%;
+  max-width: 300px;
+  /* avoid rotation causing ugly appearance at large container widths */
+  max-height: 100px;
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-15deg) rotate(-6deg);
+  -moz-transform: skew(-15deg) rotate(-6deg);
+  -ms-transform: skew(-15deg) rotate(-6deg);
+  -o-transform: skew(-15deg) rotate(-6deg);
+  transform: skew(-15deg) rotate(-6deg); }
+.paper_curl_effect ul.box li:after {
+  left: auto;
+  right: 10px;
+  -webkit-transform: skew(15deg) rotate(6deg);
+  -moz-transform: skew(15deg) rotate(6deg);
+  -ms-transform: skew(15deg) rotate(6deg);
+  -o-transform: skew(15deg) rotate(6deg);
+  transform: skew(15deg) rotate(6deg); }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.csspop.com/view/524" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example paper_curl_effect"><ul class="box">
+  <li></li>
+</ul>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#paper_curl_effect_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="paper_curl_effect_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="paper_curl_effect_html">copy</button>
+                    </header>
+                    <code id="paper_curl_effect_html">
+                      <div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="paper_curl_effect_css">copy</button>
+                    </header>
+                    <code id="paper_curl_effect_css">
+                      <div class="highlight"><pre><span class="nt">ul</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span> <span class="c">/* prevent shadows falling behind containers with backgrounds */</span>
+  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+  <span class="k">list-style</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.box</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">250px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#efefef</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">30px</span> <span class="m">30px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">27</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">40px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">06</span><span class="p">)</span> <span class="k">inset</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">27</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">40px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">06</span><span class="p">)</span> <span class="k">inset</span><span class="p">;</span> 
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">27</span><span class="p">)</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span> <span class="m">40px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">06</span><span class="p">)</span> <span class="k">inset</span><span class="p">;</span> 
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.box</span> <span class="nt">li</span><span class="nd">:before</span><span class="o">,</span>
+<span class="nt">ul</span><span class="nc">.box</span> <span class="nt">li</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">-1</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">70</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">max-width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span> <span class="c">/* avoid rotation causing ugly appearance at large container widths */</span>
+  <span class="k">max-height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">55</span><span class="o">%</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">16px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">16px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">8px</span> <span class="m">16px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">-15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">-15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">-15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">-15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">-15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-6</span><span class="n">deg</span><span class="p">);</span> 
+<span class="p">}</span>
+<span class="nt">ul</span><span class="nc">.box</span> <span class="nt">li</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">left</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">6</span><span class="n">deg</span><span class="p">);</span>
+  <span class="n">transform</span><span class="o">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">15</span><span class="n">deg</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">6</span><span class="n">deg</span><span class="p">);</span> 
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="paper_curl_effect_js">copy</button>
+                    </header>
+                    <code id="paper_curl_effect_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="stack_of_paper_effect">Stack of Paper Effect</h3>
+            <style>.stack_of_paper_effect body {
+  padding: 1em;
+  background: #eee; }
+.stack_of_paper_effect .layers {
+  text-align: center;
+  padding: 1.618em;
+  font-weight: bold;
+  width: 250px;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 10px 0 -5px white, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px white, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  /* The third layer shadow */ }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.csspop.com/view/555" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example stack_of_paper_effect"><div class="layers"></div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#stack_of_paper_effect_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="stack_of_paper_effect_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="stack_of_paper_effect_html">copy</button>
+                    </header>
+                    <code id="stack_of_paper_effect_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layers&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="stack_of_paper_effect_css">copy</button>
+                    </header>
+                    <code id="stack_of_paper_effect_css">
+                      <div class="highlight"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.layers</span> <span class="p">{</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">1.618em</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">250px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fdfdfd</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>
+      <span class="m">0</span> <span class="m">1px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">25</span><span class="p">)</span><span class="o">,</span> <span class="c">/* The top layer shadow */</span>
+      <span class="m">0</span> <span class="m">10px</span> <span class="m">0</span> <span class="m">-5px</span> <span class="m">#fff</span><span class="o">,</span> <span class="c">/* The second layer */</span>
+      <span class="m">0</span> <span class="m">10px</span> <span class="m">1px</span> <span class="m">-4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">15</span><span class="p">)</span><span class="o">,</span> <span class="c">/* The second layer shadow */</span>
+      <span class="m">0</span> <span class="m">20px</span> <span class="m">0</span> <span class="m">-10px</span> <span class="m">#fff</span><span class="o">,</span> <span class="c">/* The third layer */</span>
+      <span class="m">0</span> <span class="m">20px</span> <span class="m">1px</span> <span class="m">-9px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">15</span><span class="p">);</span> <span class="c">/* The third layer shadow */</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="stack_of_paper_effect_js">copy</button>
+                    </header>
+                    <code id="stack_of_paper_effect_js">
                       
                     </code>
                   </div> -->
