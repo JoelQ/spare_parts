@@ -3208,8 +3208,7 @@
               
             </div>
           </header>
-          <div class="example toggle_class"><input type="button" 
- value="Click to toggle class "addition" to text below"></input>
+          <div class="example toggle_class"><div class="toggle-class">Click here to toggle class "addition" to text below</div>
 <p>Toggle class "addition" 
  here by clicking button</p>
 </div>
@@ -3229,8 +3228,7 @@
                       <button class="copy" data-clipboard-target="toggle_class_html">copy</button>
                     </header>
                     <code id="toggle_class_html">
-                      <div class="highlight"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> 
- <span class="na">value=</span><span class="s">&quot;Click to toggle class &quot;</span><span class="err">addition&quot;</span> <span class="err">to</span> <span class="err">text</span> <span class="err">below&quot;</span><span class="nt">&gt;&lt;/input&gt;</span>
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;toggle-class&quot;</span><span class="nt">&gt;</span>Click here to toggle class &quot;addition&quot; to text below<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;p&gt;</span>Toggle class &quot;addition&quot; 
  here by clicking button<span class="nt">&lt;/p&gt;</span>
 </pre></div>
@@ -3260,7 +3258,7 @@
                       <div class="highlight"><pre><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span>
   $(document).ready(function() {
-    $(&quot;input&quot;).click(function() {
+    $(&quot;.toggle-class&quot;).click(function() {
       $(&quot;p&quot;).toggleClass(&quot;addition&quot;);
     });
   });
@@ -3276,7 +3274,7 @@
             <script><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script>
   $(document).ready(function() {
-    $("input").click(function() {
+    $(".toggle-class").click(function() {
       $("p").toggleClass("addition");
     });
   });
