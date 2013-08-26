@@ -62,6 +62,8 @@
           
             <a href="#avatar_and_comment">Avatar and Comment</a>
           
+            <a href="#tabs">Tabs</a>
+          
             <a href="#center_vertically_and_horizontally">Center vertically and horizontally</a>
           
             <a href="#navigation">Navigation</a>
@@ -1875,6 +1877,213 @@
                       <button class="copy" data-clipboard-target="avatar_and_comment_js">copy</button>
                     </header>
                     <code id="avatar_and_comment_js">
+                      
+                    </code>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+            <script></script>
+          </div>
+        </div>
+      
+        <div class="item-container">
+          <header>
+            <h3 id="tabs">Tabs</h3>
+            <style>.tabs .tab-switcher {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 14px; }
+.tabs .tab {
+  float: left; }
+.tabs .tab-switcher label {
+  padding: 14px;
+  border-radius: 3px 3px 0 0;
+  background: #676767;
+  display: block;
+  color: white;
+  margin-left: -1px;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  transition: all .4s linear; }
+.tabs .tab-switcher label:hover {
+  cursor: pointer; }
+.tabs .tab-content {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  padding: 20px;
+  background: gray;
+  width: 100%;
+  border-top: none;
+  margin-left: -1px;
+  z-index: 1;
+  opacity: 0; }
+  .tabs .tab-content p {
+    color: white;
+    font-size: 13px; }
+.tabs .tab-switcher input[type=radio] {
+  display: none; }
+.tabs .tab-switcher input[type=radio]:checked ~ .tab-content {
+  z-index: 10;
+  opacity: 1;
+  background: gray;
+  color: white;
+  border: none; }
+.tabs .tab-switcher input[type=radio]:checked ~ label {
+  background: gray;
+  color: white;
+  border: none; }
+</style>
+            <div class="item-links">
+              
+              
+              
+                <a href="http://www.adobe.com/devnet/html5/articles/using-form-elements-and-css3-to-replace-javascript.html?utm_source=html5weekly&utm_medium=email" class="external-link">Code Origin</a>
+              
+            </div>
+          </header>
+          <div class="example tabs"><div class="tab-switcher">
+  <section class="tab">
+    <input type="radio" id="tab-one" name="tab-set" checked>
+    <label for="tab-one" onclick="">Tab 1</label>
+    <div class="tab-content">
+      <p>First tab content goes here.</p>
+    </div>
+  </section>
+  <section class="tab">
+    <input type="radio" id="tab-two" name="tab-set">
+    <label for="tab-two" onclick="">Tab 2</label>
+    <div class="tab-content">
+      <p>This is another tab, specifically number 2.</p>
+    </div>
+ </section>
+ <section class="tab">
+    <input type="radio" id="tab-three" name="tab-set">
+    <label for="tab-three" onclick="">Tab 3</label>
+    <div class="tab-content">
+      <p>Here's three.</p>
+    </div>
+ </section>
+</div>
+</div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#tabs_accordion">
+                  <small>Code <i class="icon-right-circled"></i></small>
+                </a>
+              </div>
+              <div id="tabs_accordion" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="tabs_html">copy</button>
+                    </header>
+                    <code id="tabs_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-switcher&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-one&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span> <span class="err">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-one&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>First tab content goes here.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-two&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-two&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This is another tab, specifically number 2.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/section&gt;</span>
+ <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-three&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-three&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Here&#39;s three.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="tabs_css">copy</button>
+                    </header>
+                    <code id="tabs_css">
+                      <div class="highlight"><pre><span class="nc">.tab-switcher</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab-switcher</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab-switcher</span> <span class="nt">label</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab-content</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="n">p</span> <span class="err">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nc">.tab-content</span> <span class="p">{</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <!--<div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="tabs_js">copy</button>
+                    </header>
+                    <code id="tabs_js">
                       
                     </code>
                   </div> -->

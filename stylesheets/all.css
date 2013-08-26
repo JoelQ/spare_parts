@@ -677,7 +677,19 @@ nav {
 /* line 222, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .example {
   padding: 15px 0;
-  margin: 15px 0; }
+  margin: 15px 0;
+  *zoom: 1; }
+  /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .example:before, .example:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .example:after {
+    clear: both; }
+
+/* line 228, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+.tabs {
+  min-height: 155px; }
 
 /* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 body {
