@@ -62,8 +62,6 @@
           
             <a href="#avatar_and_comment">Avatar and Comment</a>
           
-            <a href="#tabs">Tabs</a>
-          
             <a href="#center_vertically_and_horizontally">Center vertically and horizontally</a>
           
             <a href="#navigation">Navigation</a>
@@ -83,6 +81,8 @@
           
             <a href="#ellipsis_for_overflow">Ellipsis for overflow</a>
           
+            <a href="#form">Form</a>
+          
             <a href="#toggle_class">Toggle Class</a>
           
           </div>
@@ -90,16 +90,17 @@
       </nav>
       <div class="main-content-container">
 
+
+
   
 
-    <h2>Styles</h2>
+    
 
-    <div class="items">
+    
       
-        <div class="item-container">
-          <header>
-            <h3 id="light_from_above_for_type_icons">Light from above for type icons</h3>
-            <style>.light_from_above_for_type_icons .circle {
+      <div class="items" id="Styles-items">
+        <div class="item-container light_from_above_for_type_icons-item">
+          <style>.light_from_above_for_type_icons .circle {
   background-color: #444;
   padding: 5px;
   border-radius: 40px;
@@ -117,28 +118,45 @@
     margin: 0;
     line-height: 60px; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example light_from_above_for_type_icons">
+            <div class="circle">
+  <div class="style-light-from-above">
+    <p>&#9733;</p>
+  </div>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#light_from_above_for_type_icons_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="light_from_above_for_type_icons">Light from above for type icons</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example light_from_above_for_type_icons"><div class="circle">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="light_from_above_for_type_icons_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example light_from_above_for_type_icons"><div class="circle">
   <div class="style-light-from-above">
     <p>&#9733;</p>
   </div>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#light_from_above_for_type_icons_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="light_from_above_for_type_icons_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -203,18 +221,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="shadowed_png">Shadowed png</h3>
-            <style>.shadowed_png .shadowed {
+      <div class="items" id="Styles-items">
+        <div class="item-container shadowed_png-item">
+          <style>.shadowed_png .shadowed {
   -webkit-filter: drop-shadow(0px 0px 5px rgba(128, 128, 128, 0.9));
   filter: url(shadow.svg#drop-shadow);
   -ms-filter: "progid:DXImageTransform.Microsoft.
@@ -222,37 +240,40 @@
   filter: "progid:DXImageTransform.Microsoft.
     Dropshadow(OffX=12, OffY=12, 
   Color='$shadow-color')"; }
-.shadowed_png .style-light-from-above {
-  text-shadow: 0 1px 2px rgba(255, 165, 0, 0.5);
-  color: #faa200;
-  background: -webkit-linear-gradient(white, #faa200);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-  .shadowed_png .style-light-from-above p {
-    font-size: 60px;
-    margin: 0;
-    line-height: 60px; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://snipplr.com/view/70539/transparent-png-drop-shadow/" class="external-link">Code Origin</a>
-              
-            </div>
-          </header>
-          <div class="example shadowed_png"><img class="shadowed" src="images/shadow-img.png" alt="">
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#shadowed_png_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="shadowed_png_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example shadowed_png">
+            <img class="shadowed" src="images/shadow-img.png" alt="">
 
+          </div>
+          
+          <a data-toggle="modal" href="#shadowed_png_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="shadowed_png">Shadowed png</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://snipplr.com/view/70539/transparent-png-drop-shadow/" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="shadowed_png_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example shadowed_png"><img class="shadowed" src="images/shadow-img.png" alt="">
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -284,28 +305,6 @@
     <span class="n">Dropshadow</span><span class="p">(</span><span class="n">OffX</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">OffY</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> 
   <span class="n">Color</span><span class="o">=</span><span class="err">&#39;$</span><span class="n">shadow</span><span class="o">-</span><span class="n">color</span><span class="err">&#39;</span><span class="p">)</span><span class="s">&quot;;</span>
 <span class="p">}</span>
-
-<span class="err">@</span><span class="n">mixin</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span> <span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nl">color:</span> <span class="err">$</span><span class="n">bottom</span><span class="p">;</span>
-  <span class="nl">background:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="err">$</span><span class="n">top</span><span class="p">,</span> <span class="err">$</span><span class="n">bottom</span><span class="p">);</span>
-  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">clip</span><span class="o">:</span> <span class="n">text</span><span class="p">;</span>
-  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">fill</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">transparent</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="err">@</span><span class="n">mixin</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">text</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="n">px</span> <span class="err">$</span><span class="n">edge</span><span class="o">-</span><span class="n">sharpness</span> <span class="n">transparentize</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">transparentize</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="p">.</span><span class="n">style</span><span class="o">-</span><span class="n">light</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">above</span> <span class="p">{</span>
-  <span class="err">@</span><span class="n">include</span> <span class="n">blend</span><span class="o">-</span><span class="n">layer</span><span class="p">(</span><span class="n">orange</span><span class="p">,</span> <span class="mi">2</span><span class="n">px</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
-  <span class="err">@</span><span class="n">include</span> <span class="n">text</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">white</span><span class="p">,</span> <span class="n">darken</span><span class="p">(</span><span class="n">orange</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
-
-  <span class="n">p</span> <span class="p">{</span>
-    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
-    <span class="nl">margin:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="o">:</span> <span class="mi">60</span><span class="n">px</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
 </pre></div>
                     </code>
                   </div>
@@ -319,18 +318,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="gloss">Gloss</h3>
-            <style>.gloss .style-gloss {
+      <div class="items" id="Styles-items">
+        <div class="item-container gloss-item">
+          <style>.gloss .style-gloss {
   color: #7d7de8;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8a8f0), color-stop(50%, #9393ec), color-stop(51%, #7d7de8), color-stop(100%, #a8a8f0));
   -webkit-background-clip: text;
@@ -342,26 +341,41 @@
     margin: 0;
     line-height: 60px; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example gloss">
+            <div class="style-gloss">
+  <p>&#9733;</p>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#gloss_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="gloss">Gloss</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example gloss"><div class="style-gloss">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="gloss_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example gloss"><div class="style-gloss">
   <p>&#9733;</p>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#gloss_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="gloss_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -422,18 +436,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="inset_for_type_icons">Inset for type icons</h3>
-            <style>.inset_for_type_icons .style-inset {
+      <div class="items" id="Styles-items">
+        <div class="item-container inset_for_type_icons-item">
+          <style>.inset_for_type_icons .style-inset {
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
   color: #999999;
   background: -webkit-linear-gradient(gray, #999999);
@@ -446,26 +460,41 @@
     margin: 0;
     line-height: 60px; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example inset_for_type_icons">
+            <div class="style-inset">
+  <p>&#9733;</p>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#inset_for_type_icons_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="inset_for_type_icons">Inset for type icons</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example inset_for_type_icons"><div class="style-inset">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="inset_for_type_icons_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example inset_for_type_icons"><div class="style-inset">
   <p>&#9733;</p>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#inset_for_type_icons_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="inset_for_type_icons_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -525,18 +554,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="button">Button</h3>
-            <style>.button body {
+      <div class="items" id="Styles-items">
+        <div class="item-container button-item">
+          <style>.button body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f3f3f3; }
 .button .button {
@@ -587,28 +616,43 @@
   background-image: linear-gradient(top, #e5e5e5 0%, #f3f3f3 70%, #ebebeb 100%);
   box-shadow: inset 0px 1px 15px #ccc; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.csspop.com/view/613" class="external-link">Code Origin</a>
-              
+            
+          <div class="example button">
+            <div class="button">
+ <div>Button</div>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#button_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="button">Button</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example button"><div class="button">
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://www.csspop.com/view/613" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="button_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example button"><div class="button">
  <div>Button</div>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#button_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="button_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -696,18 +740,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="button_with_indication">Button with indication</h3>
-            <style>.button_with_indication button {
+      <div class="items" id="Styles-items">
+        <div class="item-container button_with_indication-item">
+          <style>.button_with_indication button {
   background: -moz-linear-gradient(top, white 0%, #cccccc 100%);
   background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
   background: linear-gradient(top, #ffffff 0%, #cccccc 100%);
@@ -740,28 +784,43 @@
   background: #0ED6B6;
   display: block; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.csspop.com/view/570" class="external-link">Code Origin</a>
-              
+            
+          <div class="example button_with_indication">
+            <button class="confirm">
+  Confirm
+</button>
+
+          </div>
+          
+          <a data-toggle="modal" href="#button_with_indication_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="button_with_indication">Button with indication</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example button_with_indication"><button class="confirm">
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://www.csspop.com/view/570" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="button_with_indication_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example button_with_indication"><button class="confirm">
   Confirm
 </button>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#button_with_indication_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="button_with_indication_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -831,18 +890,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="rubber_button">Rubber Button</h3>
-            <style>.rubber_button .btn {
+      <div class="items" id="Styles-items">
+        <div class="item-container rubber_button-item">
+          <style>.rubber_button .btn {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -865,24 +924,37 @@
     background-color: #ededed;
     box-shadow: inset 0 1px 0 #c2c2c2, 0 1px 2px white, inset 0 -1px 0 #e6e6e6; }
 </style>
-            <div class="item-links">
-              
-              
-              
-            </div>
-          </header>
-          <div class="example rubber_button"><div class="btn">Rubber button</div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#rubber_button_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="rubber_button_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example rubber_button">
+            <div class="btn">Rubber button</div>
 
+          </div>
+          
+          <a data-toggle="modal" href="#rubber_button_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="rubber_button">Rubber Button</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="rubber_button_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example rubber_button"><div class="btn">Rubber button</div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -946,18 +1018,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="simple_button">Simple Button</h3>
-            <style>.simple_button .btn {
+      <div class="items" id="Styles-items">
+        <div class="item-container simple_button-item">
+          <style>.simple_button .btn {
   display: inline-block;
   padding: 13px 25px;
   margin-bottom: 0;
@@ -990,24 +1062,37 @@
     outline: 0;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
 </style>
-            <div class="item-links">
-              
-              
-              
-            </div>
-          </header>
-          <div class="example simple_button"><div class="btn">Simple Button</div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#simple_button_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="simple_button_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example simple_button">
+            <div class="btn">Simple Button</div>
 
+          </div>
+          
+          <a data-toggle="modal" href="#simple_button_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="simple_button">Simple Button</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="simple_button_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example simple_button"><div class="btn">Simple Button</div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1076,42 +1161,55 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="border_detail">Border Detail</h3>
-            <style>.border_detail .box {
+      <div class="items" id="Styles-items">
+        <div class="item-container border_detail-item">
+          <style>.border_detail .box {
   height: 30px;
   width: 90px;
   background-color: #C0C0C0;
   border: 1px solid #838383;
   box-shadow: 0 1px 2px #A7A7A7, inset 0 0 2px white; }
 </style>
-            <div class="item-links">
-              
-              
-              
-            </div>
-          </header>
-          <div class="example border_detail"><div class="box"></div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#border_detail_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="border_detail_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example border_detail">
+            <div class="box"></div>
 
+          </div>
+          
+          <a data-toggle="modal" href="#border_detail_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="border_detail">Border Detail</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="border_detail_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example border_detail"><div class="box"></div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1149,18 +1247,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="drop_cap">Drop Cap</h3>
-            <style>.drop_cap p {
+      <div class="items" id="Styles-items">
+        <div class="item-container drop_cap-item">
+          <style>.drop_cap p {
   width: 390px;
   color: gray;
   font-size: 13px; }
@@ -1175,15 +1273,44 @@
   font-family: Georgia;
   font-weight: bold; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://snipplr.com/view/66684/css--add-a-drop-cap/" class="external-link">Code Origin</a>
-              
+            
+          <div class="example drop_cap">
+            <p>Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi asperiores odit! 
+  ipsum dolor sit amet, 
+  consectetur adipisicing elit. 
+  Pariatur eos dignissimos nihil 
+  esse tenetur modi. 
+</p>
+
+          </div>
+          
+          <a data-toggle="modal" href="#drop_cap_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="drop_cap">Drop Cap</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example drop_cap"><p>Lorem ipsum dolor sit amet, 
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://snipplr.com/view/66684/css--add-a-drop-cap/" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="drop_cap_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example drop_cap"><p>Lorem ipsum dolor sit amet, 
   consectetur adipisicing elit. 
   Pariatur eos dignissimos nihil 
   esse tenetur modi asperiores odit! 
@@ -1193,16 +1320,8 @@
   esse tenetur modi. 
 </p>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#drop_cap_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="drop_cap_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1257,18 +1376,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="tilted_box">Tilted box</h3>
-            <style>.tilted_box .box {
+      <div class="items" id="Styles-items">
+        <div class="item-container tilted_box-item">
+          <style>.tilted_box .box {
   display: inline-block;
   -webkit-transform: skew(-20deg, 0deg);
   -moz-transform: skew(-20deg, 0deg);
@@ -1284,28 +1403,41 @@
     -o-transform: skew(20deg, 0deg);
     transform: skew(20deg, 0deg); }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://snipplr.com/view/66684/css--add-a-drop-cap/" class="external-link">Code Origin</a>
-              
+            
+          <div class="example tilted_box">
+            <div class="box">
+  <p>Tilted Text Box</p>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#tilted_box_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="tilted_box">Tilted box</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example tilted_box"><div class="box">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="tilted_box_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example tilted_box"><div class="box">
   <p>Tilted Text Box</p>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#tilted_box_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="tilted_box_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1357,18 +1489,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="ribbon">Ribbon</h3>
-            <style>.ribbon .wrapper {
+      <div class="items" id="Styles-items">
+        <div class="item-container ribbon-item">
+          <style>.ribbon .wrapper {
   width: 280px;
   height: 100px;
   background: white;
@@ -1378,14 +1510,14 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 90; }
-.ribbon .ribbon-wrapper-green {
+.ribbon .ribbon-wrapper {
   width: 85px;
   height: 88px;
   overflow: hidden;
   position: absolute;
   top: -1px;
   right: -1px; }
-.ribbon .ribbon-green {
+.ribbon .ribbon {
   font: bold 15px Sans-Serif;
   text-align: center;
   -webkit-transform: rotate(45deg);
@@ -1397,39 +1529,49 @@
   left: -5px;
   top: 15px;
   width: 120px;
-  background-color: #BFDC7A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bfdc7a), to(#8ebf45));
-  background-image: -webkit-linear-gradient(top, #bfdc7a, #8ebf45);
-  background-image: -moz-linear-gradient(top, #bfdc7a, #8ebf45);
-  background-image: -ms-linear-gradient(top, #bfdc7a, #8ebf45);
-  background-image: -o-linear-gradient(top, #bfdc7a, #8ebf45);
+  background-color: gray;
   color: white;
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.csspop.com/view/530" class="external-link">Code Origin</a>
-              
+            
+          <div class="example ribbon">
+            <div class="wrapper">
+  <div class="ribbon-wrapper"><div class="ribbon">NEWS</div></div>
+</div>​
+
+          </div>
+          
+          <a data-toggle="modal" href="#ribbon_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="ribbon">Ribbon</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example ribbon"><div class="wrapper">
-  <div class="ribbon-wrapper-green"><div class="ribbon-green">NEWS</div></div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://www.csspop.com/view/530" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="ribbon_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example ribbon"><div class="wrapper">
+  <div class="ribbon-wrapper"><div class="ribbon">NEWS</div></div>
 </div>​
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#ribbon_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="ribbon_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1437,7 +1579,7 @@
                     </header>
                     <code id="ribbon_html">
                       <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;wrapper&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon-wrapper-green&quot;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon-green&quot;</span><span class="nt">&gt;</span>NEWS<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon-wrapper&quot;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;ribbon&quot;</span><span class="nt">&gt;</span>NEWS<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>​
 </pre></div>
                     </code>
@@ -1461,7 +1603,7 @@
   <span class="k">z-index</span><span class="o">:</span> <span class="m">90</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nc">.ribbon-wrapper-green</span> <span class="p">{</span>
+<span class="nc">.ribbon-wrapper</span> <span class="p">{</span>
   <span class="k">width</span><span class="o">:</span> <span class="m">85px</span><span class="p">;</span>
   <span class="k">height</span><span class="o">:</span> <span class="m">88px</span><span class="p">;</span>
   <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
@@ -1470,7 +1612,7 @@
   <span class="k">right</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nc">.ribbon-green</span> <span class="p">{</span>
+<span class="nc">.ribbon</span> <span class="p">{</span>
   <span class="k">font</span><span class="o">:</span> <span class="k">bold</span> <span class="m">15px</span> <span class="n">Sans</span><span class="o">-</span><span class="n">Serif</span><span class="p">;</span>
   <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45</span><span class="n">deg</span><span class="p">);</span>
@@ -1482,12 +1624,7 @@
   <span class="k">left</span><span class="o">:</span> <span class="m">-5px</span><span class="p">;</span>
   <span class="k">top</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
   <span class="k">width</span><span class="o">:</span> <span class="m">120px</span><span class="p">;</span>
-  <span class="k">background-color</span><span class="o">:</span> <span class="m">#BFDC7A</span><span class="p">;</span>
-  <span class="k">background-image</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">linear</span><span class="o">,</span> <span class="k">left</span> <span class="k">top</span><span class="o">,</span> <span class="k">left</span> <span class="k">bottom</span><span class="o">,</span> <span class="n">from</span><span class="p">(</span><span class="m">#BFDC7A</span><span class="p">)</span><span class="o">,</span> <span class="n">to</span><span class="p">(</span><span class="m">#8EBF45</span><span class="p">));</span> 
-  <span class="k">background-image</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
-  <span class="k">background-image</span><span class="o">:</span>    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
-  <span class="k">background-image</span><span class="o">:</span>     <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
-  <span class="k">background-image</span><span class="o">:</span>      <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="k">top</span><span class="o">,</span> <span class="m">#BFDC7A</span><span class="o">,</span> <span class="m">#8EBF45</span><span class="p">);</span> 
+  <span class="k">background-color</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
   <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
   <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
   <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span>    <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">);</span>
@@ -1506,18 +1643,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="paper_curl_effect">Paper Curl effect</h3>
-            <style>.paper_curl_effect ul.box {
+      <div class="items" id="Styles-items">
+        <div class="item-container paper_curl_effect-item">
+          <style>.paper_curl_effect ul.box {
   position: relative;
   z-index: 1;
   /* prevent shadows falling behind containers with backgrounds */
@@ -1566,28 +1703,43 @@
   -o-transform: skew(15deg) rotate(6deg);
   transform: skew(15deg) rotate(6deg); }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.csspop.com/view/524" class="external-link">Code Origin</a>
-              
+            
+          <div class="example paper_curl_effect">
+            <ul class="box">
+  <li></li>
+</ul>
+
+          </div>
+          
+          <a data-toggle="modal" href="#paper_curl_effect_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="paper_curl_effect">Paper Curl effect</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example paper_curl_effect"><ul class="box">
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://www.csspop.com/view/524" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="paper_curl_effect_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example paper_curl_effect"><ul class="box">
   <li></li>
 </ul>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#paper_curl_effect_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="paper_curl_effect_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1670,18 +1822,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="stack_of_paper_effect">Stack of Paper Effect</h3>
-            <style>.stack_of_paper_effect body {
+      <div class="items" id="Styles-items">
+        <div class="item-container stack_of_paper_effect-item">
+          <style>.stack_of_paper_effect body {
   padding: 1em;
   background: #eee; }
 .stack_of_paper_effect .layers {
@@ -1694,26 +1846,39 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 10px 0 -5px white, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px white, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
   /* The third layer shadow */ }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.csspop.com/view/555" class="external-link">Code Origin</a>
-              
-            </div>
-          </header>
-          <div class="example stack_of_paper_effect"><div class="layers"></div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#stack_of_paper_effect_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="stack_of_paper_effect_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example stack_of_paper_effect">
+            <div class="layers"></div>
 
+          </div>
+          
+          <a data-toggle="modal" href="#stack_of_paper_effect_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="stack_of_paper_effect">Stack of Paper Effect</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://www.csspop.com/view/555" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="stack_of_paper_effect_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example stack_of_paper_effect"><div class="layers"></div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1762,29 +1927,36 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
     </div>
   
 
-    <h2>Patterns</h2>
+    
 
-    <div class="items">
+    
       
-        <div class="item-container">
-          <header>
-            <h3 id="avatar_and_comment">Avatar and Comment</h3>
-            <style>.avatar_and_comment .comment p {
+      <div class="items" id="Patterns-items">
+        <div class="item-container avatar_and_comment-item">
+          <style>.avatar_and_comment .comment h3, .avatar_and_comment .comment h4 {
+  display: inline;
+  color: gray;
+  font-weight: 700; }
+.avatar_and_comment .comment h3 {
+  font-size: 15px; }
+.avatar_and_comment .comment h4 {
+  font-size: 12px; }
+.avatar_and_comment .comment p {
+  color: gray;
   margin-left: 65px;
   margin-top: 5px; }
-.avatar_and_comment .comment h3, .avatar_and_comment .comment h4 {
-  display: inline; }
 .avatar_and_comment .comment .avatar {
   background: url(../images/avatar.png) no-repeat center center;
   background-size: 50px;
@@ -1796,13 +1968,42 @@
   float: left;
   margin-right: 15px; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example avatar_and_comment">
+            <div class="comment">
+  <div class="avatar">
+  </div>
+  <div>
+    <h3>Name Lastname</h3>
+    <h4>Timestamp</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+ </div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#avatar_and_comment_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="avatar_and_comment">Avatar and Comment</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example avatar_and_comment"><div class="comment">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="avatar_and_comment_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example avatar_and_comment"><div class="comment">
   <div class="avatar">
   </div>
   <div>
@@ -1812,16 +2013,8 @@
   </div>
  </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#avatar_and_comment_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="avatar_and_comment_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -1849,14 +2042,26 @@
                     <code id="avatar_and_comment_css">
                       <div class="highlight"><pre><span class="err">$</span><span class="n">avatar</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span>
 <span class="err">$</span><span class="n">space</span><span class="o">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+<span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">gray</span><span class="p">;</span>
+
 <span class="p">.</span><span class="n">comment</span> <span class="p">{</span>
+  <span class="n">h3</span><span class="p">,</span> <span class="n">h4</span> <span class="p">{</span>
+    <span class="nl">display:</span> <span class="kr">inline</span><span class="p">;</span>
+    <span class="nl">color:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">weight</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">h3</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">h4</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="mi">12</span><span class="n">px</span><span class="p">;</span>
+  <span class="p">}</span>
   <span class="n">p</span> <span class="p">{</span>
+    <span class="nl">color:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
     <span class="n">margin</span><span class="o">-</span><span class="n">left</span><span class="o">:</span> <span class="err">$</span><span class="n">avatar</span><span class="o">-</span><span class="n">size</span> <span class="o">+</span> <span class="err">$</span><span class="n">space</span><span class="p">;</span>
     <span class="n">margin</span><span class="o">-</span><span class="n">top</span><span class="o">:</span> <span class="mi">5</span><span class="n">px</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="n">h3</span><span class="p">,</span> <span class="n">h4</span> <span class="p">{</span>
-    <span class="nl">display:</span> <span class="kr">inline</span><span class="p">;</span>
-  <span class="p">}</span>
+
   <span class="p">.</span><span class="n">avatar</span> <span class="p">{</span>
     <span class="nl">background:</span> <span class="n">url</span><span class="p">(..</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">avatar</span><span class="p">.</span><span class="n">png</span><span class="p">)</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span> <span class="n">center</span> <span class="n">center</span><span class="p">;</span>
     <span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="o">:</span> <span class="err">$</span><span class="n">avatar</span><span class="o">-</span><span class="n">size</span><span class="p">;</span>
@@ -1882,255 +2087,63 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
-      
-        <div class="item-container">
-          <header>
-            <h3 id="tabs">Tabs</h3>
-            <style>.tabs .tab-switcher {
-  position: relative;
-  font-family: Arial, sans-serif;
-  font-size: 14px; }
-.tabs .tab {
-  float: left; }
-.tabs .tab-switcher label {
-  padding: 14px;
-  border-radius: 3px 3px 0 0;
-  background: #676767;
-  display: block;
-  color: white;
-  margin-left: -1px;
-  -webkit-transition: all .4s linear;
-  -moz-transition: all .4s linear;
-  -o-transition: all .4s linear;
-  -ms-transition: all .4s linear;
-  transition: all .4s linear; }
-.tabs .tab-switcher label:hover {
-  cursor: pointer; }
-.tabs .tab-content {
-  position: absolute;
-  top: 44px;
-  left: 0;
-  padding: 20px;
-  background: gray;
-  width: 100%;
-  border-top: none;
-  margin-left: -1px;
-  z-index: 1;
-  opacity: 0; }
-  .tabs .tab-content p {
-    color: white;
-    font-size: 13px; }
-.tabs .tab-switcher input[type=radio] {
-  display: none; }
-.tabs .tab-switcher input[type=radio]:checked ~ .tab-content {
-  z-index: 10;
-  opacity: 1;
-  background: gray;
-  color: white;
-  border: none; }
-.tabs .tab-switcher input[type=radio]:checked ~ label {
-  background: gray;
-  color: white;
-  border: none; }
-</style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://www.adobe.com/devnet/html5/articles/using-form-elements-and-css3-to-replace-javascript.html?utm_source=html5weekly&utm_medium=email" class="external-link">Code Origin</a>
-              
-            </div>
-          </header>
-          <div class="example tabs"><div class="tab-switcher">
-  <section class="tab">
-    <input type="radio" id="tab-one" name="tab-set" checked>
-    <label for="tab-one" onclick="">Tab 1</label>
-    <div class="tab-content">
-      <p>First tab content goes here.</p>
-    </div>
-  </section>
-  <section class="tab">
-    <input type="radio" id="tab-two" name="tab-set">
-    <label for="tab-two" onclick="">Tab 2</label>
-    <div class="tab-content">
-      <p>This is another tab, specifically number 2.</p>
-    </div>
- </section>
- <section class="tab">
-    <input type="radio" id="tab-three" name="tab-set">
-    <label for="tab-three" onclick="">Tab 3</label>
-    <div class="tab-content">
-      <p>Here's three.</p>
-    </div>
- </section>
-</div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#tabs_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="tabs_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
-                  <div class="code-section html">
-                    <header>
-                      <h4>HTML</h4>
-                      <button class="copy" data-clipboard-target="tabs_html">copy</button>
-                    </header>
-                    <code id="tabs_html">
-                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-switcher&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-one&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span> <span class="err">checked</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-one&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>First tab content goes here.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/section&gt;</span>
-  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-two&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-two&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>This is another tab, specifically number 2.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
- <span class="nt">&lt;/section&gt;</span>
- <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">id=</span><span class="s">&quot;tab-three&quot;</span> <span class="na">name=</span><span class="s">&quot;tab-set&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;tab-three&quot;</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tab-content&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Here&#39;s three.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
- <span class="nt">&lt;/section&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-                    </code>
-                  </div>
-
-                  <div class="code-section css">
-                    <header>
-                      <h4>CSS</h4>
-                      <button class="copy" data-clipboard-target="tabs_css">copy</button>
-                    </header>
-                    <code id="tabs_css">
-                      <div class="highlight"><pre><span class="nc">.tab-switcher</span> <span class="p">{</span>
-  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab</span> <span class="p">{</span>
-  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab-switcher</span> <span class="nt">label</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
-  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">background</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="nb">gray</span><span class="o">,</span> <span class="m">10</span><span class="p">);</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
-  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
-  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
-  <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
-  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
-  <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">.4s</span> <span class="n">linear</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab-switcher</span> <span class="nt">label</span><span class="nd">:hover</span> <span class="p">{</span>
-  <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab-content</span> <span class="p">{</span>
-  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
-  <span class="k">top</span><span class="o">:</span> <span class="m">44px</span><span class="p">;</span>
-  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
-  <span class="k">border-top</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-1px</span><span class="p">;</span>
-  <span class="k">z-index</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
-  <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="n">p</span> <span class="err">{</span>
-    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-    <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="err">}</span>
-<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nc">.tab-content</span> <span class="p">{</span>
-  <span class="k">z-index</span><span class="o">:</span> <span class="m">10</span><span class="p">;</span>
-  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
-  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nc">.tab-switcher</span> <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="nx">radio</span><span class="cp">]</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">label</span> <span class="p">{</span>
-  <span class="k">background</span><span class="o">:</span> <span class="nb">gray</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-  <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-                    </code>
-                  </div>
-
-                  <div class="code-section js">
-                    <header>
-                      <h4>JS</h4>
-                      <button class="copy" data-clipboard-target="tabs_js">copy</button>
-                    </header>
-                    <code id="tabs_js">
-                      
-                    </code>
-                  </div> 
-
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="center_vertically_and_horizontally">Center vertically and horizontally</h3>
-            <style>.center_vertically_and_horizontally .wraptocenter {
+      <div class="items" id="Patterns-items">
+        <div class="item-container center_vertically_and_horizontally-item">
+          <style>.center_vertically_and_horizontally .wraptocenter {
   display: table-cell;
   text-align: center;
   color: white;
   vertical-align: middle;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: gray; }
 .center_vertically_and_horizontally .wraptocenter * {
   vertical-align: middle; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example center_vertically_and_horizontally">
+            <div class="wraptocenter">
+  <span>MID</span>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#center_vertically_and_horizontally_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="center_vertically_and_horizontally">Center vertically and horizontally</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example center_vertically_and_horizontally"><div class="wraptocenter">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="center_vertically_and_horizontally_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example center_vertically_and_horizontally"><div class="wraptocenter">
   <span>MID</span>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#center_vertically_and_horizontally_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="center_vertically_and_horizontally_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -2155,8 +2168,8 @@
   <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="o">:</span> <span class="n">center</span><span class="p">;</span>
   <span class="nl">color:</span> <span class="n">white</span><span class="p">;</span>
   <span class="n">vertical</span><span class="o">-</span><span class="n">align</span><span class="o">:</span> <span class="n">middle</span><span class="p">;</span>
-  <span class="nl">width:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
-  <span class="nl">height:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
+  <span class="nl">width:</span> <span class="mi">80</span><span class="n">px</span><span class="p">;</span>
+  <span class="nl">height:</span> <span class="mi">80</span><span class="n">px</span><span class="p">;</span>
   <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="o">:</span> <span class="n">gray</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">.</span><span class="n">wraptocenter</span> <span class="o">*</span> <span class="p">{</span>
@@ -2175,18 +2188,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="navigation">Navigation</h3>
-            <style>.navigation header {
+      <div class="items" id="Patterns-items">
+        <div class="item-container navigation-item">
+          <style>.navigation header {
   width: 100%;
   height: 60px;
   background-color: gray;
@@ -2263,13 +2276,46 @@
         overflow: hidden;
         background-color: gray; } }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example navigation">
+            <header>
+  <div class="menu-wrapper">
+    <p>Menu</p>
+    <div class="nav">
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+          </div>
+          
+          <a data-toggle="modal" href="#navigation_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="navigation">Navigation</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example navigation"><header>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="navigation_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example navigation"><header>
   <div class="menu-wrapper">
     <p>Menu</p>
     <div class="nav">
@@ -2283,16 +2329,8 @@
   </div>
 </header>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#navigation_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="navigation_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -2450,25 +2488,25 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
     </div>
   
 
-    <h2>Components</h2>
+    
 
-    <div class="items">
+    
       
-        <div class="item-container">
-          <header>
-            <h3 id="switch">Switch</h3>
-            <style>.switch .onoffswitch {
+      <div class="items" id="Components-items">
+        <div class="item-container switch-item">
+          <style>.switch .onoffswitch {
   position: relative;
   width: 90px;
   -webkit-user-select: none;
@@ -2526,15 +2564,42 @@
 .switch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://proto.io/freebies/onoff/" class="external-link">Code Origin</a>
-              
+            
+          <div class="example switch">
+            <div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+  <label class="onoffswitch-label" for="myonoffswitch">
+    <div class="onoffswitch-inner"></div>
+    <div class="onoffswitch-switch"></div>
+  </label>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#switch_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="switch">Switch</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example switch"><div class="onoffswitch">
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://proto.io/freebies/onoff/" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="switch_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example switch"><div class="onoffswitch">
   <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
   <label class="onoffswitch-label" for="myonoffswitch">
     <div class="onoffswitch-inner"></div>
@@ -2542,16 +2607,8 @@
   </label>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#switch_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="switch_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -2647,18 +2704,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="tooltip">Tooltip</h3>
-            <style>.tooltip a.item-one {
+      <div class="items" id="Components-items">
+        <div class="item-container tooltip-item">
+          <style>.tooltip a.item-one {
   position: relative;
   background-color: gray;
   padding: 5px 8px; }
@@ -2720,27 +2777,43 @@
       opacity: 0;
       visibility: hidden; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example tooltip">
+            <a href="#" class="item-one">
+  Hover for Tooltip
+  <div class="tooltip">Tooltip text</div>
+</a>
+
+          </div>
+          
+          <a data-toggle="modal" href="#tooltip_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="tooltip">Tooltip</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example tooltip"><a href="#" class="item-one">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="tooltip_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example tooltip"><a href="#" class="item-one">
   Hover for Tooltip
   <div class="tooltip">Tooltip text</div>
 </a>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#tooltip_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="tooltip_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -2883,18 +2956,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="dropdown">Dropdown</h3>
-            <style>.dropdown .dropdown-menu {
+      <div class="items" id="Components-items">
+        <div class="item-container dropdown-item">
+          <style>.dropdown .dropdown-menu {
   cursor: pointer;
   position: relative;
   color: white;
@@ -2912,29 +2985,47 @@
     padding: 5px 8px;
     transition: all 0.15s linear; }
 </style>
-            <div class="item-links">
-              
-              
-              
+            
+          <div class="example dropdown">
+            <a class="dropdown-menu">
+  Hover for Dropdown
+  <div class="dropdown">
+    Dropdown
+  </div>
+</a>
+
+          </div>
+          
+          <a data-toggle="modal" href="#dropdown_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="dropdown">Dropdown</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example dropdown"><a class="dropdown-menu">
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="dropdown_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example dropdown"><a class="dropdown-menu">
   Hover for Dropdown
   <div class="dropdown">
     Dropdown
   </div>
 </a>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#dropdown_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="dropdown_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -2992,18 +3083,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="line_behind_text">Line behind text</h3>
-            <style>.line_behind_text .line-behind-text {
+      <div class="items" id="Components-items">
+        <div class="item-container line_behind_text-item">
+          <style>.line_behind_text .line-behind-text {
   text-align: center;
   border-bottom: 1px solid gray; }
 .line_behind_text .line-behind-text p {
@@ -3016,28 +3107,43 @@
   background: white;
   padding: 0 10px; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://theleggett.com/explanations/strikethrough/" class="external-link">Code Origin</a>
-              
-            </div>
-          </header>
-          <div class="example line_behind_text"><div class="line-behind-text">
-  <p>LINE BEHIND TEXT</p>
+            
+          <div class="example line_behind_text">
+            <div class="line-behind-text">
+  <p>LINE</p>
 </div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#line_behind_text_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="line_behind_text_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
 
+          </div>
+          
+          <a data-toggle="modal" href="#line_behind_text_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="line_behind_text">Line behind text</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://theleggett.com/explanations/strikethrough/" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="line_behind_text_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example line_behind_text"><div class="line-behind-text">
+  <p>LINE</p>
+</div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -3045,7 +3151,7 @@
                     </header>
                     <code id="line_behind_text_html">
                       <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;line-behind-text&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p&gt;</span>LINE BEHIND TEXT<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>LINE<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
                     </code>
@@ -3084,18 +3190,18 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="ellipsis_for_overflow">Ellipsis for overflow</h3>
-            <style>.ellipsis_for_overflow .box {
+      <div class="items" id="Components-items">
+        <div class="item-container ellipsis_for_overflow-item">
+          <style>.ellipsis_for_overflow .box {
   width: 200px;
   height: 66.66667px; }
 .ellipsis_for_overflow .ellipsis {
@@ -3105,15 +3211,45 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical; }
 </style>
-            <div class="item-links">
-              
-              
-              
-                <a href="http://snipplr.com/view/67357/webkit-lastline-truncate/" class="external-link">Code Origin</a>
-              
+            
+          <div class="example ellipsis_for_overflow">
+            <div class="box">
+  <p class="ellipsis">Lorem ipsum dolor sit amet, 
+  consectetur adipisicing elit. Quidem 
+  facilis aspernatur harum eos beatae 
+  molestiae molestias vitae repudiandae 
+  praesentium itaque natus accusantium 
+  quia ipsam doloribus aut! Illum 
+  repudiandae inventore laboriosam
+  </p>
+</div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#ellipsis_for_overflow_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="ellipsis_for_overflow">Ellipsis for overflow</h3>
+              <script></script>
             </div>
-          </header>
-          <div class="example ellipsis_for_overflow"><div class="box">
+          </a>
+          
+          <div class="item-links">
+            
+            
+              <button class="origin"><a href="http://snipplr.com/view/67357/webkit-lastline-truncate/" class="external-link">Origin</a></button>
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="ellipsis_for_overflow_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example ellipsis_for_overflow"><div class="box">
   <p class="ellipsis">Lorem ipsum dolor sit amet, 
   consectetur adipisicing elit. Quidem 
   facilis aspernatur harum eos beatae 
@@ -3124,16 +3260,8 @@
   </p>
 </div>
 </div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#ellipsis_for_overflow_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="ellipsis_for_overflow_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
-
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -3185,18 +3313,198 @@
                       
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
-        <div class="item-container">
-          <header>
-            <h3 id="toggle_class">Toggle Class</h3>
-            <style>.toggle_class div {
+      <div class="items" id="Components-items">
+        <div class="item-container form-item">
+          <style>.form form {
+  max-width: 500px; }
+  .form form fieldset {
+    border-radius: 4px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 0; }
+    .form form fieldset input {
+      padding: 8px 6px;
+      border: 1px solid gray;
+      border-bottom: none;
+      box-sizing: border-box;
+      display: block;
+      margin: 0;
+      outline: none;
+      width: 100%; }
+      .form form fieldset input:focus {
+        background: #FCFCDE; }
+      .form form fieldset input:first-child {
+        border-bottom: none;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; }
+      .form form fieldset input:last-child {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; }
+  .form form input[type="submit"] {
+    width: 100%;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 1em;
+    background-color: gray; }
+    .form form input[type="submit"]:hover {
+      background: #676767; }
+</style>
+            
+          <div class="example form">
+            <form action="" method="post">
+  <fieldset>
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Full Name">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+
+          </div>
+          
+          <a data-toggle="modal" href="#form_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="form">Form</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="form_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example form"><form action="" method="post">
+  <fieldset>
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Full Name">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+</div>
+                </div>
+                <div class="modal-body">
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="form_html">copy</button>
+                    </header>
+                    <code id="form_html">
+                      <div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;fieldset&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Email&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Full Name&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Submit&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="form_css">copy</button>
+                    </header>
+                    <code id="form_css">
+                      <div class="highlight"><pre><span class="err">$</span><span class="nt">radius</span><span class="o">:</span> <span class="nt">3px</span><span class="o">;</span>
+<span class="err">$</span><span class="nt">gray</span><span class="o">:</span> <span class="nt">gray</span><span class="o">;</span>
+
+<span class="nt">form</span> <span class="p">{</span>
+  <span class="k">max-width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span>
+  <span class="o">@</span><span class="n">mixin</span> <span class="n">form</span><span class="o">-</span><span class="k">block</span> <span class="err">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">8px</span> <span class="m">6px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="err">$</span><span class="nb">gray</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">outline</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+
+    <span class="o">&amp;:</span><span class="n">focus</span> <span class="err">{</span>
+      <span class="k">background</span><span class="o">:</span> <span class="m">#FCFCDE</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+
+  <span class="nt">fieldset</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span> <span class="o">+</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="err">$</span><span class="nb">gray</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+
+    <span class="n">input</span> <span class="err">{</span>
+      <span class="o">@</span><span class="n">include</span> <span class="n">form</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+
+      <span class="o">&amp;:</span><span class="n">first</span><span class="o">-</span><span class="n">child</span> <span class="err">{</span>
+        <span class="k">border-bottom</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+        <span class="k">border-top</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span><span class="p">;</span>
+        <span class="k">border-top</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="o">&amp;</span><span class="nd">:last-child</span> <span class="p">{</span>
+        <span class="k">border-bottom</span><span class="o">-</span><span class="k">left</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span><span class="p">;</span>
+        <span class="k">border-bottom</span><span class="o">-</span><span class="k">right</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+
+  <span class="nt">input</span><span class="cp">[</span><span class="k">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span><span class="cp">]</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="err">$</span><span class="n">radius</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#FFF</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="err">$</span><span class="nb">gray</span><span class="p">;</span>
+
+    <span class="o">&amp;:</span><span class="n">hover</span> <span class="err">{</span>
+      <span class="k">background</span><span class="o">:</span> <span class="n">darken</span><span class="p">(</span><span class="err">$</span><span class="nb">gray</span><span class="o">,</span> <span class="m">10</span><span class="o">%</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="form_js">copy</button>
+                    </header>
+                    <code id="form_js">
+                      
+                    </code>
+                  </div> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+      
+      <div class="items" id="Components-items">
+        <div class="item-container toggle_class-item">
+          <style>.toggle_class div {
   background-color: gray;
   color: white;
   padding: 5px 8px;
@@ -3206,26 +3514,48 @@
   background-color: teal;
   width: 400px; }
 </style>
-            <div class="item-links">
-              
-                <button class="jquery"><a href="http://jquery.com">Jquery Required</a></button>
-              
-              
-              
-            </div>
-          </header>
-          <div class="example toggle_class"><div class="toggle-class">Click here to add class to div</div>
-</div>
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" href="#toggle_class_accordion">
-                  <small>Code <i class="icon-right-circled"></i></small>
-                </a>
-              </div>
-              <div id="toggle_class_accordion" class="accordion-body collapse">
-                <div class="accordion-inner">
+            
+          <div class="example toggle_class">
+            <div class="toggle-class">Click here to add class to div</div>
 
+          </div>
+          
+          <a data-toggle="modal" href="#toggle_class_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="toggle_class">Toggle Class</h3>
+              <script><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".toggle-class").click(function() {
+      $(this).toggleClass("addition", 1000, "easeInOutExpo" );
+    });
+  });
+</script>
+</script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+                        
+              <button class="jquery"><a href="http://jquery.com">Jquery Required</a></button>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="toggle_class_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example toggle_class"><div class="toggle-class">Click here to add class to div</div>
+</div>
+                </div>
+                <div class="modal-body">
                   <div class="code-section html">
                     <header>
                       <h4>HTML</h4>
@@ -3277,26 +3607,29 @@
 </pre></div>
                     </code>
                   </div> 
-
                 </div>
-              </div>
-            </div>
-            <script><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script>
-  $(document).ready(function() {
-    $(".toggle-class").click(function() {
-      $(this).toggleClass("addition", 1000, "easeInOutExpo" );
-    });
-  });
-</script>
-</script></script>
-          </div>
-        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       
     </div>
   
 </div>
+
+<script>
+  
+  var $container = $('#Styles-items');
+  // initialize
+  $container.packery({
+    itemSelector: '.item-container',
+    gutter: 10
+  });
+  
+</script>
 
 <script>
   ZeroClipboard.setDefaults({moviePath: 'images/ZeroClipboard.swf'});

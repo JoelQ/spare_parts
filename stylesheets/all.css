@@ -306,22 +306,33 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 37, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
-.accordion-heading, .accordion-inner, .item-container header .item-links a.external-link {
-  background-color: #f7f7f7;
-  box-shadow: inset 0 2px 2px #e6e6e6;
-  text-shadow: 0 1px 0 white; }
-  /* line 42, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
-  .accordion-heading a, .accordion-inner a, .item-container header .item-links a.external-link a {
-    text-shadow: 0 1px 0 white;
-    color: #cccccc; }
-    /* line 46, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
-    .accordion-heading a:hover, .accordion-inner a:hover, .item-container header .item-links a.external-link a:hover {
-      text-shadow: 0 1px 0 white;
-      color: #cccccc; }
-  /* line 52, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
-  .accordion-heading:hover, .accordion-inner:hover, .item-container header .item-links a.external-link:hover {
-    background-color: #fafafa; }
+/* line 63, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+.hero a {
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid #64a2a2;
+  background-color: #74acac;
+  transition: all 0.03s linear;
+  border-radius: 3px;
+  text-transform: uppercase;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px white;
+  color: white;
+  text-shadow: 0 2px 1px #599494; }
+  /* line 74, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+  .hero a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #84b5b5;
+    *background-color: #64a2a2;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -15px; }
+  /* line 83, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_variables.scss */
+  .hero a.active, .hero a:active {
+    background-color: #64a2a2;
+    background-color: #64a2a2 \9;
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 /* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
 .code-section {
@@ -346,17 +357,17 @@
     display: block;
     float: left;
     margin-right: 0.84034%;
-    width: 66.38655%;
-    margin-right: 0; }
+    width: 32.77311%; }
     /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
     .code-section.css:last-child {
       margin-right: 0; }
-  /* line 20, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  /* line 19, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
   .code-section.js {
     display: block;
     float: left;
     margin-right: 0.84034%;
-    width: 100%; }
+    width: 32.77311%;
+    margin-right: 0; }
     /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
     .code-section.js:last-child {
       margin-right: 0; }
@@ -380,7 +391,7 @@
     /* line 36, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
     .code-section header button {
       border: none;
-      background-color: #dde4e3;
+      background-color: #e1e1e1;
       border-radius: 20px;
       text-transform: uppercase;
       font-weight: 800;
@@ -390,105 +401,203 @@
       display: inline; }
       /* line 47, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
       .code-section header button:hover {
-        background-color: #c1cdcb; }
+        background-color: #c7c7c7; }
 
-/* line 62, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0; }
+/* line 61, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-open {
+  overflow: hidden; }
 
-/* line 68, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.clearfix:after {
-  clear: both; }
+/* line 66, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 15px; }
 
-/* line 72, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }
+/* line 69, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040; }
 
 /* line 80, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out; }
 
 /* line 89, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.accordion-heading {
-  border-radius: 3px; }
-  /* line 93, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-  .accordion-heading a {
-    padding: 10px 15px; }
-  /* line 97, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-  .accordion-heading i {
-    float: right;
-    font-size: 16.8px; }
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
 
-/* line 103, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.accordion-heading .accordion-toggle {
-  display: block; }
+/* line 94, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-dialog {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding: 10px;
+  z-index: 1050; }
 
-/* line 107, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.accordion-toggle {
-  cursor: pointer; }
+/* line 101, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none; }
 
-/* line 111, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.accordion-inner {
-  *zoom: 1;
-  border-radius: 3px;
-  margin-top: 7.5px;
-  border-top: none; }
-  /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .accordion-inner:before, .accordion-inner:after {
-    content: " ";
-    display: table; }
-  /* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
-  .accordion-inner:after {
-    clear: both; }
+/* line 112, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: rgba(0, 0, 0, 0.2); }
 
-/* line 119, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+/* line 121, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+/* line 125, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+/* line 129, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.428571429px; }
+  /* line 134, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .modal-header button {
+    background-color: transparent;
+    border: none;
+    float: right; }
+
+/* line 140, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-header .close {
+  margin-top: -2px; }
+
+/* line 143, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.428571429; }
+
+/* line 147, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-body {
+  position: relative;
+  padding: 20px; }
+
+/* line 151, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer {
+  margin-top: 15px;
+  padding: 19px 20px 20px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5; }
+
+/* line 158, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 166, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer:after {
+  clear: both; }
+
+/* line 170, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 178, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer:after {
+  clear: both; }
+
+/* line 181, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0; }
+
+/* line 185, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px; }
+
+/* line 188, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0; }
+
+@media screen and (min-width: 768px) {
+  /* line 192, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .modal-dialog {
+    margin: auto;
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+  /* line 199, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+/* line 922, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
-  -moz-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
 
-/* line 126, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+/* line 927, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
 .fade.in {
   opacity: 1; }
 
-/* line 129, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+/* line 930, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
 .collapse {
+  display: none; }
+
+/* line 933, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.collapse.in {
+  display: block; }
+
+/* line 936, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
+.collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.35s ease;
-  -moz-transition: height 0.35s ease;
-  -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
-
-/* line 138, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_code-section.scss */
-.collapse.in {
-  height: auto; }
 
 /* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 body {
-  background: #68b8b8;
+  background: #74acac;
   margin: 0; }
 
 /* line 7, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .container {
   margin-top: 30px;
   *zoom: 1;
-  max-width: 1700px;
+  max-width: 2700px;
   margin-left: auto;
   margin-right: auto;
   padding: 30px; }
@@ -530,8 +639,8 @@ body {
     font-size: 48px;
     text-align: center;
     padding-top: 30px;
-    color: #535d67;
-    text-shadow: 0 1px 1px rgba(132, 144, 156, 0.2); }
+    color: #5d5d5d;
+    text-shadow: 0 1px 1px rgba(144, 144, 144, 0.2); }
   /* line 48, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
   .hero h2 {
     font-family: "Open Sans", sans-serif;
@@ -540,11 +649,11 @@ body {
     max-width: 600px;
     margin: auto;
     margin-bottom: 15px;
-    color: #768391;
-    text-shadow: 0 1px 1px rgba(132, 144, 156, 0.2); }
+    color: #838383;
+    text-shadow: 0 1px 1px rgba(144, 144, 144, 0.2); }
   /* line 59, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
   .hero .divider {
-    border-bottom: 1px solid #84909c;
+    border-bottom: 1px solid #909090;
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -561,34 +670,9 @@ body {
     text-align: center;
     width: 500px;
     padding: 30px;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    border-bottom: 2px solid #57b0b0;
-    background-color: #68b8b8;
-    transition: all 0.03s linear;
-    border-radius: 3px;
-    text-transform: uppercase;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px white;
-    color: white;
-    text-shadow: 0 2px 1px #4ca1a1; }
-    /* line 90, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-    .hero a:hover {
-      color: white;
-      text-decoration: none;
-      background-color: #7ac0c0;
-      *background-color: #57b0b0;
-      /* Buttons in IE7 don't get borders, so darken on hover */
-      background-position: 0 -15px; }
-    /* line 99, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-    .hero a.active, .hero a:active {
-      background-color: #57b0b0;
-      background-color: #57b0b0 \9;
-      background-image: none;
-      outline: 0;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+    font-size: 18px; }
 
-/* line 115, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+/* line 89, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 nav {
   display: block;
   float: left;
@@ -598,21 +682,21 @@ nav {
   /* line 41, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/neat/grid/_span-columns.scss */
   nav:last-child {
     margin-right: 0; }
-  /* line 119, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  /* line 93, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
   nav h2 {
     font-size: 12px;
-    text-shadow: 0 1px 0 #535d67;
+    text-shadow: 0 1px 0 #5d5d5d;
     text-transform: uppercase;
     margin: 0; }
-  /* line 126, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  /* line 100, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
   nav a {
     display: block;
     font-size: 14.4px; }
-    /* line 130, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    /* line 104, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
     nav a:last-child {
       margin-bottom: 15px; }
 
-/* line 136, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+/* line 110, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .main-content-container {
   display: block;
   float: left;
@@ -623,72 +707,50 @@ nav {
   .main-content-container:last-child {
     margin-right: 0; }
 
-/* line 147, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+/* line 121, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .item-container {
-  position: relative;
   background-color: white;
-  padding: 30px;
-  margin-bottom: 0;
-  border: 4px solid #f7f7f7;
-  border-bottom: 0; }
-  /* line 155, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-  .item-container:last-child {
-    margin-bottom: 30px; }
-  /* line 161, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-  .item-container header h3 {
-    display: inline; }
-  /* line 165, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-  .item-container header .item-links {
+  position: relative; }
+  /* line 125, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .item-container .info-section {
+    padding: 15px;
+    min-height: 100px;
+    background-color: #467474; }
+    /* line 130, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    .item-container .info-section:hover {
+      background-color: #4b7e7e;
+      cursor: pointer; }
+  /* line 136, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .item-container .item-links {
     position: absolute;
-    right: -4px;
-    top: 30px;
-    float: right; }
-    /* line 171, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-    .item-container header .item-links p {
-      display: inline;
-      font-style: italic; }
-    /* line 176, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-    .item-container header .item-links a.external-link {
-      color: #cccccc;
-      font-weight: 700;
-      border-right: 1px solid #68b8b8;
-      padding: 5px 34px 5px 12px;
-      font-size: 10px;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-top-right-radius: 0;
-      border-bottom: 0;
-      border-bottom-right-radius: 0; }
-    /* line 190, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-    .item-container header .item-links button {
+    bottom: 15px;
+    padding-left: 15px; }
+    /* line 141, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+    .item-container .item-links button {
       border: 0;
       color: white;
       text-transform: uppercase;
       font-size: 10px;
       font-weight: 600;
-      padding: 3px 15px;
-      border-radius: 15px;
-      margin-left: 7.5px;
+      padding: 4px 15px;
       margin-right: 30px;
-      background-color: #848c9c;
-      border-bottom: 2px solid #6a7283;
-      text-shadow: 0 1px 0 #6a7283; }
-      /* line 204, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-      .item-container header .item-links button:hover {
-        background-color: #9299a7; }
-      /* line 208, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-      .item-container header .item-links button.bourbon {
-        background-color: #98849c;
-        border-bottom: 2px solid #7f6a83;
-        text-shadow: 0 1px 0 #7f6a83; }
-        /* line 212, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
-        .item-container header .item-links button.bourbon:hover {
-          background-color: #a492a7; }
+      background-color: #3c6464; }
+      /* line 156, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+      .item-container .item-links button.bourbon {
+        background-color: #909090;
+        border-bottom: 2px solid #767676;
+        text-shadow: 0 1px 0 #767676; }
+        /* line 160, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+        .item-container .item-links button.bourbon:hover {
+          background-color: #9d9d9d; }
+  /* line 167, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .item-container .code-button {
+    display: block; }
 
-/* line 223, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+/* line 172, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .example {
-  padding: 15px 0;
-  margin: 15px 0;
+  min-height: 140px;
+  margin: 30px 30px 0 30px;
   *zoom: 1; }
   /* line 18, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
   .example:before, .example:after {
@@ -697,8 +759,11 @@ nav {
   /* line 23, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/bourbon/addons/_clearfix.scss */
   .example:after {
     clear: both; }
+  /* line 177, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+  .example div, .example img {
+    margin: auto; }
 
-/* line 229, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
+/* line 182, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_layout.scss */
 .tabs {
   min-height: 155px; }
 
@@ -731,33 +796,34 @@ h2 {
 /* line 27, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 h3 {
   margin: 0;
-  color: #84909c;
+  font-size: 12px;
+  color: white;
   font-weight: 400; }
 
-/* line 33, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 34, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 h4 {
   margin: 0;
-  color: #84909c; }
+  color: #909090; }
 
-/* line 38, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 39, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 p {
   font-size: 12px;
-  color: #84909c; }
+  color: #909090; }
 
-/* line 43, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 44, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 small {
   text-transform: uppercase;
   font-weight: 800; }
 
-/* line 48, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 49, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9); }
-  /* line 51, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+  /* line 52, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
   a:hover {
     color: white; }
 
-/* line 56, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 57, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 code {
   font-size: 12px;
   line-height: 16.8px; }
@@ -769,7 +835,7 @@ code {
   font-weight: normal;
   font-style: normal; }
 
-/* line 78, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 79, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -785,13 +851,20 @@ code {
   line-height: 1em;
   margin-left: .2em; }
 
-/* line 94, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 95, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 .icon-tools:before {
   content: '\e801'; }
 
 /* '' */
-/* line 95, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
+/* line 96, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_typography.scss */
 .icon-right-circled:before {
   content: '\e800'; }
 
 /* '' */
+/* line 1, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_example-tweaks.scss */
+.navigation-item {
+  min-width: 350px; }
+
+/* line 5, /Users/Magnus/Documents/thoughtbot/spare_parts/source/stylesheets/_example-tweaks.scss */
+.line_behind_text-item {
+  min-width: 250px; }
