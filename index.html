@@ -77,6 +77,8 @@
           
             <a href="#dropdown">Dropdown</a>
           
+            <a href="#triangle">Triangle</a>
+          
             <a href="#line_behind_text">Line behind text</a>
           
             <a href="#ellipsis_for_overflow">Ellipsis for overflow</a>
@@ -3080,6 +3082,90 @@
                       <button class="copy" data-clipboard-target="dropdown_js">copy</button>
                     </header>
                     <code id="dropdown_js">
+                      
+                    </code>
+                  </div> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+      
+      <div class="items" id="Components-items">
+        <div class="item-container triangle-item">
+          <style>.triangle .triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 70px solid white;
+  border-left: 70px solid gray; }
+</style>
+            
+          <div class="example triangle">
+            <div class="triangle"></div>
+
+          </div>
+          
+          <a data-toggle="modal" href="#triangle_modal" class="btn btn-primary btn-lg">
+            <div class="info-section">
+              <h3 id="triangle">Triangle</h3>
+              <script></script>
+            </div>
+          </a>
+          
+          <div class="item-links">
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        <div class="modal fade" id="triangle_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                  <div class="example triangle"><div class="triangle"></div>
+</div>
+                </div>
+                <div class="modal-body">
+                  <div class="code-section html">
+                    <header>
+                      <h4>HTML</h4>
+                      <button class="copy" data-clipboard-target="triangle_html">copy</button>
+                    </header>
+                    <code id="triangle_html">
+                      <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;triangle&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section css">
+                    <header>
+                      <h4>CSS</h4>
+                      <button class="copy" data-clipboard-target="triangle_css">copy</button>
+                    </header>
+                    <code id="triangle_css">
+                      <div class="highlight"><pre><span class="p">.</span><span class="n">triangle</span> <span class="p">{</span>
+  <span class="nl">width:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="nl">height:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">bottom</span><span class="o">:</span> <span class="mi">70</span><span class="n">px</span> <span class="n">solid</span> <span class="n">white</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">left</span><span class="o">:</span> <span class="mi">70</span><span class="n">px</span> <span class="n">solid</span> <span class="n">gray</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+                    </code>
+                  </div>
+
+                  <div class="code-section js">
+                    <header>
+                      <h4>JS</h4>
+                      <button class="copy" data-clipboard-target="triangle_js">copy</button>
+                    </header>
+                    <code id="triangle_js">
                       
                     </code>
                   </div> 
